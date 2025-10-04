@@ -1,7 +1,6 @@
-import type { PokemonType } from "@prisma/client";
 import type { PokemonTypeName } from "@/types/pokemon";
 
-export const TYPE_BADGE_STYLES: Partial<Record<PokemonType, string>> = {
+export const TYPE_BADGE_STYLES: Partial<Record<PokemonTypeName, string>> = {
   grass: "bg-emerald-100 text-emerald-700",
   poison: "bg-fuchsia-100 text-fuchsia-700",
   fire: "bg-orange-100 text-orange-700",
