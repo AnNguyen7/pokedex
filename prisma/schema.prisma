@@ -1,0 +1,68 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
+}
+
+enum PokemonType {
+  BUG
+  FIRE
+  FLYING
+  GRASS
+  NORMAL
+  POISON
+  WATER
+}
+
+model Pokemon {
+  id             Int          @id @default(autoincrement())
+  nationalDex    Int          @unique
+  slug           String       @unique
+  displayName    String
+  primaryType    PokemonType
+  secondaryType  PokemonType?
+  spriteUrl      String
+  hp             Int          @default(0)
+  attack         Int          @default(0)
+  defense        Int          @default(0)
+  specialAttack  Int          @default(0)
+  specialDefense Int          @default(0)
+  speed          Int          @default(0)
+  summary        String?      @db.Text
+  description    String?      @db.Text
+
+  evolutionStage EvolutionStage?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model EvolutionChain {
+  id        Int              @id @default(autoincrement())
+  slug      String           @unique
+  stages    EvolutionStage[]
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+}
+
+model EvolutionStage {
+  id        Int            @id @default(autoincrement())
+  order     Int
+  chain     EvolutionChain @relation(fields: [chainId], references: [id], onDelete: Cascade)
+  chainId   Int
+  pokemon   Pokemon        @relation(fields: [pokemonId], references: [id], onDelete: Cascade)
+  pokemonId Int
+
+  @@unique([chainId, order])
+  @@unique([pokemonId])
+}
