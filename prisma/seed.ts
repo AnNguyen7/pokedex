@@ -48,13 +48,87 @@ const EVOLUTION_GROUPS: string[][] = [
 
 const LORE: Record<number, Partial<{ summary: string; description: string }>> = {
   1: {
-    summary: "Bulbasaur is a Grass/Poison type Pokémon introduced in Generation 1.",
+    summary: "Bulbasaur is a dual Grass/Poison starter that carries a budding plant on its back.",
     description:
-      "Bulbasaur is a small, mainly turquoise amphibian Pokémon with red eyes and a green bulb on its back. " +
-      "It is based on a frog or toad, and the bulb resembles a plant bud that blossoms as it evolves. " +
-      "It's notable for being first in the National Pokédex and one of the original starter Pokémon alongside Charmander and Squirtle.",
+      "The bulb on Bulbasaur’s back stores sunlight and slowly blooms as it absorbs energy. It prefers bright meadows and grows sluggish when it can’t bask in the sun.",
+  },
+  2: {
+    summary: "Ivysaur’s plant begins to bloom, giving it stronger Grass-type attacks.",
+    description:
+      "Ivysaur spends more time rooted in place to siphon nutrients. It channels that energy into a powerful fragrance that can overwhelm foes before it strikes.",
+  },
+  3: {
+    summary: "Venusaur towers over battlefields with a full bloom that radiates healing pollen.",
+    description:
+      "When sunlight is strongest, Venusaur’s blossom opens wide and releases a sweet aroma that calms allies. The massive leaves shield it from status moves while it charges solar energy.",
+  },
+  4: {
+    summary: "Charmander is a Fire starter whose tail flame mirrors its mood and health.",
+    description:
+      "Charmander relies on a steady flame to keep warm. When excited or determined, the flame flares brighter, and a cheerful crackling sound echoes from its tail.",
+  },
+  5: {
+    summary: "Charmeleon’s fiery temperament drives it to seek stronger opponents.",
+    description:
+      "Charmeleon’s claws glow red-hot in the middle of a fight. It loves rugged terrain and often scales cliffs to unleash bursts of flame from above.",
+  },
+  6: {
+    summary: "Charizard is a powerful Fire/Flying Pokémon that breathes scorching flames.",
+    description:
+      "A veteran of many battles, Charizard roars before unleashing a stream of blue fire capable of melting boulders. It guides air currents with its wings to stay aloft during long duels.",
+  },
+  7: {
+    summary: "Squirtle is the Water starter known for its agile shell defense.",
+    description:
+      "Squirtle withdraws into its shell to break the flow of enemy attacks, then fires pressurized bursts of water to counter. It polishes its shell for streamlined swimming.",
+  },
+  8: {
+    summary: "Wartortle’s fluffy tail stores air, letting it dive for long stretches.",
+    description:
+      "Wartortle uses its larger ears to steer underwater. When it surfaces, it whips its tail to spray water arcs that dazzle opponents.",
+  },
+  9: {
+    summary: "Blastoise carries twin hydro cannons capable of piercing heavy armor.",
+    description:
+      "Blastoise stabilizes its massive body by planting its feet, then fires a synchronized torrent from both cannons. It can adjust water pressure precisely to push or topple foes.",
+  },
+  10: {
+    summary: "Caterpie is a Bug-type larva that relies on a sweet scent to pacify enemies.",
+    description:
+      "Caterpie wriggles to mimic swaying leaves, using its antennae to release an aroma that keeps predators at bay while it munches on foliage.",
+  },
+  11: {
+    summary: "Metapod stays motionless while its shell hardens, preparing for evolution.",
+    description:
+      "Its shell is tougher than it looks. Metapod endures harsh weather by tightening its internal muscles, storing energy for the moment it emerges.",
+  },
+  12: {
+    summary: "Butterfree spreads powdery wings that scatter debilitating spores.",
+    description:
+      "Its wings beat rapidly, creating breezes that carry sleep-inducing spores toward opponents. Butterfree prefers blooming fields where nectar is plentiful.",
+  },
+  13: {
+    summary: "Weedle is a dual Bug/Poison Pokémon with a sharp stinger on its head.",
+    description:
+      "Weedle burrows into tree bark to avoid predators. When threatened, it jabs with its venomous spike and quickly retreats deeper into the wood.",
+  },
+  14: {
+    summary: "Kakuna hangs from branches while its shell hardens in preparation for evolution.",
+    description:
+      "Although seemingly immobile, Kakuna senses minute vibrations through its outer shell. If danger approaches, it stiffens its body to resist impact.",
+  },
+  15: {
+    summary: "Beedrill swarms its foes using twin arm stingers and a venomous tail.",
+    description:
+      "Beedrill relies on teamwork, coordinating with the hive to corner targets. It darts forward in zigzags, striking with rapid stinger combos before darting away.",
+  },
+  16: {
+    summary: "Pidgey is a calm Normal/Flying Pokémon that excels at scouting.",
+    description:
+      "Pidgey flaps quietly to stay aloft without alerting foes. It uses sharp eyesight to spot seeds or intruders from high above the treetops.",
   },
 };
+
 
 const prisma = new PrismaClient();
 
