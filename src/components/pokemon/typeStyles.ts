@@ -1,7 +1,7 @@
 import type { PokemonTypeName } from "@/types/pokemon";
 
 // Lighter colors for Pokémon cards (like the reference image)
-export const TYPE_BADGE_STYLES: Partial<Record<PokemonTypeName, string>> = {
+export const TYPE_BADGE_STYLES: Record<string, string> = {
   normal: "bg-stone-200 text-stone-700",
   fire: "bg-orange-200 text-orange-700",
   water: "bg-blue-200 text-blue-700",
@@ -22,4 +22,4 @@ export const TYPE_BADGE_STYLES: Partial<Record<PokemonTypeName, string>> = {
   fairy: "bg-pink-200 text-pink-700",
 };
 
-export const badgeClassForNames: Partial<Record<PokemonTypeName, string>> = TYPE_BADGE_STYLES;
+export const badgeClassForNames: Record<string, string> = TYPE_BADGE_STYLES;
