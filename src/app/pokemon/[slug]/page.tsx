@@ -7,6 +7,7 @@ import MetaCard from "@/components/pokemon/MetaCard";
 import EvolutionCard from "@/components/pokemon/EvolutionCard";
 import AbilitiesCard from "@/components/pokemon/AbilitiesCard";
 import StatsCard from "@/components/pokemon/StatsCard";
+import TypeEffectivenessCard from "@/components/pokemon/TypeEffectivenessCard";
 import type { PokemonTypeName } from "@/types/pokemon";
 
 import { TYPE_CARD_BG_COLORS } from "@/components/pokemon/typeStyles"; // Add this line
@@ -146,7 +147,10 @@ export default async function PokemonPage({ params }: { params: { slug: string }
           <EvolutionCard stages={evolutionStages} />
         </div>
 
-        <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
+        <div className="space-y-6">
+          <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
+          <TypeEffectivenessCard types={types} />
+        </div>
       </section>
 
       {pokemon.summary && (
