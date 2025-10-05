@@ -174,12 +174,198 @@ type PokemonSummary = {
 };
 
 const EVOLUTION_GROUPS: string[][] = [
+  // Starter evolutions
   ["bulbasaur", "ivysaur", "venusaur"],
   ["charmander", "charmeleon", "charizard"],
   ["squirtle", "wartortle", "blastoise"],
+  
+  // Bug evolutions
   ["caterpie", "metapod", "butterfree"],
   ["weedle", "kakuna", "beedrill"],
-  ["pidgey"], // single-stage example
+  
+  // Bird evolutions
+  ["pidgey", "pidgeotto", "pidgeot"],
+  ["spearow", "fearow"],
+  
+  // Normal evolutions
+  ["rattata", "raticate"],
+  
+  // Poison evolutions
+  ["ekans", "arbok"],
+  
+  // Electric evolutions
+  ["pikachu", "raichu"],
+  
+  // Ground evolutions
+  ["sandshrew", "sandslash"],
+  
+  // Nidoran evolutions
+  ["nidoran-f", "nidorina", "nidoqueen"],
+  ["nidoran-m", "nidorino", "nidoking"],
+  
+  // Fairy evolutions
+  ["clefairy", "clefable"],
+  
+  // Fire evolutions
+  ["vulpix", "ninetales"],
+  
+  // Normal/Fairy evolutions
+  ["jigglypuff", "wigglytuff"],
+  
+  // Poison/Flying evolutions
+  ["zubat", "golbat"],
+  
+  // Grass/Poison evolutions
+  ["oddish", "gloom", "vileplume"],
+  ["bellsprout", "weepinbell", "victreebel"],
+  
+  // Bug/Grass evolutions
+  ["paras", "parasect"],
+  
+  // Bug/Poison evolutions
+  ["venonat", "venomoth"],
+  
+  // Ground evolutions
+  ["diglett", "dugtrio"],
+  
+  // Normal evolutions
+  ["meowth", "persian"],
+  
+  // Water evolutions
+  ["psyduck", "golduck"],
+  
+  // Fighting evolutions
+  ["mankey", "primeape"],
+  
+  // Fire evolutions
+  ["growlithe", "arcanine"],
+  
+  // Water evolutions
+  ["poliwag", "poliwhirl", "poliwrath"],
+  
+  // Psychic evolutions
+  ["abra", "kadabra", "alakazam"],
+  
+  // Fighting evolutions
+  ["machop", "machoke", "machamp"],
+  
+  // Water/Poison evolutions
+  ["tentacool", "tentacruel"],
+  
+  // Rock/Ground evolutions
+  ["geodude", "graveler", "golem"],
+  
+  // Fire evolutions
+  ["ponyta", "rapidash"],
+  
+  // Water/Psychic evolutions
+  ["slowpoke", "slowbro"],
+  
+  // Electric/Steel evolutions
+  ["magnemite", "magneton"],
+  
+  // Single-stage Pokémon
+  ["farfetchd"],
+  
+  // Normal/Flying evolutions
+  ["doduo", "dodrio"],
+  
+  // Water evolutions
+  ["seel", "dewgong"],
+  
+  // Poison evolutions
+  ["grimer", "muk"],
+  
+  // Water evolutions
+  ["shellder", "cloyster"],
+  
+  // Ghost/Poison evolutions
+  ["gastly", "haunter", "gengar"],
+  
+  // Single-stage Pokémon
+  ["onix"],
+  
+  // Psychic evolutions
+  ["drowzee", "hypno"],
+  
+  // Water evolutions
+  ["krabby", "kingler"],
+  
+  // Electric evolutions
+  ["voltorb", "electrode"],
+  
+  // Grass/Psychic evolutions
+  ["exeggcute", "exeggutor"],
+  
+  // Ground evolutions
+  ["cubone", "marowak"],
+  
+  // Single-stage Fighting
+  ["hitmonlee"],
+  ["hitmonchan"],
+  
+  // Single-stage Normal
+  ["lickitung"],
+  
+  // Poison evolutions
+  ["koffing", "weezing"],
+  
+  // Ground/Rock evolutions
+  ["rhyhorn", "rhydon"],
+  
+  // Single-stage Pokémon
+  ["chansey"],
+  ["tangela"],
+  ["kangaskhan"],
+  
+  // Water evolutions
+  ["horsea", "seadra"],
+  ["goldeen", "seaking"],
+  ["staryu", "starmie"],
+  
+  // Single-stage Pokémon
+  ["mr-mime"],
+  ["scyther"],
+  ["jynx"],
+  ["electabuzz"],
+  ["magmar"],
+  ["pinsir"],
+  ["tauros"],
+  
+  // Water evolutions
+  ["magikarp", "gyarados"],
+  
+  // Single-stage Pokémon
+  ["lapras"],
+  ["ditto"],
+  
+  // Eevee evolutions
+  ["eevee", "vaporeon"],
+  ["eevee", "jolteon"],
+  ["eevee", "flareon"],
+  
+  // Single-stage Pokémon
+  ["porygon"],
+  
+  // Rock/Water evolutions
+  ["omanyte", "omastar"],
+  ["kabuto", "kabutops"],
+  
+  // Single-stage Pokémon
+  ["aerodactyl"],
+  ["snorlax"],
+  
+  // Legendary birds
+  ["articuno"],
+  ["zapdos"],
+  ["moltres"],
+  
+  // Dragon evolutions
+  ["dratini", "dragonair", "dragonite"],
+  
+  // Legendary Pokémon
+  ["mewtwo"],
+  ["mew"],
 ];
 
 const LORE: Record<number, Partial<{ summary: string; description: string }>> = {

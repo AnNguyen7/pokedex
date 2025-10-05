@@ -124,7 +124,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
           <EvolutionCard stages={evolutionStages} />
         </div>
 
-        <StatsCard stats={statEntries} total={total} />
+        <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
       </section>
 
       {pokemon.summary && (
