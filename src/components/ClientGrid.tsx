@@ -51,15 +51,15 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
         </div>
       </header>
 
-      <section className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-8">
+      <section className="mb-8 space-y-4">
         <SearchBar onChange={setQuery} />
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
           {typeOptions.map(type => (
             <TypeChip
               key={type}
               label={type}
               selected={type === selectedType}
-              onClick={() => setSelectedType(type)}
+              onClick={() => setSelectedType(type === selectedType ? "all" : type)}
             />
           ))}
         </div>

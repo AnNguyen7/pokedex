@@ -52,6 +52,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
                     select: {
                       nationalDex: true,
                       displayName: true,
+                      slug: true,
                     },
                   },
                 },
@@ -78,6 +79,11 @@ export default async function PokemonPage({ params }: { params: { slug: string }
     .map(type => type!.toLowerCase() as PokemonTypeName);
 
   const sprites = spriteUrls(pokemon.nationalDex);
+  const allSprites = {
+    ...sprites,
+    animatedShiny: sprites.animatedShiny,
+    fallbackShiny: sprites.fallbackShiny,
+  };
 
   const statEntries = [
     { key: "hp", label: "HP", value: pokemon.hp },
@@ -93,7 +99,8 @@ export default async function PokemonPage({ params }: { params: { slug: string }
   const evolutionStages = pokemon.evolutionStage?.chain.stages.map(stage => ({
     dex: stage.pokemon.nationalDex,
     name: stage.pokemon.displayName,
-  })) ?? [{ dex: pokemon.nationalDex, name: pokemon.displayName }];
+    slug: stage.pokemon.slug,
+  })) ?? [{ dex: pokemon.nationalDex, name: pokemon.displayName, slug: pokemon.slug }];
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-14 text-emerald-900">
@@ -111,7 +118,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
             displayName={pokemon.displayName}
             nationalDex={pokemon.nationalDex}
             types={types}
-            sprites={sprites}
+            sprites={allSprites}
           />
           <MetaCard types={types} />
           <EvolutionCard stages={evolutionStages} />

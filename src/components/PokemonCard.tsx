@@ -14,7 +14,7 @@ type Props = {
 const formatDexNumber = (dex: number) => `#${dex.toString().padStart(3, "0")}`;
 
 export default function PokemonCard({ nationalDex, slug, displayName, types }: Props) {
-  const { animated, fallback } = spriteUrls(nationalDex);
+  const sprites = spriteUrls(nationalDex);
 
   return (
     <Link
@@ -23,8 +23,8 @@ export default function PokemonCard({ nationalDex, slug, displayName, types }: P
     >
       <div className="flex h-32 items-center justify-center">
         <AnimatedSprite
-          animatedSrc={animated}
-          fallbackSrc={fallback}
+          animatedSrc={sprites.animated}
+          fallbackSrc={sprites.fallback}
           alt={displayName}
           width={96}
           height={96}

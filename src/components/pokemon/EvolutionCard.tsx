@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import AnimatedSprite from "@/components/AnimatedSprite";
 import { spriteUrls } from "@/lib/starters";
 
 type Stage = {
   dex: number;
   name: string;
+  slug: string;
 };
 
 type Props = {
@@ -27,15 +29,22 @@ export default function EvolutionCard({ stages }: Props) {
             return (
               <div key={stage.dex} className="flex items-center gap-3">
                 {index > 0 && <span aria-hidden className="text-emerald-400">&rarr;</span>}
-                <AnimatedSprite
-                  animatedSrc={sprites.animated}
-                  fallbackSrc={sprites.fallback}
-                  alt={stage.name}
-                  width={36}
-                  height={36}
-                  className="h-9 w-9 object-contain drop-shadow"
-                />
-                <span className="font-medium text-emerald-800">{stage.name}</span>
+                <Link
+                  href={`/pokemon/${stage.slug}`}
+                  className="group flex items-center gap-3 rounded-lg p-2 transition-all hover:bg-emerald-50 hover:shadow-sm"
+                >
+                  <AnimatedSprite
+                    animatedSrc={sprites.animated}
+                    fallbackSrc={sprites.fallback}
+                    alt={stage.name}
+                    width={36}
+                    height={36}
+                    className="h-9 w-9 object-contain drop-shadow transition-transform group-hover:scale-110"
+                  />
+                  <span className="font-medium text-emerald-800 transition-colors group-hover:text-emerald-600">
+                    {stage.name}
+                  </span>
+                </Link>
               </div>
             );
           })}

@@ -9,6 +9,8 @@ const formatDexNumber = (dex: number) => `#${dex.toString().padStart(3, "0")}`;
 type SpriteSources = {
   animated: string;
   fallback: string;
+  animatedShiny?: string;
+  fallbackShiny?: string;
 };
 
 type Props = {
@@ -25,6 +27,8 @@ export default function HeroSection({ displayName, nationalDex, types, sprites }
         <AnimatedSprite
           animatedSrc={sprites.animated}
           fallbackSrc={sprites.fallback}
+          animatedShinySrc={sprites.animatedShiny}
+          fallbackShinySrc={sprites.fallbackShiny}
           alt={displayName}
           width={192}
           height={192}

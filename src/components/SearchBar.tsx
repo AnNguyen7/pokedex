@@ -12,7 +12,7 @@ export default function SearchBar({ onChange }: { onChange: (q: string) => void 
         placeholder="Search by name or number"
         type="search"
         aria-label="Search Pokémon"
-        className="flex-1 rounded-xl border border-emerald-200 bg-white/80 px-3 py-2 shadow-sm backdrop-blur focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+        className="flex-1 rounded-xl border border-emerald-200 bg-white/80 px-3 py-2 shadow-sm backdrop-blur focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200 text-emerald-900 placeholder:text-emerald-400"
       />
       <button
         onClick={() => { setQ(""); onChange(""); }}
