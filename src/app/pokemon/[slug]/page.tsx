@@ -5,8 +5,12 @@ import { prisma } from "@/lib/prisma";
 import HeroSection from "@/components/pokemon/HeroSection";
 import MetaCard from "@/components/pokemon/MetaCard";
 import EvolutionCard from "@/components/pokemon/EvolutionCard";
+import AbilitiesCard from "@/components/pokemon/AbilitiesCard";
 import StatsCard from "@/components/pokemon/StatsCard";
 import type { PokemonTypeName } from "@/types/pokemon";
+
+import { TYPE_CARD_BG_COLORS } from "@/components/pokemon/typeStyles"; // Add this line
+
 
 export async function generateStaticParams() {
   const pokemon = await prisma.pokemon.findMany({ select: { slug: true } });
@@ -40,6 +44,17 @@ export default async function PokemonPage({ params }: { params: { slug: string }
       speed: true,
       summary: true,
       description: true,
+      abilities: {
+        select: {
+          isHidden: true,
+          ability: {
+            select: {
+              displayName: true,
+              description: true,
+            },
+          },
+        },
+      },
       evolutionStage: {
         select: {
           chain: {
@@ -102,6 +117,12 @@ export default async function PokemonPage({ params }: { params: { slug: string }
     slug: stage.pokemon.slug,
   })) ?? [{ dex: pokemon.nationalDex, name: pokemon.displayName, slug: pokemon.slug }];
 
+  const abilities = pokemon.abilities.map(pa => ({
+    displayName: pa.ability.displayName,
+    description: pa.ability.description,
+    isHidden: pa.isHidden,
+  }));
+
   return (
     <main className="mx-auto max-w-5xl px-6 py-14 text-emerald-900">
       <Link
@@ -112,7 +133,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
         Back to Pokédex
       </Link>
 
-      <section className="mt-10 grid gap-8 rounded-[36px] border border-emerald-100 bg-white/85 p-10 shadow-xl backdrop-blur lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
+      <section className="mt-10 grid gap-6 rounded-[36px] border border-emerald-100 bg-white/85 p-6 shadow-xl backdrop-blur sm:p-8 md:gap-8 md:p-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
         <div className="space-y-8">
           <HeroSection
             displayName={pokemon.displayName}
@@ -121,6 +142,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
             sprites={allSprites}
           />
           <MetaCard types={types} />
+          <AbilitiesCard abilities={abilities} />
           <EvolutionCard stages={evolutionStages} />
         </div>
 
@@ -128,16 +150,16 @@ export default async function PokemonPage({ params }: { params: { slug: string }
       </section>
 
       {pokemon.summary && (
-        <section className="mt-16 space-y-4 rounded-[32px] border border-emerald-100 bg-white/85 p-8 shadow-lg backdrop-blur">
-          <h2 className="text-xl font-semibold text-emerald-800">Summary</h2>
-          <p className="text-base leading-7 text-emerald-800">{pokemon.summary}</p>
+        <section className="mt-8 space-y-3 rounded-[32px] border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur transition-all duration-200 hover:border-emerald-200 hover:shadow-xl sm:mt-16 sm:space-y-4 sm:p-8">
+          <h2 className="text-lg font-semibold text-emerald-800 sm:text-xl">Summary</h2>
+          <p className="text-sm leading-6 text-emerald-800 sm:text-base sm:leading-7">{pokemon.summary}</p>
         </section>
       )}
 
       {pokemon.description && (
-        <section className="mt-8 space-y-4 rounded-[32px] border border-emerald-100 bg-white/85 p-8 shadow-lg backdrop-blur">
-          <h2 className="text-xl font-semibold text-emerald-800">Pokédex Notes</h2>
-          <p className="text-base leading-7 text-emerald-800">{pokemon.description}</p>
+        <section className="mt-6 space-y-3 rounded-[32px] border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur transition-all duration-200 hover:border-emerald-200 hover:shadow-xl sm:mt-8 sm:space-y-4 sm:p-8">
+          <h2 className="text-lg font-semibold text-emerald-800 sm:text-xl">Pokédex Notes</h2>
+          <p className="text-sm leading-6 text-emerald-800 sm:text-base sm:leading-7">{pokemon.description}</p>
         </section>
       )}
     </main>

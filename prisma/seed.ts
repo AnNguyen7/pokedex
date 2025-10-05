@@ -171,6 +171,163 @@ type PokemonSummary = {
   id: number;
   slug: string;
   displayName: string;
+  nationalDex: number;
+};
+
+// Abilities for each Pokémon (by nationalDex ID)
+// Format: [ability1, ability2 (optional), hiddenAbility (optional)]
+const POKEMON_ABILITIES: Record<number, string[]> = {
+  1: ["overgrow", "chlorophyll"], // Bulbasaur
+  2: ["overgrow", "chlorophyll"], // Ivysaur
+  3: ["overgrow", "chlorophyll"], // Venusaur
+  4: ["blaze", "solar-power"], // Charmander
+  5: ["blaze", "solar-power"], // Charmeleon
+  6: ["blaze", "solar-power"], // Charizard
+  7: ["torrent", "rain-dish"], // Squirtle
+  8: ["torrent", "rain-dish"], // Wartortle
+  9: ["torrent", "rain-dish"], // Blastoise
+  10: ["shield-dust", "run-away"], // Caterpie
+  11: ["shed-skin"], // Metapod
+  12: ["compound-eyes", "tinted-lens"], // Butterfree
+  13: ["shield-dust", "run-away"], // Weedle
+  14: ["shed-skin"], // Kakuna
+  15: ["swarm", "sniper"], // Beedrill
+  16: ["keen-eye", "tangled-feet", "big-pecks"], // Pidgey
+  17: ["keen-eye", "tangled-feet", "big-pecks"], // Pidgeotto
+  18: ["keen-eye", "tangled-feet", "big-pecks"], // Pidgeot
+  19: ["run-away", "guts", "hustle"], // Rattata
+  20: ["run-away", "guts", "hustle"], // Raticate
+  21: ["keen-eye", "sniper"], // Spearow
+  22: ["keen-eye", "sniper"], // Fearow
+  23: ["intimidate", "shed-skin", "unnerve"], // Ekans
+  24: ["intimidate", "shed-skin", "unnerve"], // Arbok
+  25: ["static", "lightning-rod"], // Pikachu
+  26: ["static", "lightning-rod"], // Raichu
+  27: ["sand-veil", "sand-rush"], // Sandshrew
+  28: ["sand-veil", "sand-rush"], // Sandslash
+  29: ["poison-point", "rivalry", "hustle"], // Nidoran-F
+  30: ["poison-point", "rivalry", "hustle"], // Nidorina
+  31: ["poison-point", "rivalry", "sheer-force"], // Nidoqueen
+  32: ["poison-point", "rivalry", "hustle"], // Nidoran-M
+  33: ["poison-point", "rivalry", "hustle"], // Nidorino
+  34: ["poison-point", "rivalry", "sheer-force"], // Nidoking
+  35: ["cute-charm", "magic-guard", "friend-guard"], // Clefairy
+  36: ["cute-charm", "magic-guard", "unaware"], // Clefable
+  37: ["flash-fire", "drought"], // Vulpix
+  38: ["flash-fire", "drought"], // Ninetales
+  39: ["cute-charm", "competitive", "friend-guard"], // Jigglypuff
+  40: ["cute-charm", "competitive", "frisk"], // Wigglytuff
+  41: ["inner-focus", "infiltrator"], // Zubat
+  42: ["inner-focus", "infiltrator"], // Golbat
+  43: ["chlorophyll", "run-away"], // Oddish
+  44: ["chlorophyll", "stench"], // Gloom
+  45: ["chlorophyll", "effect-spore"], // Vileplume
+  46: ["effect-spore", "dry-skin", "damp"], // Paras
+  47: ["effect-spore", "dry-skin", "damp"], // Parasect
+  48: ["compound-eyes", "tinted-lens", "run-away"], // Venonat
+  49: ["shield-dust", "tinted-lens", "wonder-skin"], // Venomoth
+  50: ["sand-veil", "arena-trap", "sand-force"], // Diglett
+  51: ["sand-veil", "arena-trap", "sand-force"], // Dugtrio
+  52: ["pickup", "technician", "unnerve"], // Meowth
+  53: ["limber", "technician", "unnerve"], // Persian
+  54: ["damp", "cloud-nine", "swift-swim"], // Psyduck
+  55: ["damp", "cloud-nine", "swift-swim"], // Golduck
+  56: ["vital-spirit", "anger-point", "defiant"], // Mankey
+  57: ["vital-spirit", "anger-point", "defiant"], // Primeape
+  58: ["intimidate", "flash-fire", "justified"], // Growlithe
+  59: ["intimidate", "flash-fire", "justified"], // Arcanine
+  60: ["water-absorb", "damp", "swift-swim"], // Poliwag
+  61: ["water-absorb", "damp", "swift-swim"], // Poliwhirl
+  62: ["water-absorb", "damp", "swift-swim"], // Poliwrath
+  63: ["synchronize", "inner-focus", "magic-guard"], // Abra
+  64: ["synchronize", "inner-focus", "magic-guard"], // Kadabra
+  65: ["synchronize", "inner-focus", "magic-guard"], // Alakazam
+  66: ["guts", "no-guard", "steadfast"], // Machop
+  67: ["guts", "no-guard", "steadfast"], // Machoke
+  68: ["guts", "no-guard", "steadfast"], // Machamp
+  69: ["chlorophyll", "gluttony"], // Bellsprout
+  70: ["chlorophyll", "gluttony"], // Weepinbell
+  71: ["chlorophyll", "gluttony"], // Victreebel
+  72: ["clear-body", "liquid-ooze", "rain-dish"], // Tentacool
+  73: ["clear-body", "liquid-ooze", "rain-dish"], // Tentacruel
+  74: ["rock-head", "sturdy", "sand-veil"], // Geodude
+  75: ["rock-head", "sturdy", "sand-veil"], // Graveler
+  76: ["rock-head", "sturdy", "sand-veil"], // Golem
+  77: ["run-away", "flash-fire", "flame-body"], // Ponyta
+  78: ["run-away", "flash-fire", "flame-body"], // Rapidash
+  79: ["oblivious", "own-tempo", "regenerator"], // Slowpoke
+  80: ["oblivious", "own-tempo", "regenerator"], // Slowbro
+  81: ["magnet-pull", "sturdy", "analytic"], // Magnemite
+  82: ["magnet-pull", "sturdy", "analytic"], // Magneton
+  83: ["keen-eye", "inner-focus", "defiant"], // Farfetch'd
+  84: ["run-away", "early-bird", "tangled-feet"], // Doduo
+  85: ["run-away", "early-bird", "tangled-feet"], // Dodrio
+  86: ["thick-fat", "hydration", "ice-body"], // Seel
+  87: ["thick-fat", "hydration", "ice-body"], // Dewgong
+  88: ["stench", "sticky-hold", "poison-touch"], // Grimer
+  89: ["stench", "sticky-hold", "poison-touch"], // Muk
+  90: ["shell-armor", "skill-link", "overcoat"], // Shellder
+  91: ["shell-armor", "skill-link", "overcoat"], // Cloyster
+  92: ["levitate"], // Gastly
+  93: ["levitate"], // Haunter
+  94: ["levitate"], // Gengar
+  95: ["rock-head", "sturdy", "weak-armor"], // Onix
+  96: ["insomnia", "forewarn", "inner-focus"], // Drowzee
+  97: ["insomnia", "forewarn", "inner-focus"], // Hypno
+  98: ["hyper-cutter", "shell-armor", "sheer-force"], // Krabby
+  99: ["hyper-cutter", "shell-armor", "sheer-force"], // Kingler
+  100: ["soundproof", "static", "aftermath"], // Voltorb
+  101: ["soundproof", "static", "aftermath"], // Electrode
+  102: ["chlorophyll", "harvest"], // Exeggcute
+  103: ["chlorophyll", "harvest"], // Exeggutor
+  104: ["rock-head", "lightning-rod", "battle-armor"], // Cubone
+  105: ["rock-head", "lightning-rod", "battle-armor"], // Marowak
+  106: ["limber", "reckless", "unburden"], // Hitmonlee
+  107: ["keen-eye", "iron-fist", "inner-focus"], // Hitmonchan
+  108: ["own-tempo", "oblivious", "cloud-nine"], // Lickitung
+  109: ["levitate", "neutralizing-gas"], // Koffing
+  110: ["levitate", "neutralizing-gas"], // Weezing
+  111: ["lightning-rod", "rock-head", "reckless"], // Rhyhorn
+  112: ["lightning-rod", "rock-head", "reckless"], // Rhydon
+  113: ["natural-cure", "serene-grace", "healer"], // Chansey
+  114: ["chlorophyll", "leaf-guard", "regenerator"], // Tangela
+  115: ["early-bird", "scrappy", "inner-focus"], // Kangaskhan
+  116: ["swift-swim", "sniper", "damp"], // Horsea
+  117: ["poison-point", "sniper", "damp"], // Seadra
+  118: ["swift-swim", "water-veil", "lightning-rod"], // Goldeen
+  119: ["swift-swim", "water-veil", "lightning-rod"], // Seaking
+  120: ["illuminate", "natural-cure", "analytic"], // Staryu
+  121: ["illuminate", "natural-cure", "analytic"], // Starmie
+  122: ["soundproof", "filter", "technician"], // Mr. Mime
+  123: ["swarm", "technician", "steadfast"], // Scyther
+  124: ["oblivious", "forewarn", "dry-skin"], // Jynx
+  125: ["static", "vital-spirit"], // Electabuzz
+  126: ["flame-body", "vital-spirit"], // Magmar
+  127: ["hyper-cutter", "mold-breaker", "moxie"], // Pinsir
+  128: ["intimidate", "anger-point", "sheer-force"], // Tauros
+  129: ["swift-swim", "rattled"], // Magikarp
+  130: ["intimidate", "moxie"], // Gyarados
+  131: ["water-absorb", "shell-armor", "hydration"], // Lapras
+  132: ["limber", "imposter"], // Ditto
+  133: ["run-away", "adaptability", "anticipation"], // Eevee
+  134: ["water-absorb", "hydration"], // Vaporeon
+  135: ["volt-absorb", "quick-feet"], // Jolteon
+  136: ["flash-fire", "guts"], // Flareon
+  137: ["trace", "download", "analytic"], // Porygon
+  138: ["swift-swim", "shell-armor", "weak-armor"], // Omanyte
+  139: ["swift-swim", "shell-armor", "weak-armor"], // Omastar
+  140: ["swift-swim", "battle-armor", "weak-armor"], // Kabuto
+  141: ["swift-swim", "battle-armor", "weak-armor"], // Kabutops
+  142: ["rock-head", "pressure", "unnerve"], // Aerodactyl
+  143: ["immunity", "thick-fat", "gluttony"], // Snorlax
+  144: ["pressure", "snow-cloak"], // Articuno
+  145: ["pressure", "static"], // Zapdos
+  146: ["pressure", "flame-body"], // Moltres
+  147: ["shed-skin", "marvel-scale"], // Dratini
+  148: ["shed-skin", "marvel-scale"], // Dragonair
+  149: ["inner-focus", "multiscale"], // Dragonite
+  150: ["pressure", "unnerve"], // Mewtwo
+  151: ["synchronize"], // Mew
 };
 
 const EVOLUTION_GROUPS: string[][] = [
@@ -556,7 +713,7 @@ async function seedPokemon(): Promise<Map<string, PokemonSummary>> {
         where: { slug: pokemon.slug },
         update: pokemon,
         create: pokemon,
-        select: { id: true, slug: true, displayName: true },
+        select: { id: true, slug: true, displayName: true, nationalDex: true },
       }),
     ),
   );
@@ -594,9 +751,208 @@ async function seedEvolutionChains(pokemonBySlug: Map<string, PokemonSummary>) {
 }
 
 
+// Ability descriptions
+const ABILITY_INFO: Record<string, { displayName: string; description: string }> = {
+  "overgrow": { displayName: "Overgrow", description: "Powers up Grass-type moves when the Pokémon's HP is low." },
+  "chlorophyll": { displayName: "Chlorophyll", description: "Boosts the Pokémon's Speed stat in harsh sunlight." },
+  "blaze": { displayName: "Blaze", description: "Powers up Fire-type moves when the Pokémon's HP is low." },
+  "solar-power": { displayName: "Solar Power", description: "Boosts the Sp. Atk stat in harsh sunlight, but HP decreases every turn." },
+  "torrent": { displayName: "Torrent", description: "Powers up Water-type moves when the Pokémon's HP is low." },
+  "rain-dish": { displayName: "Rain Dish", description: "The Pokémon gradually regains HP in rain." },
+  "shield-dust": { displayName: "Shield Dust", description: "Blocks the additional effects of attacks taken." },
+  "run-away": { displayName: "Run Away", description: "Enables a sure getaway from wild Pokémon." },
+  "shed-skin": { displayName: "Shed Skin", description: "The Pokémon may heal its own status conditions by shedding its skin." },
+  "compound-eyes": { displayName: "Compound Eyes", description: "The Pokémon's compound eyes boost its accuracy." },
+  "tinted-lens": { displayName: "Tinted Lens", description: "Powers up 'not very effective' moves." },
+  "swarm": { displayName: "Swarm", description: "Powers up Bug-type moves when the Pokémon's HP is low." },
+  "sniper": { displayName: "Sniper", description: "Powers up moves if they become critical hits." },
+  "keen-eye": { displayName: "Keen Eye", description: "Prevents other Pokémon from lowering accuracy." },
+  "tangled-feet": { displayName: "Tangled Feet", description: "Raises evasion if the Pokémon is confused." },
+  "big-pecks": { displayName: "Big Pecks", description: "Protects the Pokémon from Defense-lowering effects." },
+  "guts": { displayName: "Guts", description: "Boosts the Attack stat if the Pokémon has a status condition." },
+  "hustle": { displayName: "Hustle", description: "Boosts the Attack stat, but lowers accuracy." },
+  "intimidate": { displayName: "Intimidate", description: "Lowers the foe's Attack stat when switched in." },
+  "unnerve": { displayName: "Unnerve", description: "Makes opposing Pokémon nervous and prevents them from eating Berries." },
+  "static": { displayName: "Static", description: "May cause paralysis when hit by a contact move." },
+  "lightning-rod": { displayName: "Lightning Rod", description: "Draws in all Electric-type moves to boost Sp. Atk." },
+  "sand-veil": { displayName: "Sand Veil", description: "Boosts evasion in a sandstorm." },
+  "sand-rush": { displayName: "Sand Rush", description: "Boosts the Pokémon's Speed stat in a sandstorm." },
+  "poison-point": { displayName: "Poison Point", description: "May poison a target when hit by a contact move." },
+  "rivalry": { displayName: "Rivalry", description: "Becomes competitive and deals more damage to same gender opponents." },
+  "sheer-force": { displayName: "Sheer Force", description: "Removes additional effects to increase move damage." },
+  "cute-charm": { displayName: "Cute Charm", description: "May infatuate attackers on contact." },
+  "magic-guard": { displayName: "Magic Guard", description: "Only takes damage from attacks." },
+  "friend-guard": { displayName: "Friend Guard", description: "Reduces damage done to allies." },
+  "unaware": { displayName: "Unaware", description: "Ignores any stat changes in the opponent." },
+  "flash-fire": { displayName: "Flash Fire", description: "Powers up Fire-type moves if hit by a fire move." },
+  "drought": { displayName: "Drought", description: "Turns the sunlight harsh when switched in." },
+  "competitive": { displayName: "Competitive", description: "Boosts Sp. Atk sharply when stats are lowered." },
+  "frisk": { displayName: "Frisk", description: "Checks an opposing Pokémon's held item." },
+  "inner-focus": { displayName: "Inner Focus", description: "Protects the Pokémon from flinching." },
+  "infiltrator": { displayName: "Infiltrator", description: "Passes through the opposing Pokémon's barrier and strikes." },
+  "stench": { displayName: "Stench", description: "May cause the target to flinch." },
+  "effect-spore": { displayName: "Effect Spore", description: "Contact may poison, paralyze, or put to sleep." },
+  "dry-skin": { displayName: "Dry Skin", description: "Restores HP in rain but loses HP in harsh sunlight. Water moves heal." },
+  "damp": { displayName: "Damp", description: "Prevents the use of explosive moves." },
+  "wonder-skin": { displayName: "Wonder Skin", description: "Makes status moves more likely to miss." },
+  "arena-trap": { displayName: "Arena Trap", description: "Prevents opposing Pokémon from fleeing." },
+  "sand-force": { displayName: "Sand Force", description: "Boosts certain move types in a sandstorm." },
+  "pickup": { displayName: "Pickup", description: "May pick up items." },
+  "technician": { displayName: "Technician", description: "Powers up weak moves." },
+  "limber": { displayName: "Limber", description: "Prevents the Pokémon from becoming paralyzed." },
+  "cloud-nine": { displayName: "Cloud Nine", description: "Eliminates the effects of weather." },
+  "swift-swim": { displayName: "Swift Swim", description: "Boosts the Pokémon's Speed stat in rain." },
+  "vital-spirit": { displayName: "Vital Spirit", description: "Prevents the Pokémon from falling asleep." },
+  "anger-point": { displayName: "Anger Point", description: "Maxes Attack after taking a critical hit." },
+  "defiant": { displayName: "Defiant", description: "Sharply boosts Attack when stats are lowered." },
+  "justified": { displayName: "Justified", description: "Raises Attack when hit by a Dark-type move." },
+  "water-absorb": { displayName: "Water Absorb", description: "Restores HP if hit by a Water-type move." },
+  "synchronize": { displayName: "Synchronize", description: "Passes poison, paralyze, or burn to the foe." },
+  "no-guard": { displayName: "No Guard", description: "Ensures attacks by or against the Pokémon land." },
+  "steadfast": { displayName: "Steadfast", description: "Boosts Speed each time the Pokémon flinches." },
+  "gluttony": { displayName: "Gluttony", description: "Eats Berries early when HP drops below half." },
+  "clear-body": { displayName: "Clear Body", description: "Prevents other Pokémon from lowering its stats." },
+  "liquid-ooze": { displayName: "Liquid Ooze", description: "Damages attackers using HP-draining moves." },
+  "rock-head": { displayName: "Rock Head", description: "Protects from recoil damage." },
+  "sturdy": { displayName: "Sturdy", description: "Cannot be knocked out with one hit. One-hit KO moves fail." },
+  "flame-body": { displayName: "Flame Body", description: "Contact may burn the attacker." },
+  "oblivious": { displayName: "Oblivious", description: "Prevents it from becoming infatuated or taunted." },
+  "own-tempo": { displayName: "Own Tempo", description: "Prevents the Pokémon from becoming confused." },
+  "regenerator": { displayName: "Regenerator", description: "Restores HP when withdrawn from battle." },
+  "magnet-pull": { displayName: "Magnet Pull", description: "Prevents Steel-type Pokémon from escaping." },
+  "analytic": { displayName: "Analytic", description: "Boosts move power when moving last." },
+  "early-bird": { displayName: "Early Bird", description: "Awakens quickly from sleep." },
+  "thick-fat": { displayName: "Thick Fat", description: "Halves damage from Fire- and Ice-type moves." },
+  "hydration": { displayName: "Hydration", description: "Heals status conditions if it's raining." },
+  "ice-body": { displayName: "Ice Body", description: "Gradually restores HP in a hailstorm." },
+  "sticky-hold": { displayName: "Sticky Hold", description: "Protects the Pokémon from item theft." },
+  "poison-touch": { displayName: "Poison Touch", description: "May poison a target when hit." },
+  "shell-armor": { displayName: "Shell Armor", description: "Protects from critical hits." },
+  "skill-link": { displayName: "Skill Link", description: "Maximizes the number of times multi-strike moves hit." },
+  "overcoat": { displayName: "Overcoat", description: "Protects from weather damage and powder moves." },
+  "levitate": { displayName: "Levitate", description: "Gives immunity to Ground-type moves." },
+  "weak-armor": { displayName: "Weak Armor", description: "Lowers Defense and raises Speed when hit." },
+  "insomnia": { displayName: "Insomnia", description: "Prevents the Pokémon from falling asleep." },
+  "forewarn": { displayName: "Forewarn", description: "Reveals one of the opponent's moves." },
+  "hyper-cutter": { displayName: "Hyper Cutter", description: "Prevents Attack from being lowered." },
+  "soundproof": { displayName: "Soundproof", description: "Gives immunity to sound-based moves." },
+  "aftermath": { displayName: "Aftermath", description: "Damages the attacker if knocked out by a contact move." },
+  "harvest": { displayName: "Harvest", description: "May create another Berry after one is used." },
+  "battle-armor": { displayName: "Battle Armor", description: "Protects from critical hits." },
+  "reckless": { displayName: "Reckless", description: "Powers up moves that have recoil damage." },
+  "unburden": { displayName: "Unburden", description: "Boosts Speed if a held item is used." },
+  "iron-fist": { displayName: "Iron Fist", description: "Boosts the power of punching moves." },
+  "neutralizing-gas": { displayName: "Neutralizing Gas", description: "Neutralizes abilities of all Pokémon in battle." },
+  "natural-cure": { displayName: "Natural Cure", description: "Heals status conditions when withdrawn." },
+  "serene-grace": { displayName: "Serene Grace", description: "Boosts the likelihood of added effects appearing." },
+  "healer": { displayName: "Healer", description: "May heal an ally's status conditions." },
+  "leaf-guard": { displayName: "Leaf Guard", description: "Prevents status conditions in harsh sunlight." },
+  "scrappy": { displayName: "Scrappy", description: "Enables hitting Ghost-type Pokémon with Normal- and Fighting-type moves." },
+  "water-veil": { displayName: "Water Veil", description: "Prevents the Pokémon from getting a burn." },
+  "illuminate": { displayName: "Illuminate", description: "Raises the likelihood of meeting wild Pokémon by illuminating the surroundings." },
+  "filter": { displayName: "Filter", description: "Reduces damage from super-effective attacks." },
+  "mold-breaker": { displayName: "Mold Breaker", description: "Moves can be used on the target regardless of its abilities." },
+  "moxie": { displayName: "Moxie", description: "Boosts Attack after knocking out any Pokémon." },
+  "rattled": { displayName: "Rattled", description: "Boosts Speed when hit by certain move types." },
+  "imposter": { displayName: "Imposter", description: "Transforms into the opposing Pokémon." },
+  "adaptability": { displayName: "Adaptability", description: "Powers up moves of the same type." },
+  "anticipation": { displayName: "Anticipation", description: "Senses an opposing Pokémon's dangerous moves." },
+  "volt-absorb": { displayName: "Volt Absorb", description: "Restores HP if hit by an Electric-type move." },
+  "quick-feet": { displayName: "Quick Feet", description: "Boosts Speed if there is a status condition." },
+  "trace": { displayName: "Trace", description: "Copies an opposing Pokémon's ability." },
+  "download": { displayName: "Download", description: "Adjusts power based on the opposing Pokémon's stats." },
+  "immunity": { displayName: "Immunity", description: "Prevents the Pokémon from getting poisoned." },
+  "pressure": { displayName: "Pressure", description: "Makes foes use more PP." },
+  "snow-cloak": { displayName: "Snow Cloak", description: "Boosts evasion in a hailstorm." },
+  "marvel-scale": { displayName: "Marvel Scale", description: "Ups Defense if there is a status condition." },
+  "multiscale": { displayName: "Multiscale", description: "Reduces damage when HP is full." },
+};
+
+async function seedAbilities(): Promise<Map<string, number>> {
+  console.log("🎯 Seeding abilities...");
+  
+  const abilityMap = new Map<string, number>();
+  
+  // Get all unique abilities from POKEMON_ABILITIES
+  const uniqueAbilities = new Set<string>();
+  Object.values(POKEMON_ABILITIES).forEach(abilities => {
+    abilities.forEach(ability => uniqueAbilities.add(ability));
+  });
+  
+  // Create or update each ability
+  for (const abilityName of uniqueAbilities) {
+    const info = ABILITY_INFO[abilityName] || {
+      displayName: abilityName.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' '),
+      description: "No description available."
+    };
+    
+    const ability = await prisma.ability.upsert({
+      where: { name: abilityName },
+      update: {
+        displayName: info.displayName,
+        description: info.description,
+      },
+      create: {
+        name: abilityName,
+        displayName: info.displayName,
+        description: info.description,
+      },
+    });
+    
+    abilityMap.set(abilityName, ability.id);
+  }
+  
+  console.log(`✅ Seeded ${abilityMap.size} abilities`);
+  return abilityMap;
+}
+
+async function linkPokemonAbilities(pokemonBySlug: Map<string, PokemonSummary>, abilityMap: Map<string, number>) {
+  console.log("🔗 Linking Pokémon to abilities...");
+  
+  // First, delete all existing PokemonAbility links to start fresh
+  await prisma.pokemonAbility.deleteMany({});
+  console.log("🗑️  Cleared old ability links");
+  
+  for (const [nationalDex, abilities] of Object.entries(POKEMON_ABILITIES)) {
+    const dexNum = parseInt(nationalDex);
+    const pokemon = Array.from(pokemonBySlug.values()).find(p => p.nationalDex === dexNum);
+    
+    if (!pokemon) {
+      console.warn(`⚠️  Pokémon with dex #${dexNum} not found`);
+      continue;
+    }
+    
+    // Link each ability to this Pokémon
+    for (let i = 0; i < abilities.length; i++) {
+      const abilityName = abilities[i];
+      const abilityId = abilityMap.get(abilityName);
+      
+      if (!abilityId) {
+        console.warn(`⚠️  Ability "${abilityName}" not found`);
+        continue;
+      }
+      
+      // The last ability in the array is considered "hidden"
+      const isHidden = i === abilities.length - 1 && abilities.length > 1;
+      
+      await prisma.pokemonAbility.create({
+        data: {
+          pokemonId: pokemon.id,
+          abilityId: abilityId,
+          isHidden,
+        },
+      });
+    }
+  }
+  
+  console.log("✅ Linked Pokémon to abilities");
+}
+
 async function main() {
   const pokemonBySlug = await seedPokemon();
   await seedEvolutionChains(pokemonBySlug);
+  const abilityMap = await seedAbilities();
+  await linkPokemonAbilities(pokemonBySlug, abilityMap);
 }
 
 

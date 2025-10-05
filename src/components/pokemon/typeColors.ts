@@ -1,0 +1,66 @@
+// Type-specific border and accent colors for cards
+export const TYPE_BORDER_COLORS: Record<string, string> = {
+  normal: "border-stone-200 hover:border-stone-300",
+  fire: "border-orange-200 hover:border-orange-300",
+  water: "border-blue-200 hover:border-blue-300",
+  electric: "border-yellow-200 hover:border-yellow-300",
+  grass: "border-green-200 hover:border-green-300",
+  ice: "border-cyan-200 hover:border-cyan-300",
+  fighting: "border-red-200 hover:border-red-300",
+  poison: "border-purple-200 hover:border-purple-300",
+  ground: "border-amber-200 hover:border-amber-300",
+  flying: "border-indigo-200 hover:border-indigo-300",
+  psychic: "border-pink-200 hover:border-pink-300",
+  bug: "border-lime-200 hover:border-lime-300",
+  rock: "border-yellow-200 hover:border-yellow-300",
+  ghost: "border-purple-200 hover:border-purple-300",
+  dragon: "border-indigo-200 hover:border-indigo-300",
+  dark: "border-gray-300 hover:border-gray-400",
+  steel: "border-slate-200 hover:border-slate-300",
+  fairy: "border-pink-200 hover:border-pink-300",
+};
+
+// Type-specific text colors for section headers
+export const TYPE_TEXT_COLORS: Record<string, string> = {
+  normal: "text-stone-600",
+  fire: "text-orange-600",
+  water: "text-blue-600",
+  electric: "text-yellow-700",
+  grass: "text-green-600",
+  ice: "text-cyan-600",
+  fighting: "text-red-700",
+  poison: "text-purple-600",
+  ground: "text-amber-700",
+  flying: "text-indigo-600",
+  psychic: "text-pink-600",
+  bug: "text-lime-700",
+  rock: "text-yellow-700",
+  ghost: "text-purple-700",
+  dragon: "text-indigo-700",
+  dark: "text-gray-800",
+  steel: "text-slate-600",
+  fairy: "text-pink-600",
+};
+
+// Type-specific shadow colors
+export const TYPE_SHADOW_COLORS: Record<string, string> = {
+  normal: "hover:shadow-stone-200/50",
+  fire: "hover:shadow-orange-200/50",
+  water: "hover:shadow-blue-200/50",
+  electric: "hover:shadow-yellow-200/50",
+  grass: "hover:shadow-green-200/50",
+  ice: "hover:shadow-cyan-200/50",
+  fighting: "hover:shadow-red-200/50",
+  poison: "hover:shadow-purple-200/50",
+  ground: "hover:shadow-amber-200/50",
+  flying: "hover:shadow-indigo-200/50",
+  psychic: "hover:shadow-pink-200/50",
+  bug: "hover:shadow-lime-200/50",
+  rock: "hover:shadow-yellow-200/50",
+  ghost: "hover:shadow-purple-200/50",
+  dragon: "hover:shadow-indigo-200/50",
+  dark: "hover:shadow-gray-300/50",
+  steel: "hover:shadow-slate-200/50",
+  fairy: "hover:shadow-pink-200/50",
+};
+

@@ -7,7 +7,7 @@ type Props = {
 
 export default function MetaCard({ types }: Props) {
   return (
-    <div className="rounded-[24px] border border-emerald-100/80 bg-white/80 p-6 shadow-inner">
+    <div className="rounded-[24px] border border-emerald-100/80 bg-white/80 p-6 shadow-inner transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
       <dl className="space-y-4 text-sm text-emerald-800">
         <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
           <dt className="font-semibold uppercase tracking-wide text-emerald-500">Types</dt>
@@ -15,7 +15,7 @@ export default function MetaCard({ types }: Props) {
             {types.map(type => (
               <span
                 key={type}
-                className={`rounded-full px-3 py-0.5 text-xs font-semibold capitalize ${
+                className={`rounded-full px-3 py-0.5 text-xs font-semibold capitalize transition-transform duration-200 hover:scale-110 ${
                   TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                 }`}
               >

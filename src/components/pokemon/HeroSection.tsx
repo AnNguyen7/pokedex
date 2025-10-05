@@ -23,7 +23,7 @@ type Props = {
 export default function HeroSection({ displayName, nationalDex, types, sprites }: Props) {
   return (
     <div className="flex flex-col gap-6 sm:flex-row sm:gap-10">
-      <div className="mx-auto flex h-48 w-48 items-center justify-center rounded-3xl border border-emerald-100 bg-emerald-50/80 shadow-inner sm:mx-0">
+      <div className="group mx-auto flex h-48 w-48 items-center justify-center rounded-3xl border border-emerald-100 bg-emerald-50/80 shadow-inner transition-all duration-300 hover:scale-105 hover:border-emerald-200 hover:shadow-lg sm:mx-0">
         <AnimatedSprite
           animatedSrc={sprites.animated}
           fallbackSrc={sprites.fallback}
@@ -32,19 +32,19 @@ export default function HeroSection({ displayName, nationalDex, types, sprites }
           alt={displayName}
           width={192}
           height={192}
-          className="h-40 w-40 object-contain drop-shadow"
+          className="h-40 w-40 object-contain drop-shadow transition-transform duration-300 group-hover:scale-110"
         />
       </div>
       <div className="flex-1 space-y-5 text-center sm:text-left">
-        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400">
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400 transition-colors hover:text-emerald-500">
           {formatDexNumber(nationalDex)}
         </p>
-        <h1 className="text-4xl font-bold text-emerald-900 sm:text-5xl">{displayName}</h1>
+        <h1 className="text-4xl font-bold text-emerald-900 transition-colors hover:text-emerald-700 sm:text-5xl">{displayName}</h1>
         <div className="flex flex-wrap justify-center gap-3 sm:justify-start">
           {types.map(type => (
             <span
               key={type}
-              className={`rounded-full px-4 py-1.5 text-sm font-semibold capitalize shadow-sm transition ${
+              className={`rounded-full px-4 py-1.5 text-sm font-semibold capitalize shadow-sm transition-all duration-200 hover:scale-110 hover:shadow-md ${
                 TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
               }`}
             >

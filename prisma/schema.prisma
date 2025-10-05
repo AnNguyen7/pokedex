@@ -53,6 +53,7 @@ model Pokemon {
   description    String?      @db.Text
 
   evolutionStage EvolutionStage?
+  abilities      PokemonAbility[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -76,4 +77,26 @@ model EvolutionStage {
 
   @@unique([chainId, order])
   @@unique([pokemonId])
+}
+
+model Ability {
+  id          Int              @id @default(autoincrement())
+  name        String           @unique
+  displayName String
+  description String           @db.Text
+  pokemon     PokemonAbility[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+model PokemonAbility {
+  id        Int      @id @default(autoincrement())
+  pokemon   Pokemon  @relation(fields: [pokemonId], references: [id], onDelete: Cascade)
+  pokemonId Int
+  ability   Ability  @relation(fields: [abilityId], references: [id], onDelete: Cascade)
+  abilityId Int
+  isHidden  Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@unique([pokemonId, abilityId])
 }

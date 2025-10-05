@@ -60,21 +60,21 @@ export default function StatsCard({ stats, total, primaryType }: Props) {
   const bgColor = primaryType ? TYPE_BG_COLORS[primaryType] || "bg-emerald-100" : "bg-emerald-100";
 
   return (
-    <aside className="rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg">
+    <aside className="rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg transition-all duration-200 hover:border-emerald-200 hover:shadow-xl">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-emerald-800">Base Stats</h2>
         <span className="text-sm font-semibold text-emerald-600">Total {total}</span>
       </div>
       <div className="mt-6 space-y-4">
         {stats.map(stat => (
-          <div key={stat.key} className="space-y-2">
+          <div key={stat.key} className="group space-y-2">
             <div className="flex items-center justify-between text-sm font-medium text-emerald-700">
-              <span>{stat.label}</span>
-              <span className="font-semibold text-emerald-900">{stat.value}</span>
+              <span className="transition-colors group-hover:text-emerald-900">{stat.label}</span>
+              <span className="font-semibold text-emerald-900 transition-transform group-hover:scale-110">{stat.value}</span>
             </div>
-            <div className={`relative h-2.5 w-full overflow-hidden rounded-full ${bgColor}`}>
+            <div className={`relative h-2.5 w-full overflow-hidden rounded-full ${bgColor} transition-all group-hover:h-3`}>
               <div
-                className={`absolute inset-y-0 left-0 rounded-full bg-gradient-to-r ${gradient}`}
+                className={`absolute inset-y-0 left-0 rounded-full bg-gradient-to-r ${gradient} transition-all duration-300`}
                 style={{ width: `${Math.min(100, (stat.value / 180) * 100)}%` }}
               />
             </div>
