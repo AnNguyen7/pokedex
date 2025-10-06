@@ -10,8 +10,6 @@ import StatsCard from "@/components/pokemon/StatsCard";
 import TypeEffectivenessCard from "@/components/pokemon/TypeEffectivenessCard";
 import type { PokemonTypeName } from "@/types/pokemon";
 
-import { TYPE_CARD_BG_COLORS } from "@/components/pokemon/typeStyles"; // Add this line
-
 
 export async function generateStaticParams() {
   const pokemon = await prisma.pokemon.findMany({ select: { slug: true } });
