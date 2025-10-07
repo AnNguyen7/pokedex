@@ -1,5 +1,3 @@
-import type { PokemonTypeName } from "@/types/pokemon";
-
 // Lighter colors for Pokémon cards (like the reference image)
 export const TYPE_BADGE_STYLES: Record<string, string> = {
   normal: "bg-stone-200 text-stone-700",

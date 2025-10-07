@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import ClientGrid from "@/components/ClientGrid";
 import { prisma } from "@/lib/prisma";
 import type { PokemonType } from "@prisma/client";
@@ -34,5 +35,9 @@ export default async function Home() {
 
   const listItems = pokemon.map(toListItem);
 
-  return <ClientGrid pokemon={listItems} />;
+  return (
+    <Suspense fallback={<div className="max-w-5xl mx-auto px-4 py-12 text-center text-emerald-600">Loading Pokédex...</div>}>
+      <ClientGrid pokemon={listItems} />
+    </Suspense>
+  );
 }
