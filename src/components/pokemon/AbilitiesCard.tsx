@@ -1,5 +1,3 @@
-"use client";
-
 type Ability = {
   displayName: string;
   description: string;
@@ -39,4 +37,3 @@ export default function AbilitiesCard({ abilities }: Props) {
     </div>
   );
 }
-

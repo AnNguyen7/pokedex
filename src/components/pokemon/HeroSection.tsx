@@ -1,6 +1,7 @@
 "use client";
 
 import type { PokemonTypeName } from "@/types/pokemon";
+import Link from "next/link";
 import AnimatedSprite from "@/components/AnimatedSprite";
 import { TYPE_BADGE_STYLES } from "@/components/pokemon/typeStyles";
 
@@ -42,14 +43,15 @@ export default function HeroSection({ displayName, nationalDex, types, sprites }
         <h1 className="text-4xl font-bold text-emerald-900 transition-colors hover:text-emerald-700 sm:text-5xl">{displayName}</h1>
         <div className="flex flex-wrap justify-center gap-3 sm:justify-start">
           {types.map(type => (
-            <span
+            <Link
               key={type}
-              className={`rounded-full px-4 py-1.5 text-sm font-semibold capitalize shadow-sm transition-all duration-200 hover:scale-110 hover:shadow-md ${
+              href={`/?type=${type}`}
+              className={`rounded-full px-4 py-1.5 text-sm font-semibold capitalize shadow-sm transition-all duration-200 hover:scale-110 hover:shadow-md cursor-pointer ${
                 TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
               }`}
             >
               {type}
-            </span>
+            </Link>
           ))}
         </div>
       </div>

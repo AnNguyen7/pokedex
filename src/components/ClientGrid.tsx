@@ -1,14 +1,27 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import SearchBar from "@/components/SearchBar";
 import TypeChip from "@/components/TypeChip";
 import PokemonCard from "@/components/PokemonCard";
 import type { PokemonListItem, PokemonTypeName } from "@/types/pokemon";
 
 export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [query, setQuery] = useState("");
   const [selectedType, setSelectedType] = useState<"all" | PokemonTypeName>("all");
+
+  // Read the 'type' parameter from URL and set the filter
+  useEffect(() => {
+    const typeParam = searchParams.get('type');
+    if (typeParam && typeParam !== 'all') {
+      setSelectedType(typeParam as PokemonTypeName);
+      // Scroll to top to show the filtered results
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [searchParams]);
 
   const typeOptions = useMemo(() => {
     const seen = new Set<PokemonTypeName>();
@@ -32,6 +45,11 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
     });
   }, [query, selectedType, pokemon]);
 
+  const handleClearFilter = () => {
+    setSelectedType("all");
+    router.push("/");
+  };
+
   return (
     <main className="max-w-5xl mx-auto px-4 py-12">
       <header className="space-y-6 mb-10 text-emerald-900">
@@ -53,7 +71,7 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
 
       <section className="mb-8 space-y-4">
         <SearchBar onChange={setQuery} />
-        <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
+        <div className="flex flex-wrap items-center gap-2 justify-center sm:justify-start">
           {typeOptions.map(type => (
             <TypeChip
               key={type}
@@ -62,6 +80,14 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
               onClick={() => setSelectedType(type === selectedType ? "all" : type)}
             />
           ))}
+          {selectedType !== "all" && (
+            <button
+              onClick={handleClearFilter}
+              className="ml-2 px-4 py-1 rounded-full border border-red-200 bg-red-50 text-red-600 text-sm font-medium transition-all hover:bg-red-100 hover:border-red-300 hover:shadow-sm active:scale-95"
+            >
+              Clear ✕
+            </button>
+          )}
         </div>
       </section>
 

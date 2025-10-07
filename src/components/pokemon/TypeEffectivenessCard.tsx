@@ -1,4 +1,5 @@
 import type { PokemonTypeName } from "@/types/pokemon";
+import Link from "next/link";
 import { TYPE_BADGE_STYLES } from "./typeStyles";
 
 type Props = {
@@ -175,18 +176,19 @@ export default function TypeEffectivenessCard({ types }: Props) {
         {effectiveness.veryWeakTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-red-700">
-              Very Weak To (4×)
+              Very Weak To
             </h3>
             <div className="flex flex-wrap gap-2">
               {effectiveness.veryWeakTo.map(type => (
-                <span
+                <Link
                   key={type}
-                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize shadow-sm transition-transform hover:scale-105 ${
+                  href={`/?type=${type}`}
+                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize shadow-sm transition-transform hover:scale-105 cursor-pointer ${
                     TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                   }`}
                 >
                   {type}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -196,18 +198,19 @@ export default function TypeEffectivenessCard({ types }: Props) {
         {effectiveness.weakTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-red-600">
-              Weak To (2×)
+              Weak To
             </h3>
             <div className="flex flex-wrap gap-2">
               {effectiveness.weakTo.map(type => (
-                <span
+                <Link
                   key={type}
-                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize transition-transform hover:scale-105 ${
+                  href={`/?type=${type}`}
+                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize transition-transform hover:scale-105 cursor-pointer ${
                     TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                   }`}
                 >
                   {type}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -217,18 +220,19 @@ export default function TypeEffectivenessCard({ types }: Props) {
         {effectiveness.resistantTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-green-600">
-              Resistant To (½×)
+              Resistant To
             </h3>
             <div className="flex flex-wrap gap-2">
               {effectiveness.resistantTo.map(type => (
-                <span
+                <Link
                   key={type}
-                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize transition-transform hover:scale-105 ${
+                  href={`/?type=${type}`}
+                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize transition-transform hover:scale-105 cursor-pointer ${
                     TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                   }`}
                 >
                   {type}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -238,18 +242,19 @@ export default function TypeEffectivenessCard({ types }: Props) {
         {effectiveness.veryResistantTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-green-700">
-              Very Resistant To (¼×)
+              Very Resistant To
             </h3>
             <div className="flex flex-wrap gap-2">
               {effectiveness.veryResistantTo.map(type => (
-                <span
+                <Link
                   key={type}
-                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize shadow-sm transition-transform hover:scale-105 ${
+                  href={`/?type=${type}`}
+                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize shadow-sm transition-transform hover:scale-105 cursor-pointer ${
                     TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                   }`}
                 >
                   {type}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -259,18 +264,19 @@ export default function TypeEffectivenessCard({ types }: Props) {
         {effectiveness.immuneTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-gray-600">
-              Immune To (0×)
+              Immune To
             </h3>
             <div className="flex flex-wrap gap-2">
               {effectiveness.immuneTo.map(type => (
-                <span
+                <Link
                   key={type}
-                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize transition-transform hover:scale-105 ${
+                  href={`/?type=${type}`}
+                  className={`rounded-full px-3 py-1 text-xs font-semibold capitalize transition-transform hover:scale-105 cursor-pointer ${
                     TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                   }`}
                 >
                   {type}
-                </span>
+                </Link>
               ))}
             </div>
           </div>

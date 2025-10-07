@@ -93,11 +93,6 @@ export default async function PokemonPage({ params }: { params: { slug: string }
     .map(type => type!.toLowerCase() as PokemonTypeName);
 
   const sprites = spriteUrls(pokemon.nationalDex);
-  const allSprites = {
-    ...sprites,
-    animatedShiny: sprites.animatedShiny,
-    fallbackShiny: sprites.fallbackShiny,
-  };
 
   const statEntries = [
     { key: "hp", label: "HP", value: pokemon.hp },
@@ -138,7 +133,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
             displayName={pokemon.displayName}
             nationalDex={pokemon.nationalDex}
             types={types}
-            sprites={allSprites}
+            sprites={sprites}
           />
           <MetaCard types={types} />
           <AbilitiesCard abilities={abilities} />

@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FireRed & LeafGreen Pokédex",
   description:
-    "Browse the Kanto Pokédex with filters and search before wiring it up to Prisma and Neon.",
+    "Browse all 151 Kanto Pokémon with detailed stats, abilities, evolution chains, and type effectiveness. Search and filter by type.",
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({

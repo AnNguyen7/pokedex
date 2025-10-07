@@ -23,30 +23,3 @@ export const TYPE_BADGE_STYLES: Record<string, string> = {
 };
 
 export const badgeClassForNames: Record<string, string> = TYPE_BADGE_STYLES;
-
-
-    // src/components/pokemon/typeStyles.ts
-
-    // ... (existing imports and TYPE_BADGE_STYLES, TYPE_GRADIENTS, TYPE_BG_COLORS) ...
-
-    // Very light background colors for the main detail card
-    export const TYPE_CARD_BG_COLORS: Record<string, string> = {
-      normal: "bg-stone-50",
-      fire: "bg-orange-50",
-      water: "bg-blue-50",
-      electric: "bg-yellow-50",
-      grass: "bg-green-50",
-      ice: "bg-cyan-50",
-      fighting: "bg-red-50",
-      poison: "bg-purple-50",
-      ground: "bg-amber-50",
-      flying: "bg-indigo-50",
-      psychic: "bg-pink-50",
-      bug: "bg-lime-50",
-      rock: "bg-gray-50",
-      ghost: "bg-violet-50",
-      dragon: "bg-indigo-50", // Can reuse or pick a distinct one
-      steel: "bg-slate-50",
-      fairy: "bg-fuchsia-50",
-      dark: "bg-zinc-50",
-    };

@@ -1,4 +1,5 @@
 import type { PokemonTypeName } from "@/types/pokemon";
+import Link from "next/link";
 import { TYPE_BADGE_STYLES } from "@/components/pokemon/typeStyles";
 
 type Props = {
@@ -13,14 +14,15 @@ export default function MetaCard({ types }: Props) {
           <dt className="font-semibold uppercase tracking-wide text-emerald-500">Types</dt>
           <dd className="flex flex-wrap gap-2">
             {types.map(type => (
-              <span
+              <Link
                 key={type}
-                className={`rounded-full px-3 py-0.5 text-xs font-semibold capitalize transition-transform duration-200 hover:scale-110 ${
+                href={`/?type=${type}`}
+                className={`rounded-full px-3 py-0.5 text-xs font-semibold capitalize transition-transform duration-200 hover:scale-110 cursor-pointer ${
                   TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
                 }`}
               >
                 {type}
-              </span>
+              </Link>
             ))}
           </dd>
         </div>
