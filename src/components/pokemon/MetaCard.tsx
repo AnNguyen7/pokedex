@@ -1,35 +1,45 @@
-import type { PokemonTypeName } from "@/types/pokemon";
-import Link from "next/link";
-import { TYPE_BADGE_STYLES } from "@/components/pokemon/typeStyles";
-
 type Props = {
-  types: PokemonTypeName[];
+  species: string | null;
+  heightM: number | null;
+  weightKg: number | null;
 };
 
-export default function MetaCard({ types }: Props) {
+// Helper function to convert meters to feet and inches
+function formatHeight(heightM: number): string {
+  const totalInches = heightM * 39.3701; // Convert meters to inches
+  const feet = Math.floor(totalInches / 12);
+  const inches = Math.round(totalInches % 12);
+  return `${heightM.toFixed(1)} m (${feet}′${inches.toString().padStart(2, '0')}″)`;
+}
+
+// Helper function to format weight with both kg and lbs
+function formatWeight(weightKg: number): string {
+  const lbs = (weightKg * 2.20462).toFixed(1);
+  return `${weightKg} kg (${lbs} lbs)`;
+}
+
+export default function MetaCard({ species, heightM, weightKg }: Props) {
   return (
     <div className="rounded-[24px] border border-emerald-100/80 bg-white/80 p-6 shadow-inner transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
       <dl className="space-y-4 text-sm text-emerald-800">
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
-          <dt className="font-semibold uppercase tracking-wide text-emerald-500">Types</dt>
-          <dd className="flex flex-wrap gap-2">
-            {types.map(type => (
-              <Link
-                key={type}
-                href={`/?type=${type}`}
-                className={`rounded-full px-3 py-0.5 text-xs font-semibold capitalize transition-transform duration-200 hover:scale-110 cursor-pointer ${
-                  TYPE_BADGE_STYLES[type as keyof typeof TYPE_BADGE_STYLES] ?? "bg-emerald-100/80 text-emerald-700"
-                }`}
-              >
-                {type}
-              </Link>
-            ))}
-          </dd>
-        </div>
-        <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
-          <dt className="font-semibold uppercase tracking-wide text-emerald-500">Tier</dt>
-          <dd className="font-medium text-emerald-800">Starter</dd>
-        </div>
+        {species && (
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
+            <dt className="font-semibold uppercase tracking-wide text-emerald-500">Species</dt>
+            <dd className="font-medium text-emerald-800">{species}</dd>
+          </div>
+        )}
+        {heightM !== null && heightM !== undefined && (
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
+            <dt className="font-semibold uppercase tracking-wide text-emerald-500">Height</dt>
+            <dd className="font-medium text-emerald-800">{formatHeight(heightM)}</dd>
+          </div>
+        )}
+        {weightKg !== null && weightKg !== undefined && (
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
+            <dt className="font-semibold uppercase tracking-wide text-emerald-500">Weight</dt>
+            <dd className="font-medium text-emerald-800">{formatWeight(weightKg)}</dd>
+          </div>
+        )}
       </dl>
     </div>
   );

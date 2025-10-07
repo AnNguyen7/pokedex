@@ -35,6 +35,9 @@ export default async function PokemonPage({ params }: { params: { slug: string }
       nationalDex: true,
       primaryType: true,
       secondaryType: true,
+      species: true,
+      heightM: true,
+      weightKg: true,
       hp: true,
       attack: true,
       defense: true,
@@ -135,7 +138,11 @@ export default async function PokemonPage({ params }: { params: { slug: string }
             types={types}
             sprites={sprites}
           />
-          <MetaCard types={types} />
+          <MetaCard 
+            species={pokemon.species} 
+            heightM={pokemon.heightM} 
+            weightKg={pokemon.weightKg} 
+          />
           <AbilitiesCard abilities={abilities} />
           <EvolutionCard stages={evolutionStages} />
         </div>
