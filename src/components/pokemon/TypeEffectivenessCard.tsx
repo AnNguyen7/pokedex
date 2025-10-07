@@ -169,10 +169,8 @@ export default function TypeEffectivenessCard({ types }: Props) {
 
   return (
     <aside className="rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg transition-all duration-200 hover:border-emerald-200 hover:shadow-xl">
-      <h2 className="text-lg font-semibold text-emerald-800">Type Match-ups</h2>
-      
-      <div className="mt-6 space-y-4">
-        {/* Very Weak To (4×) */}
+      <div className="space-y-4">
+        {/* Types that deal 4× damage */}
         {effectiveness.veryWeakTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-red-700">
@@ -194,7 +192,7 @@ export default function TypeEffectivenessCard({ types }: Props) {
           </div>
         )}
 
-        {/* Weak To (2×) */}
+        {/* Types that deal 2× damage */}
         {effectiveness.weakTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-red-600">
@@ -216,7 +214,7 @@ export default function TypeEffectivenessCard({ types }: Props) {
           </div>
         )}
 
-        {/* Resistant To (½×) */}
+        {/* Types that deal 0.5× damage */}
         {effectiveness.resistantTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-green-600">
@@ -238,7 +236,7 @@ export default function TypeEffectivenessCard({ types }: Props) {
           </div>
         )}
 
-        {/* Very Resistant To (¼×) */}
+        {/* Types that deal 0.25× damage */}
         {effectiveness.veryResistantTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-green-700">
@@ -260,7 +258,7 @@ export default function TypeEffectivenessCard({ types }: Props) {
           </div>
         )}
 
-        {/* Immune To (0×) */}
+        {/* Types that deal 0× damage (no effect) */}
         {effectiveness.immuneTo.length > 0 && (
           <div>
             <h3 className="mb-2.5 text-xs font-semibold uppercase tracking-wide text-gray-600">

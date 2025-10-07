@@ -4,15 +4,21 @@ type Props = {
   weightKg: number | null;
 };
 
-// Helper function to convert meters to feet and inches
+/**
+ * Converts metric height to both metric and imperial units.
+ * Example: 0.7 m → "0.7 m (2′04″)"
+ */
 function formatHeight(heightM: number): string {
-  const totalInches = heightM * 39.3701; // Convert meters to inches
+  const totalInches = heightM * 39.3701;
   const feet = Math.floor(totalInches / 12);
   const inches = Math.round(totalInches % 12);
   return `${heightM.toFixed(1)} m (${feet}′${inches.toString().padStart(2, '0')}″)`;
 }
 
-// Helper function to format weight with both kg and lbs
+/**
+ * Converts weight from kilograms to include pounds.
+ * Example: 6.9 kg → "6.9 kg (15.2 lbs)"
+ */
 function formatWeight(weightKg: number): string {
   const lbs = (weightKg * 2.20462).toFixed(1);
   return `${weightKg} kg (${lbs} lbs)`;

@@ -12,7 +12,7 @@ type Props = {
   primaryType?: PokemonTypeName;
 };
 
-// Gradient colors based on Pokémon type
+// Colored progress bar gradients that match each Pokémon type's theme
 const TYPE_GRADIENTS: Record<string, string> = {
   normal: "from-stone-500 via-stone-400 to-stone-300",
   fire: "from-orange-600 via-orange-500 to-orange-400",
@@ -34,6 +34,7 @@ const TYPE_GRADIENTS: Record<string, string> = {
   fairy: "from-pink-500 via-pink-400 to-pink-300",
 };
 
+// Background colors for the stat bar track
 const TYPE_BG_COLORS: Record<string, string> = {
   normal: "bg-stone-100",
   fire: "bg-orange-100",

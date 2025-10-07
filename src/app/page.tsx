@@ -4,6 +4,7 @@ import { prisma } from "@/lib/prisma";
 import type { PokemonType } from "@prisma/client";
 import type { PokemonListItem, PokemonTypeName } from "@/types/pokemon";
 
+// Revalidate cached data every hour (3600 seconds)
 export const revalidate = 3600;
 
 const toListItem = (pokemon: {

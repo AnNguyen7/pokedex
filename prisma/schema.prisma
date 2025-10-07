@@ -46,6 +46,13 @@ model Pokemon {
   species        String?      // "Seed Pokémon", "Flame Pokémon", etc.
   heightM        Float?       // Height in meters (e.g., 0.7)
   weightKg       Float?       // Weight in kg (e.g., 6.9)
+  catchRate      Int?         // Catch rate (0-255, higher = easier)
+  evYieldHP      Int          @default(0)
+  evYieldAttack  Int          @default(0)
+  evYieldDefense Int          @default(0)
+  evYieldSpAtk   Int          @default(0)
+  evYieldSpDef   Int          @default(0)
+  evYieldSpeed   Int          @default(0)
   hp             Int          @default(0)
   attack         Int          @default(0)
   defense        Int          @default(0)

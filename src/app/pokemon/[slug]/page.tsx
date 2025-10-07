@@ -7,6 +7,7 @@ import MetaCard from "@/components/pokemon/MetaCard";
 import EvolutionCard from "@/components/pokemon/EvolutionCard";
 import AbilitiesCard from "@/components/pokemon/AbilitiesCard";
 import StatsCard from "@/components/pokemon/StatsCard";
+import TrainingCard from "@/components/pokemon/TrainingCard";
 import TypeEffectivenessCard from "@/components/pokemon/TypeEffectivenessCard";
 import type { PokemonTypeName } from "@/types/pokemon";
 
@@ -38,6 +39,13 @@ export default async function PokemonPage({ params }: { params: { slug: string }
       species: true,
       heightM: true,
       weightKg: true,
+      catchRate: true,
+      evYieldHP: true,
+      evYieldAttack: true,
+      evYieldDefense: true,
+      evYieldSpAtk: true,
+      evYieldSpDef: true,
+      evYieldSpeed: true,
       hp: true,
       attack: true,
       defense: true,
@@ -141,7 +149,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
           <MetaCard 
             species={pokemon.species} 
             heightM={pokemon.heightM} 
-            weightKg={pokemon.weightKg} 
+            weightKg={pokemon.weightKg}
           />
           <AbilitiesCard abilities={abilities} />
           <EvolutionCard stages={evolutionStages} />
@@ -149,6 +157,17 @@ export default async function PokemonPage({ params }: { params: { slug: string }
 
         <div className="space-y-6">
           <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
+          <TrainingCard 
+            catchRate={pokemon.catchRate}
+            evYields={{
+              hp: pokemon.evYieldHP,
+              attack: pokemon.evYieldAttack,
+              defense: pokemon.evYieldDefense,
+              spAtk: pokemon.evYieldSpAtk,
+              spDef: pokemon.evYieldSpDef,
+              speed: pokemon.evYieldSpeed,
+            }}
+          />
           <TypeEffectivenessCard types={types} />
         </div>
       </section>

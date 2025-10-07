@@ -1,4 +1,4 @@
-// Lighter colors for Pokémon cards (like the reference image)
+// Tailwind classes for type badges - used across cards, hero sections, and type chips
 export const TYPE_BADGE_STYLES: Record<string, string> = {
   normal: "bg-stone-200 text-stone-700",
   fire: "bg-orange-200 text-orange-700",
@@ -20,4 +20,5 @@ export const TYPE_BADGE_STYLES: Record<string, string> = {
   fairy: "bg-pink-200 text-pink-700",
 };
 
-export const badgeClassForNames: Record<string, string> = TYPE_BADGE_STYLES;
+// Legacy export for backward compatibility
+export const badgeClassForNames = TYPE_BADGE_STYLES;

@@ -14,6 +14,11 @@ type Props = {
   className?: string;
 };
 
+/**
+ * Displays Pokémon sprites with automatic fallback handling.
+ * If shiny sprites are provided, clicking toggles between normal and shiny forms.
+ * Falls back to static images if animated GIFs fail to load.
+ */
 export default function AnimatedSprite({
   animatedSrc,
   fallbackSrc,
@@ -35,6 +40,7 @@ export default function AnimatedSprite({
   };
 
   const handleError = () => {
+    // If image fails to load, fall back to static PNG
     if (isShiny && fallbackShinySrc) {
       setSrc(fallbackShinySrc);
     } else {
