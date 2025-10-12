@@ -1,4 +1,4 @@
-import { spriteUrls } from "@/lib/starters";
+import { spriteUrls } from "@/lib/sprites"; // AnN updated on 10/11/2025
 import Link from "next/link";
 import AnimatedSprite from "@/components/AnimatedSprite";
 import type { PokemonTypeName } from "@/types/pokemon";

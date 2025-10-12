@@ -51,20 +51,20 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
   };
 
   return (
-    <main className="max-w-5xl mx-auto px-4 py-12">
+    <main className="max-w-7xl mx-auto px-4 py-12">
       <header className="space-y-6 mb-10 text-emerald-900">
         <div className="text-center space-y-2">
-          <p className="text-sm uppercase tracking-[0.2em] text-emerald-500">Kanto Region</p>
-          <h1 className="text-3xl sm:text-4xl font-bold text-emerald-900">FireRed &amp; LeafGreen Pokédex</h1>
+          <p className="text-sm uppercase tracking-[0.2em] text-emerald-500">Generation I - V</p>
+          <h1 className="text-3xl sm:text-4xl font-bold text-emerald-900">National Pokédex</h1>
         </div>
         <div className="rounded-3xl border border-emerald-100 bg-white/80 px-6 py-5 text-sm leading-6 text-emerald-800 shadow-sm backdrop-blur">
           <p className="mb-3">
-            FireRed &amp; LeafGreen stick to the original 151 Pokémon of Red/Blue/Yellow,
-            despite introducing two new generations in the meantime. These entries cover
-            every evolution obtainable before the National Dex is unlocked.
+            Explore all 649 Pokémon from Generation I through Generation V, spanning from
+            Kanto to Unova. This comprehensive Pokédex includes detailed stats, abilities,
+            evolution chains, and type effectiveness for every Pokémon.
           </p>
           <p>
-            Official stats remain available on the <a className="text-emerald-600 underline" href="https://pokemondb.net/pokedex/game/firered-leafgreen" target="_blank" rel="noreferrer">Gen 1 Pokédex</a>.
+            Click any Pokémon to view detailed information, hear their cry, and see their shiny form!
           </p>
         </div>
       </header>
@@ -91,7 +91,7 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
         </div>
       </section>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {filtered.map(entry => (
           <PokemonCard
             key={entry.nationalDex}

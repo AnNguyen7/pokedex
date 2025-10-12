@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { spriteUrls } from "@/lib/starters";
+import { spriteUrls } from "@/lib/sprites"; // AnN updated on 10/11/2025
 import { prisma } from "@/lib/prisma";
-import HeroSection from "@/components/pokemon/HeroSection";
-import MetaCard from "@/components/pokemon/MetaCard";
+import HeroSection from "@/components/pokemon/HeroSection"; // AnN updated on 10/11/2025
 import EvolutionCard from "@/components/pokemon/EvolutionCard";
 import AbilitiesCard from "@/components/pokemon/AbilitiesCard";
 import StatsCard from "@/components/pokemon/StatsCard";
+import MetaCard from "@/components/pokemon/MetaCard";
 import TrainingCard from "@/components/pokemon/TrainingCard";
 import TypeEffectivenessCard from "@/components/pokemon/TypeEffectivenessCard";
 import type { PokemonTypeName } from "@/types/pokemon";
@@ -36,6 +36,7 @@ export default async function PokemonPage({ params }: { params: { slug: string }
       nationalDex: true,
       primaryType: true,
       secondaryType: true,
+      cryUrl: true, // AnN added on 10/11/2025
       species: true,
       heightM: true,
       weightKg: true,
@@ -128,6 +129,15 @@ export default async function PokemonPage({ params }: { params: { slug: string }
     isHidden: pa.isHidden,
   }));
 
+  const evYields = {
+    hp: pokemon.evYieldHP,
+    attack: pokemon.evYieldAttack,
+    defense: pokemon.evYieldDefense,
+    spAtk: pokemon.evYieldSpAtk,
+    spDef: pokemon.evYieldSpDef,
+    speed: pokemon.evYieldSpeed,
+  };
+
   return (
     <main className="mx-auto max-w-5xl px-6 py-14 text-emerald-900">
       <Link
@@ -138,37 +148,36 @@ export default async function PokemonPage({ params }: { params: { slug: string }
         Back to Pokédex
       </Link>
 
-      <section className="mt-10 grid gap-6 rounded-[36px] border border-emerald-100 bg-white/85 p-6 shadow-xl backdrop-blur sm:p-8 md:gap-8 md:p-10 lg:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]">
-        <div className="space-y-8">
-          <HeroSection
-            displayName={pokemon.displayName}
-            nationalDex={pokemon.nationalDex}
-            types={types}
-            sprites={sprites}
-          />
-          <MetaCard 
-            species={pokemon.species} 
-            heightM={pokemon.heightM} 
-            weightKg={pokemon.weightKg}
-          />
-          <AbilitiesCard abilities={abilities} />
-          <EvolutionCard stages={evolutionStages} />
-        </div>
+      <section className="mt-10 rounded-[36px] border border-emerald-100 bg-white/85 p-6 shadow-xl backdrop-blur sm:p-8 md:p-10">
+        {/* AnN updated: Reorganized layout with wider left column on 10/12/2025 */}
+        <div className="grid gap-8 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] items-start">
+          {/* Left column: Sprite, Evolution, Species, Abilities */}
+          <div className="space-y-8">
+            <HeroSection
+              displayName={pokemon.displayName}
+              nationalDex={pokemon.nationalDex}
+              types={types}
+              sprites={sprites}
+              cryUrl={pokemon.cryUrl}
+            />
 
-        <div className="space-y-6">
-          <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
-          <TrainingCard 
-            catchRate={pokemon.catchRate}
-            evYields={{
-              hp: pokemon.evYieldHP,
-              attack: pokemon.evYieldAttack,
-              defense: pokemon.evYieldDefense,
-              spAtk: pokemon.evYieldSpAtk,
-              spDef: pokemon.evYieldSpDef,
-              speed: pokemon.evYieldSpeed,
-            }}
-          />
-          <TypeEffectivenessCard types={types} />
+            <EvolutionCard stages={evolutionStages} />
+
+            <MetaCard
+              species={pokemon.species ?? null}
+              heightM={pokemon.heightM ?? null}
+              weightKg={pokemon.weightKg ?? null}
+            />
+
+            <AbilitiesCard abilities={abilities} />
+          </div>
+
+          {/* Right column: Base Stats, Training, Type Effectiveness */}
+          <div className="space-y-8">
+            <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
+            <TrainingCard catchRate={pokemon.catchRate ?? null} evYields={evYields} />
+            <TypeEffectivenessCard types={types} />
+          </div>
         </div>
       </section>
 

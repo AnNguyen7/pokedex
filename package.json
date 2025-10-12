@@ -7,6 +7,8 @@
     "build": "prisma generate && next build --turbopack",
     "start": "next start",
     "lint": "eslint",
+    "fetch-data": "tsx scripts/fetch-pokemon-data.ts",
+    "db:seed": "tsx prisma/seed-new.ts",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -16,7 +18,7 @@
     "react-dom": "19.1.0"
   },
   "prisma": {
-    "seed": "tsx prisma/seed.ts"
+    "seed": "tsx prisma/seed-new.ts"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

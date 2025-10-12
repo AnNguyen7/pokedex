@@ -1,0 +1,3896 @@
+{
+  "1": {
+    "species": "Seed Pokémon",
+    "heightM": 0.7,
+    "weightKg": 6.9,
+    "catchRate": 45
+  },
+  "2": {
+    "species": "Seed Pokémon",
+    "heightM": 1,
+    "weightKg": 13,
+    "catchRate": 45
+  },
+  "3": {
+    "species": "Seed Pokémon",
+    "heightM": 2,
+    "weightKg": 100,
+    "catchRate": 45
+  },
+  "4": {
+    "species": "Lizard Pokémon",
+    "heightM": 0.6,
+    "weightKg": 8.5,
+    "catchRate": 45
+  },
+  "5": {
+    "species": "Flame Pokémon",
+    "heightM": 1.1,
+    "weightKg": 19,
+    "catchRate": 45
+  },
+  "6": {
+    "species": "Flame Pokémon",
+    "heightM": 1.7,
+    "weightKg": 90.5,
+    "catchRate": 45
+  },
+  "7": {
+    "species": "Tiny Turtle Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9,
+    "catchRate": 45
+  },
+  "8": {
+    "species": "Turtle Pokémon",
+    "heightM": 1,
+    "weightKg": 22.5,
+    "catchRate": 45
+  },
+  "9": {
+    "species": "Shellfish Pokémon",
+    "heightM": 1.6,
+    "weightKg": 85.5,
+    "catchRate": 45
+  },
+  "10": {
+    "species": "Worm Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2.9,
+    "catchRate": 255
+  },
+  "11": {
+    "species": "Cocoon Pokémon",
+    "heightM": 0.7,
+    "weightKg": 9.9,
+    "catchRate": 120
+  },
+  "12": {
+    "species": "Butterfly Pokémon",
+    "heightM": 1.1,
+    "weightKg": 32,
+    "catchRate": 45
+  },
+  "13": {
+    "species": "Hairy Bug Pokémon",
+    "heightM": 0.3,
+    "weightKg": 3.2,
+    "catchRate": 255
+  },
+  "14": {
+    "species": "Cocoon Pokémon",
+    "heightM": 0.6,
+    "weightKg": 10,
+    "catchRate": 120
+  },
+  "15": {
+    "species": "Poison Bee Pokémon",
+    "heightM": 1,
+    "weightKg": 29.5,
+    "catchRate": 45
+  },
+  "16": {
+    "species": "Tiny Bird Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1.8,
+    "catchRate": 255
+  },
+  "17": {
+    "species": "Bird Pokémon",
+    "heightM": 1.1,
+    "weightKg": 30,
+    "catchRate": 120
+  },
+  "18": {
+    "species": "Bird Pokémon",
+    "heightM": 1.5,
+    "weightKg": 39.5,
+    "catchRate": 45
+  },
+  "19": {
+    "species": "Mouse Pokémon",
+    "heightM": 0.3,
+    "weightKg": 3.5,
+    "catchRate": 255
+  },
+  "20": {
+    "species": "Mouse Pokémon",
+    "heightM": 0.7,
+    "weightKg": 18.5,
+    "catchRate": 127
+  },
+  "21": {
+    "species": "Tiny Bird Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2,
+    "catchRate": 255
+  },
+  "22": {
+    "species": "Beak Pokémon",
+    "heightM": 1.2,
+    "weightKg": 38,
+    "catchRate": 90
+  },
+  "23": {
+    "species": "Snake Pokémon",
+    "heightM": 2,
+    "weightKg": 6.9,
+    "catchRate": 255
+  },
+  "24": {
+    "species": "Cobra Pokémon",
+    "heightM": 3.5,
+    "weightKg": 65,
+    "catchRate": 90
+  },
+  "25": {
+    "species": "Mouse Pokémon",
+    "heightM": 0.4,
+    "weightKg": 6,
+    "catchRate": 190
+  },
+  "26": {
+    "species": "Mouse Pokémon",
+    "heightM": 0.8,
+    "weightKg": 30,
+    "catchRate": 75
+  },
+  "27": {
+    "species": "Mouse Pokémon",
+    "heightM": 0.6,
+    "weightKg": 12,
+    "catchRate": 255
+  },
+  "28": {
+    "species": "Mouse Pokémon",
+    "heightM": 1,
+    "weightKg": 29.5,
+    "catchRate": 90
+  },
+  "29": {
+    "species": "Poison Pin Pokémon",
+    "heightM": 0.4,
+    "weightKg": 7,
+    "catchRate": 235
+  },
+  "30": {
+    "species": "Poison Pin Pokémon",
+    "heightM": 0.8,
+    "weightKg": 20,
+    "catchRate": 120
+  },
+  "31": {
+    "species": "Drill Pokémon",
+    "heightM": 1.3,
+    "weightKg": 60,
+    "catchRate": 45
+  },
+  "32": {
+    "species": "Poison Pin Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9,
+    "catchRate": 235
+  },
+  "33": {
+    "species": "Poison Pin Pokémon",
+    "heightM": 0.9,
+    "weightKg": 19.5,
+    "catchRate": 120
+  },
+  "34": {
+    "species": "Drill Pokémon",
+    "heightM": 1.4,
+    "weightKg": 62,
+    "catchRate": 45
+  },
+  "35": {
+    "species": "Fairy Pokémon",
+    "heightM": 0.6,
+    "weightKg": 7.5,
+    "catchRate": 150
+  },
+  "36": {
+    "species": "Fairy Pokémon",
+    "heightM": 1.3,
+    "weightKg": 40,
+    "catchRate": 25
+  },
+  "37": {
+    "species": "Fox Pokémon",
+    "heightM": 0.6,
+    "weightKg": 9.9,
+    "catchRate": 190
+  },
+  "38": {
+    "species": "Fox Pokémon",
+    "heightM": 1.1,
+    "weightKg": 19.9,
+    "catchRate": 75
+  },
+  "39": {
+    "species": "Balloon Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5.5,
+    "catchRate": 170
+  },
+  "40": {
+    "species": "Balloon Pokémon",
+    "heightM": 1,
+    "weightKg": 12,
+    "catchRate": 50
+  },
+  "41": {
+    "species": "Bat Pokémon",
+    "heightM": 0.8,
+    "weightKg": 7.5,
+    "catchRate": 255
+  },
+  "42": {
+    "species": "Bat Pokémon",
+    "heightM": 1.6,
+    "weightKg": 55,
+    "catchRate": 90
+  },
+  "43": {
+    "species": "Weed Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5.4,
+    "catchRate": 255
+  },
+  "44": {
+    "species": "Weed Pokémon",
+    "heightM": 0.8,
+    "weightKg": 8.6,
+    "catchRate": 120
+  },
+  "45": {
+    "species": "Flower Pokémon",
+    "heightM": 1.2,
+    "weightKg": 18.6,
+    "catchRate": 45
+  },
+  "46": {
+    "species": "Mushroom Pokémon",
+    "heightM": 0.3,
+    "weightKg": 5.4,
+    "catchRate": 190
+  },
+  "47": {
+    "species": "Mushroom Pokémon",
+    "heightM": 1,
+    "weightKg": 29.5,
+    "catchRate": 75
+  },
+  "48": {
+    "species": "Insect Pokémon",
+    "heightM": 1,
+    "weightKg": 30,
+    "catchRate": 190
+  },
+  "49": {
+    "species": "Poison Moth Pokémon",
+    "heightM": 1.5,
+    "weightKg": 12.5,
+    "catchRate": 75
+  },
+  "50": {
+    "species": "Mole Pokémon",
+    "heightM": 0.2,
+    "weightKg": 0.8,
+    "catchRate": 255
+  },
+  "51": {
+    "species": "Mole Pokémon",
+    "heightM": 0.7,
+    "weightKg": 33.3,
+    "catchRate": 50
+  },
+  "52": {
+    "species": "Scratch Cat Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4.2,
+    "catchRate": 255
+  },
+  "53": {
+    "species": "Classy Cat Pokémon",
+    "heightM": 1,
+    "weightKg": 32,
+    "catchRate": 90
+  },
+  "54": {
+    "species": "Duck Pokémon",
+    "heightM": 0.8,
+    "weightKg": 19.6,
+    "catchRate": 190
+  },
+  "55": {
+    "species": "Duck Pokémon",
+    "heightM": 1.7,
+    "weightKg": 76.6,
+    "catchRate": 75
+  },
+  "56": {
+    "species": "Pig Monkey Pokémon",
+    "heightM": 0.5,
+    "weightKg": 28,
+    "catchRate": 190
+  },
+  "57": {
+    "species": "Pig Monkey Pokémon",
+    "heightM": 1,
+    "weightKg": 32,
+    "catchRate": 75
+  },
+  "58": {
+    "species": "Puppy Pokémon",
+    "heightM": 0.7,
+    "weightKg": 19,
+    "catchRate": 190
+  },
+  "59": {
+    "species": "Legendary Pokémon",
+    "heightM": 1.9,
+    "weightKg": 155,
+    "catchRate": 75
+  },
+  "60": {
+    "species": "Tadpole Pokémon",
+    "heightM": 0.6,
+    "weightKg": 12.4,
+    "catchRate": 255
+  },
+  "61": {
+    "species": "Tadpole Pokémon",
+    "heightM": 1,
+    "weightKg": 20,
+    "catchRate": 120
+  },
+  "62": {
+    "species": "Tadpole Pokémon",
+    "heightM": 1.3,
+    "weightKg": 54,
+    "catchRate": 45
+  },
+  "63": {
+    "species": "Psi Pokémon",
+    "heightM": 0.9,
+    "weightKg": 19.5,
+    "catchRate": 200
+  },
+  "64": {
+    "species": "Psi Pokémon",
+    "heightM": 1.3,
+    "weightKg": 56.5,
+    "catchRate": 100
+  },
+  "65": {
+    "species": "Psi Pokémon",
+    "heightM": 1.5,
+    "weightKg": 48,
+    "catchRate": 50
+  },
+  "66": {
+    "species": "Superpower Pokémon",
+    "heightM": 0.8,
+    "weightKg": 19.5,
+    "catchRate": 180
+  },
+  "67": {
+    "species": "Superpower Pokémon",
+    "heightM": 1.5,
+    "weightKg": 70.5,
+    "catchRate": 90
+  },
+  "68": {
+    "species": "Superpower Pokémon",
+    "heightM": 1.6,
+    "weightKg": 130,
+    "catchRate": 45
+  },
+  "69": {
+    "species": "Flower Pokémon",
+    "heightM": 0.7,
+    "weightKg": 4,
+    "catchRate": 255
+  },
+  "70": {
+    "species": "Flycatcher Pokémon",
+    "heightM": 1,
+    "weightKg": 6.4,
+    "catchRate": 120
+  },
+  "71": {
+    "species": "Flycatcher Pokémon",
+    "heightM": 1.7,
+    "weightKg": 15.5,
+    "catchRate": 45
+  },
+  "72": {
+    "species": "Jellyfish Pokémon",
+    "heightM": 0.9,
+    "weightKg": 45.5,
+    "catchRate": 190
+  },
+  "73": {
+    "species": "Jellyfish Pokémon",
+    "heightM": 1.6,
+    "weightKg": 55,
+    "catchRate": 60
+  },
+  "74": {
+    "species": "Rock Pokémon",
+    "heightM": 0.4,
+    "weightKg": 20,
+    "catchRate": 255
+  },
+  "75": {
+    "species": "Rock Pokémon",
+    "heightM": 1,
+    "weightKg": 105,
+    "catchRate": 120
+  },
+  "76": {
+    "species": "Megaton Pokémon",
+    "heightM": 1.4,
+    "weightKg": 300,
+    "catchRate": 45
+  },
+  "77": {
+    "species": "Fire Horse Pokémon",
+    "heightM": 1,
+    "weightKg": 30,
+    "catchRate": 190
+  },
+  "78": {
+    "species": "Fire Horse Pokémon",
+    "heightM": 1.7,
+    "weightKg": 95,
+    "catchRate": 60
+  },
+  "79": {
+    "species": "Dopey Pokémon",
+    "heightM": 1.2,
+    "weightKg": 36,
+    "catchRate": 190
+  },
+  "80": {
+    "species": "Hermit Crab Pokémon",
+    "heightM": 1.6,
+    "weightKg": 78.5,
+    "catchRate": 75
+  },
+  "81": {
+    "species": "Magnet Pokémon",
+    "heightM": 0.3,
+    "weightKg": 6,
+    "catchRate": 190
+  },
+  "82": {
+    "species": "Magnet Pokémon",
+    "heightM": 1,
+    "weightKg": 60,
+    "catchRate": 60
+  },
+  "83": {
+    "species": "Wild Duck Pokémon",
+    "heightM": 0.8,
+    "weightKg": 15,
+    "catchRate": 45
+  },
+  "84": {
+    "species": "Twin Bird Pokémon",
+    "heightM": 1.4,
+    "weightKg": 39.2,
+    "catchRate": 190
+  },
+  "85": {
+    "species": "Triple Bird Pokémon",
+    "heightM": 1.8,
+    "weightKg": 85.2,
+    "catchRate": 45
+  },
+  "86": {
+    "species": "Sea Lion Pokémon",
+    "heightM": 1.1,
+    "weightKg": 90,
+    "catchRate": 190
+  },
+  "87": {
+    "species": "Sea Lion Pokémon",
+    "heightM": 1.7,
+    "weightKg": 120,
+    "catchRate": 75
+  },
+  "88": {
+    "species": "Sludge Pokémon",
+    "heightM": 0.9,
+    "weightKg": 30,
+    "catchRate": 190
+  },
+  "89": {
+    "species": "Sludge Pokémon",
+    "heightM": 1.2,
+    "weightKg": 30,
+    "catchRate": 75
+  },
+  "90": {
+    "species": "Bivalve Pokémon",
+    "heightM": 0.3,
+    "weightKg": 4,
+    "catchRate": 190
+  },
+  "91": {
+    "species": "Bivalve Pokémon",
+    "heightM": 1.5,
+    "weightKg": 132.5,
+    "catchRate": 60
+  },
+  "92": {
+    "species": "Gas Pokémon",
+    "heightM": 1.3,
+    "weightKg": 0.1,
+    "catchRate": 190
+  },
+  "93": {
+    "species": "Gas Pokémon",
+    "heightM": 1.6,
+    "weightKg": 0.1,
+    "catchRate": 90
+  },
+  "94": {
+    "species": "Shadow Pokémon",
+    "heightM": 1.5,
+    "weightKg": 40.5,
+    "catchRate": 45
+  },
+  "95": {
+    "species": "Rock Snake Pokémon",
+    "heightM": 8.8,
+    "weightKg": 210,
+    "catchRate": 45
+  },
+  "96": {
+    "species": "Hypnosis Pokémon",
+    "heightM": 1,
+    "weightKg": 32.4,
+    "catchRate": 190
+  },
+  "97": {
+    "species": "Hypnosis Pokémon",
+    "heightM": 1.6,
+    "weightKg": 75.6,
+    "catchRate": 75
+  },
+  "98": {
+    "species": "River Crab Pokémon",
+    "heightM": 0.4,
+    "weightKg": 6.5,
+    "catchRate": 225
+  },
+  "99": {
+    "species": "Pincer Pokémon",
+    "heightM": 1.3,
+    "weightKg": 60,
+    "catchRate": 60
+  },
+  "100": {
+    "species": "Ball Pokémon",
+    "heightM": 0.5,
+    "weightKg": 10.4,
+    "catchRate": 190
+  },
+  "101": {
+    "species": "Ball Pokémon",
+    "heightM": 1.2,
+    "weightKg": 66.6,
+    "catchRate": 60
+  },
+  "102": {
+    "species": "Egg Pokémon",
+    "heightM": 0.4,
+    "weightKg": 2.5,
+    "catchRate": 90
+  },
+  "103": {
+    "species": "Coconut Pokémon",
+    "heightM": 2,
+    "weightKg": 120,
+    "catchRate": 45
+  },
+  "104": {
+    "species": "Lonely Pokémon",
+    "heightM": 0.4,
+    "weightKg": 6.5,
+    "catchRate": 190
+  },
+  "105": {
+    "species": "Bone Keeper Pokémon",
+    "heightM": 1,
+    "weightKg": 45,
+    "catchRate": 75
+  },
+  "106": {
+    "species": "Kicking Pokémon",
+    "heightM": 1.5,
+    "weightKg": 49.8,
+    "catchRate": 45
+  },
+  "107": {
+    "species": "Punching Pokémon",
+    "heightM": 1.4,
+    "weightKg": 50.2,
+    "catchRate": 45
+  },
+  "108": {
+    "species": "Licking Pokémon",
+    "heightM": 1.2,
+    "weightKg": 65.5,
+    "catchRate": 45
+  },
+  "109": {
+    "species": "Poison Gas Pokémon",
+    "heightM": 0.6,
+    "weightKg": 1,
+    "catchRate": 190
+  },
+  "110": {
+    "species": "Poison Gas Pokémon",
+    "heightM": 1.2,
+    "weightKg": 9.5,
+    "catchRate": 60
+  },
+  "111": {
+    "species": "Spikes Pokémon",
+    "heightM": 1,
+    "weightKg": 115,
+    "catchRate": 120
+  },
+  "112": {
+    "species": "Drill Pokémon",
+    "heightM": 1.9,
+    "weightKg": 120,
+    "catchRate": 60
+  },
+  "113": {
+    "species": "Egg Pokémon",
+    "heightM": 1.1,
+    "weightKg": 34.6,
+    "catchRate": 30
+  },
+  "114": {
+    "species": "Vine Pokémon",
+    "heightM": 1,
+    "weightKg": 35,
+    "catchRate": 45
+  },
+  "115": {
+    "species": "Parent Pokémon",
+    "heightM": 2.2,
+    "weightKg": 80,
+    "catchRate": 45
+  },
+  "116": {
+    "species": "Dragon Pokémon",
+    "heightM": 0.4,
+    "weightKg": 8,
+    "catchRate": 225
+  },
+  "117": {
+    "species": "Dragon Pokémon",
+    "heightM": 1.2,
+    "weightKg": 25,
+    "catchRate": 75
+  },
+  "118": {
+    "species": "Goldfish Pokémon",
+    "heightM": 0.6,
+    "weightKg": 15,
+    "catchRate": 225
+  },
+  "119": {
+    "species": "Goldfish Pokémon",
+    "heightM": 1.3,
+    "weightKg": 39,
+    "catchRate": 60
+  },
+  "120": {
+    "species": "Star Shape Pokémon",
+    "heightM": 0.8,
+    "weightKg": 34.5,
+    "catchRate": 225
+  },
+  "121": {
+    "species": "Mysterious Pokémon",
+    "heightM": 1.1,
+    "weightKg": 80,
+    "catchRate": 60
+  },
+  "122": {
+    "species": "Barrier Pokémon",
+    "heightM": 1.3,
+    "weightKg": 54.5,
+    "catchRate": 45
+  },
+  "123": {
+    "species": "Mantis Pokémon",
+    "heightM": 1.5,
+    "weightKg": 56,
+    "catchRate": 45
+  },
+  "124": {
+    "species": "Human Shape Pokémon",
+    "heightM": 1.4,
+    "weightKg": 40.6,
+    "catchRate": 45
+  },
+  "125": {
+    "species": "Electric Pokémon",
+    "heightM": 1.1,
+    "weightKg": 30,
+    "catchRate": 45
+  },
+  "126": {
+    "species": "Spitfire Pokémon",
+    "heightM": 1.3,
+    "weightKg": 44.5,
+    "catchRate": 45
+  },
+  "127": {
+    "species": "Stag Beetle Pokémon",
+    "heightM": 1.5,
+    "weightKg": 55,
+    "catchRate": 45
+  },
+  "128": {
+    "species": "Wild Bull Pokémon",
+    "heightM": 1.4,
+    "weightKg": 88.4,
+    "catchRate": 45
+  },
+  "129": {
+    "species": "Fish Pokémon",
+    "heightM": 0.9,
+    "weightKg": 10,
+    "catchRate": 255
+  },
+  "130": {
+    "species": "Atrocious Pokémon",
+    "heightM": 6.5,
+    "weightKg": 235,
+    "catchRate": 45
+  },
+  "131": {
+    "species": "Transport Pokémon",
+    "heightM": 2.5,
+    "weightKg": 220,
+    "catchRate": 45
+  },
+  "132": {
+    "species": "Transform Pokémon",
+    "heightM": 0.3,
+    "weightKg": 4,
+    "catchRate": 35
+  },
+  "133": {
+    "species": "Evolution Pokémon",
+    "heightM": 0.3,
+    "weightKg": 6.5,
+    "catchRate": 45
+  },
+  "134": {
+    "species": "Bubble Jet Pokémon",
+    "heightM": 1,
+    "weightKg": 29,
+    "catchRate": 45
+  },
+  "135": {
+    "species": "Lightning Pokémon",
+    "heightM": 0.8,
+    "weightKg": 24.5,
+    "catchRate": 45
+  },
+  "136": {
+    "species": "Flame Pokémon",
+    "heightM": 0.9,
+    "weightKg": 25,
+    "catchRate": 45
+  },
+  "137": {
+    "species": "Virtual Pokémon",
+    "heightM": 0.8,
+    "weightKg": 36.5,
+    "catchRate": 45
+  },
+  "138": {
+    "species": "Spiral Pokémon",
+    "heightM": 0.4,
+    "weightKg": 7.5,
+    "catchRate": 45
+  },
+  "139": {
+    "species": "Spiral Pokémon",
+    "heightM": 1,
+    "weightKg": 35,
+    "catchRate": 45
+  },
+  "140": {
+    "species": "Shellfish Pokémon",
+    "heightM": 0.5,
+    "weightKg": 11.5,
+    "catchRate": 45
+  },
+  "141": {
+    "species": "Shellfish Pokémon",
+    "heightM": 1.3,
+    "weightKg": 40.5,
+    "catchRate": 45
+  },
+  "142": {
+    "species": "Fossil Pokémon",
+    "heightM": 1.8,
+    "weightKg": 59,
+    "catchRate": 45
+  },
+  "143": {
+    "species": "Sleeping Pokémon",
+    "heightM": 2.1,
+    "weightKg": 460,
+    "catchRate": 25
+  },
+  "144": {
+    "species": "Freeze Pokémon",
+    "heightM": 1.7,
+    "weightKg": 55.4,
+    "catchRate": 3
+  },
+  "145": {
+    "species": "Electric Pokémon",
+    "heightM": 1.6,
+    "weightKg": 52.6,
+    "catchRate": 3
+  },
+  "146": {
+    "species": "Flame Pokémon",
+    "heightM": 2,
+    "weightKg": 60,
+    "catchRate": 3
+  },
+  "147": {
+    "species": "Dragon Pokémon",
+    "heightM": 1.8,
+    "weightKg": 3.3,
+    "catchRate": 45
+  },
+  "148": {
+    "species": "Dragon Pokémon",
+    "heightM": 4,
+    "weightKg": 16.5,
+    "catchRate": 45
+  },
+  "149": {
+    "species": "Dragon Pokémon",
+    "heightM": 2.2,
+    "weightKg": 210,
+    "catchRate": 45
+  },
+  "150": {
+    "species": "Genetic Pokémon",
+    "heightM": 2,
+    "weightKg": 122,
+    "catchRate": 3
+  },
+  "151": {
+    "species": "New Species Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4,
+    "catchRate": 45
+  },
+  "152": {
+    "species": "Leaf Pokémon",
+    "heightM": 0.9,
+    "weightKg": 6.4,
+    "catchRate": 45
+  },
+  "153": {
+    "species": "Leaf Pokémon",
+    "heightM": 1.2,
+    "weightKg": 15.8,
+    "catchRate": 45
+  },
+  "154": {
+    "species": "Herb Pokémon",
+    "heightM": 1.8,
+    "weightKg": 100.5,
+    "catchRate": 45
+  },
+  "155": {
+    "species": "Fire Mouse Pokémon",
+    "heightM": 0.5,
+    "weightKg": 7.9,
+    "catchRate": 45
+  },
+  "156": {
+    "species": "Volcano Pokémon",
+    "heightM": 0.9,
+    "weightKg": 19,
+    "catchRate": 45
+  },
+  "157": {
+    "species": "Volcano Pokémon",
+    "heightM": 1.7,
+    "weightKg": 79.5,
+    "catchRate": 45
+  },
+  "158": {
+    "species": "Big Jaw Pokémon",
+    "heightM": 0.6,
+    "weightKg": 9.5,
+    "catchRate": 45
+  },
+  "159": {
+    "species": "Big Jaw Pokémon",
+    "heightM": 1.1,
+    "weightKg": 25,
+    "catchRate": 45
+  },
+  "160": {
+    "species": "Big Jaw Pokémon",
+    "heightM": 2.3,
+    "weightKg": 88.8,
+    "catchRate": 45
+  },
+  "161": {
+    "species": "Scout Pokémon",
+    "heightM": 0.8,
+    "weightKg": 6,
+    "catchRate": 255
+  },
+  "162": {
+    "species": "Long Body Pokémon",
+    "heightM": 1.8,
+    "weightKg": 32.5,
+    "catchRate": 90
+  },
+  "163": {
+    "species": "Owl Pokémon",
+    "heightM": 0.7,
+    "weightKg": 21.2,
+    "catchRate": 255
+  },
+  "164": {
+    "species": "Owl Pokémon",
+    "heightM": 1.6,
+    "weightKg": 40.8,
+    "catchRate": 90
+  },
+  "165": {
+    "species": "Five Star Pokémon",
+    "heightM": 1,
+    "weightKg": 10.8,
+    "catchRate": 255
+  },
+  "166": {
+    "species": "Five Star Pokémon",
+    "heightM": 1.4,
+    "weightKg": 35.6,
+    "catchRate": 90
+  },
+  "167": {
+    "species": "String Spit Pokémon",
+    "heightM": 0.5,
+    "weightKg": 8.5,
+    "catchRate": 255
+  },
+  "168": {
+    "species": "Long Leg Pokémon",
+    "heightM": 1.1,
+    "weightKg": 33.5,
+    "catchRate": 90
+  },
+  "169": {
+    "species": "Bat Pokémon",
+    "heightM": 1.8,
+    "weightKg": 75,
+    "catchRate": 90
+  },
+  "170": {
+    "species": "Angler Pokémon",
+    "heightM": 0.5,
+    "weightKg": 12,
+    "catchRate": 190
+  },
+  "171": {
+    "species": "Light Pokémon",
+    "heightM": 1.2,
+    "weightKg": 22.5,
+    "catchRate": 75
+  },
+  "172": {
+    "species": "Tiny Mouse Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2,
+    "catchRate": 190
+  },
+  "173": {
+    "species": "Star Shape Pokémon",
+    "heightM": 0.3,
+    "weightKg": 3,
+    "catchRate": 150
+  },
+  "174": {
+    "species": "Balloon Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1,
+    "catchRate": 170
+  },
+  "175": {
+    "species": "Spike Ball Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1.5,
+    "catchRate": 190
+  },
+  "176": {
+    "species": "Happiness Pokémon",
+    "heightM": 0.6,
+    "weightKg": 3.2,
+    "catchRate": 75
+  },
+  "177": {
+    "species": "Tiny Bird Pokémon",
+    "heightM": 0.2,
+    "weightKg": 2,
+    "catchRate": 190
+  },
+  "178": {
+    "species": "Mystic Pokémon",
+    "heightM": 1.5,
+    "weightKg": 15,
+    "catchRate": 75
+  },
+  "179": {
+    "species": "Wool Pokémon",
+    "heightM": 0.6,
+    "weightKg": 7.8,
+    "catchRate": 235
+  },
+  "180": {
+    "species": "Wool Pokémon",
+    "heightM": 0.8,
+    "weightKg": 13.3,
+    "catchRate": 120
+  },
+  "181": {
+    "species": "Light Pokémon",
+    "heightM": 1.4,
+    "weightKg": 61.5,
+    "catchRate": 45
+  },
+  "182": {
+    "species": "Flower Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.8,
+    "catchRate": 45
+  },
+  "183": {
+    "species": "Aqua Mouse Pokémon",
+    "heightM": 0.4,
+    "weightKg": 8.5,
+    "catchRate": 190
+  },
+  "184": {
+    "species": "Aqua Rabbit Pokémon",
+    "heightM": 0.8,
+    "weightKg": 28.5,
+    "catchRate": 75
+  },
+  "185": {
+    "species": "Imitation Pokémon",
+    "heightM": 1.2,
+    "weightKg": 38,
+    "catchRate": 65
+  },
+  "186": {
+    "species": "Frog Pokémon",
+    "heightM": 1.1,
+    "weightKg": 33.9,
+    "catchRate": 45
+  },
+  "187": {
+    "species": "Cottonweed Pokémon",
+    "heightM": 0.4,
+    "weightKg": 0.5,
+    "catchRate": 255
+  },
+  "188": {
+    "species": "Cottonweed Pokémon",
+    "heightM": 0.6,
+    "weightKg": 1,
+    "catchRate": 120
+  },
+  "189": {
+    "species": "Cottonweed Pokémon",
+    "heightM": 0.8,
+    "weightKg": 3,
+    "catchRate": 45
+  },
+  "190": {
+    "species": "Long Tail Pokémon",
+    "heightM": 0.8,
+    "weightKg": 11.5,
+    "catchRate": 45
+  },
+  "191": {
+    "species": "Seed Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1.8,
+    "catchRate": 235
+  },
+  "192": {
+    "species": "Sun Pokémon",
+    "heightM": 0.8,
+    "weightKg": 8.5,
+    "catchRate": 120
+  },
+  "193": {
+    "species": "Clear Wing Pokémon",
+    "heightM": 1.2,
+    "weightKg": 38,
+    "catchRate": 75
+  },
+  "194": {
+    "species": "Water Fish Pokémon",
+    "heightM": 0.4,
+    "weightKg": 8.5,
+    "catchRate": 255
+  },
+  "195": {
+    "species": "Water Fish Pokémon",
+    "heightM": 1.4,
+    "weightKg": 75,
+    "catchRate": 90
+  },
+  "196": {
+    "species": "Sun Pokémon",
+    "heightM": 0.9,
+    "weightKg": 26.5,
+    "catchRate": 45
+  },
+  "197": {
+    "species": "Moonlight Pokémon",
+    "heightM": 1,
+    "weightKg": 27,
+    "catchRate": 45
+  },
+  "198": {
+    "species": "Darkness Pokémon",
+    "heightM": 0.5,
+    "weightKg": 2.1,
+    "catchRate": 30
+  },
+  "199": {
+    "species": "Royal Pokémon",
+    "heightM": 2,
+    "weightKg": 79.5,
+    "catchRate": 70
+  },
+  "200": {
+    "species": "Screech Pokémon",
+    "heightM": 0.7,
+    "weightKg": 1,
+    "catchRate": 45
+  },
+  "201": {
+    "species": "Symbol Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5,
+    "catchRate": 225
+  },
+  "202": {
+    "species": "Patient Pokémon",
+    "heightM": 1.3,
+    "weightKg": 28.5,
+    "catchRate": 45
+  },
+  "203": {
+    "species": "Long Neck Pokémon",
+    "heightM": 1.5,
+    "weightKg": 41.5,
+    "catchRate": 60
+  },
+  "204": {
+    "species": "Bagworm Pokémon",
+    "heightM": 0.6,
+    "weightKg": 7.2,
+    "catchRate": 190
+  },
+  "205": {
+    "species": "Bagworm Pokémon",
+    "heightM": 1.2,
+    "weightKg": 125.8,
+    "catchRate": 75
+  },
+  "206": {
+    "species": "Land Snake Pokémon",
+    "heightM": 1.5,
+    "weightKg": 14,
+    "catchRate": 190
+  },
+  "207": {
+    "species": "Fly Scorpion Pokémon",
+    "heightM": 1.1,
+    "weightKg": 64.8,
+    "catchRate": 60
+  },
+  "208": {
+    "species": "Iron Snake Pokémon",
+    "heightM": 9.2,
+    "weightKg": 400,
+    "catchRate": 25
+  },
+  "209": {
+    "species": "Fairy Pokémon",
+    "heightM": 0.6,
+    "weightKg": 7.8,
+    "catchRate": 190
+  },
+  "210": {
+    "species": "Fairy Pokémon",
+    "heightM": 1.4,
+    "weightKg": 48.7,
+    "catchRate": 75
+  },
+  "211": {
+    "species": "Balloon Pokémon",
+    "heightM": 0.5,
+    "weightKg": 3.9,
+    "catchRate": 45
+  },
+  "212": {
+    "species": "Pincer Pokémon",
+    "heightM": 1.8,
+    "weightKg": 118,
+    "catchRate": 25
+  },
+  "213": {
+    "species": "Mold Pokémon",
+    "heightM": 0.6,
+    "weightKg": 20.5,
+    "catchRate": 190
+  },
+  "214": {
+    "species": "Single Horn Pokémon",
+    "heightM": 1.5,
+    "weightKg": 54,
+    "catchRate": 45
+  },
+  "215": {
+    "species": "Sharp Claw Pokémon",
+    "heightM": 0.9,
+    "weightKg": 28,
+    "catchRate": 60
+  },
+  "216": {
+    "species": "Little Bear Pokémon",
+    "heightM": 0.6,
+    "weightKg": 8.8,
+    "catchRate": 120
+  },
+  "217": {
+    "species": "Hibernator Pokémon",
+    "heightM": 1.8,
+    "weightKg": 125.8,
+    "catchRate": 60
+  },
+  "218": {
+    "species": "Lava Pokémon",
+    "heightM": 0.7,
+    "weightKg": 35,
+    "catchRate": 190
+  },
+  "219": {
+    "species": "Lava Pokémon",
+    "heightM": 0.8,
+    "weightKg": 55,
+    "catchRate": 75
+  },
+  "220": {
+    "species": "Pig Pokémon",
+    "heightM": 0.4,
+    "weightKg": 6.5,
+    "catchRate": 225
+  },
+  "221": {
+    "species": "Swine Pokémon",
+    "heightM": 1.1,
+    "weightKg": 55.8,
+    "catchRate": 75
+  },
+  "222": {
+    "species": "Coral Pokémon",
+    "heightM": 0.6,
+    "weightKg": 5,
+    "catchRate": 60
+  },
+  "223": {
+    "species": "Jet Pokémon",
+    "heightM": 0.6,
+    "weightKg": 12,
+    "catchRate": 190
+  },
+  "224": {
+    "species": "Jet Pokémon",
+    "heightM": 0.9,
+    "weightKg": 28.5,
+    "catchRate": 75
+  },
+  "225": {
+    "species": "Delivery Pokémon",
+    "heightM": 0.9,
+    "weightKg": 16,
+    "catchRate": 45
+  },
+  "226": {
+    "species": "Kite Pokémon",
+    "heightM": 2.1,
+    "weightKg": 220,
+    "catchRate": 25
+  },
+  "227": {
+    "species": "Armor Bird Pokémon",
+    "heightM": 1.7,
+    "weightKg": 50.5,
+    "catchRate": 25
+  },
+  "228": {
+    "species": "Dark Pokémon",
+    "heightM": 0.6,
+    "weightKg": 10.8,
+    "catchRate": 120
+  },
+  "229": {
+    "species": "Dark Pokémon",
+    "heightM": 1.4,
+    "weightKg": 35,
+    "catchRate": 45
+  },
+  "230": {
+    "species": "Dragon Pokémon",
+    "heightM": 1.8,
+    "weightKg": 152,
+    "catchRate": 45
+  },
+  "231": {
+    "species": "Long Nose Pokémon",
+    "heightM": 0.5,
+    "weightKg": 33.5,
+    "catchRate": 120
+  },
+  "232": {
+    "species": "Armor Pokémon",
+    "heightM": 1.1,
+    "weightKg": 120,
+    "catchRate": 60
+  },
+  "233": {
+    "species": "Virtual Pokémon",
+    "heightM": 0.6,
+    "weightKg": 32.5,
+    "catchRate": 45
+  },
+  "234": {
+    "species": "Big Horn Pokémon",
+    "heightM": 1.4,
+    "weightKg": 71.2,
+    "catchRate": 45
+  },
+  "235": {
+    "species": "Painter Pokémon",
+    "heightM": 1.2,
+    "weightKg": 58,
+    "catchRate": 45
+  },
+  "236": {
+    "species": "Scuffle Pokémon",
+    "heightM": 0.7,
+    "weightKg": 21,
+    "catchRate": 75
+  },
+  "237": {
+    "species": "Handstand Pokémon",
+    "heightM": 1.4,
+    "weightKg": 48,
+    "catchRate": 45
+  },
+  "238": {
+    "species": "Kiss Pokémon",
+    "heightM": 0.4,
+    "weightKg": 6,
+    "catchRate": 45
+  },
+  "239": {
+    "species": "Electric Pokémon",
+    "heightM": 0.6,
+    "weightKg": 23.5,
+    "catchRate": 45
+  },
+  "240": {
+    "species": "Live Coal Pokémon",
+    "heightM": 0.7,
+    "weightKg": 21.4,
+    "catchRate": 45
+  },
+  "241": {
+    "species": "Milk Cow Pokémon",
+    "heightM": 1.2,
+    "weightKg": 75.5,
+    "catchRate": 45
+  },
+  "242": {
+    "species": "Happiness Pokémon",
+    "heightM": 1.5,
+    "weightKg": 46.8,
+    "catchRate": 30
+  },
+  "243": {
+    "species": "Thunder Pokémon",
+    "heightM": 1.9,
+    "weightKg": 178,
+    "catchRate": 3
+  },
+  "244": {
+    "species": "Volcano Pokémon",
+    "heightM": 2.1,
+    "weightKg": 198,
+    "catchRate": 3
+  },
+  "245": {
+    "species": "Aurora Pokémon",
+    "heightM": 2,
+    "weightKg": 187,
+    "catchRate": 3
+  },
+  "246": {
+    "species": "Rock Skin Pokémon",
+    "heightM": 0.6,
+    "weightKg": 72,
+    "catchRate": 45
+  },
+  "247": {
+    "species": "Hard Shell Pokémon",
+    "heightM": 1.2,
+    "weightKg": 152,
+    "catchRate": 45
+  },
+  "248": {
+    "species": "Armor Pokémon",
+    "heightM": 2,
+    "weightKg": 202,
+    "catchRate": 45
+  },
+  "249": {
+    "species": "Diving Pokémon",
+    "heightM": 5.2,
+    "weightKg": 216,
+    "catchRate": 3
+  },
+  "250": {
+    "species": "Rainbow Pokémon",
+    "heightM": 3.8,
+    "weightKg": 199,
+    "catchRate": 3
+  },
+  "251": {
+    "species": "Time Travel Pokémon",
+    "heightM": 0.6,
+    "weightKg": 5,
+    "catchRate": 45
+  },
+  "252": {
+    "species": "Wood Gecko Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5,
+    "catchRate": 45
+  },
+  "253": {
+    "species": "Wood Gecko Pokémon",
+    "heightM": 0.9,
+    "weightKg": 21.6,
+    "catchRate": 45
+  },
+  "254": {
+    "species": "Forest Pokémon",
+    "heightM": 1.7,
+    "weightKg": 52.2,
+    "catchRate": 45
+  },
+  "255": {
+    "species": "Chick Pokémon",
+    "heightM": 0.4,
+    "weightKg": 2.5,
+    "catchRate": 45
+  },
+  "256": {
+    "species": "Young Fowl Pokémon",
+    "heightM": 0.9,
+    "weightKg": 19.5,
+    "catchRate": 45
+  },
+  "257": {
+    "species": "Blaze Pokémon",
+    "heightM": 1.9,
+    "weightKg": 52,
+    "catchRate": 45
+  },
+  "258": {
+    "species": "Mud Fish Pokémon",
+    "heightM": 0.4,
+    "weightKg": 7.6,
+    "catchRate": 45
+  },
+  "259": {
+    "species": "Mud Fish Pokémon",
+    "heightM": 0.7,
+    "weightKg": 28,
+    "catchRate": 45
+  },
+  "260": {
+    "species": "Mud Fish Pokémon",
+    "heightM": 1.5,
+    "weightKg": 81.9,
+    "catchRate": 45
+  },
+  "261": {
+    "species": "Bite Pokémon",
+    "heightM": 0.5,
+    "weightKg": 13.6,
+    "catchRate": 255
+  },
+  "262": {
+    "species": "Bite Pokémon",
+    "heightM": 1,
+    "weightKg": 37,
+    "catchRate": 127
+  },
+  "263": {
+    "species": "Tiny Raccoon Pokémon",
+    "heightM": 0.4,
+    "weightKg": 17.5,
+    "catchRate": 255
+  },
+  "264": {
+    "species": "Rushing Pokémon",
+    "heightM": 0.5,
+    "weightKg": 32.5,
+    "catchRate": 90
+  },
+  "265": {
+    "species": "Worm Pokémon",
+    "heightM": 0.3,
+    "weightKg": 3.6,
+    "catchRate": 255
+  },
+  "266": {
+    "species": "Cocoon Pokémon",
+    "heightM": 0.6,
+    "weightKg": 10,
+    "catchRate": 120
+  },
+  "267": {
+    "species": "Butterfly Pokémon",
+    "heightM": 1,
+    "weightKg": 28.4,
+    "catchRate": 45
+  },
+  "268": {
+    "species": "Cocoon Pokémon",
+    "heightM": 0.7,
+    "weightKg": 11.5,
+    "catchRate": 120
+  },
+  "269": {
+    "species": "Poison Moth Pokémon",
+    "heightM": 1.2,
+    "weightKg": 31.6,
+    "catchRate": 45
+  },
+  "270": {
+    "species": "Water Weed Pokémon",
+    "heightM": 0.5,
+    "weightKg": 2.6,
+    "catchRate": 255
+  },
+  "271": {
+    "species": "Jolly Pokémon",
+    "heightM": 1.2,
+    "weightKg": 32.5,
+    "catchRate": 120
+  },
+  "272": {
+    "species": "Carefree Pokémon",
+    "heightM": 1.5,
+    "weightKg": 55,
+    "catchRate": 45
+  },
+  "273": {
+    "species": "Acorn Pokémon",
+    "heightM": 0.5,
+    "weightKg": 4,
+    "catchRate": 255
+  },
+  "274": {
+    "species": "Wily Pokémon",
+    "heightM": 1,
+    "weightKg": 28,
+    "catchRate": 120
+  },
+  "275": {
+    "species": "Wicked Pokémon",
+    "heightM": 1.3,
+    "weightKg": 59.6,
+    "catchRate": 45
+  },
+  "276": {
+    "species": "Tiny Swallow Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2.3,
+    "catchRate": 200
+  },
+  "277": {
+    "species": "Swallow Pokémon",
+    "heightM": 0.7,
+    "weightKg": 19.8,
+    "catchRate": 45
+  },
+  "278": {
+    "species": "Seagull Pokémon",
+    "heightM": 0.6,
+    "weightKg": 9.5,
+    "catchRate": 190
+  },
+  "279": {
+    "species": "Water Bird Pokémon",
+    "heightM": 1.2,
+    "weightKg": 28,
+    "catchRate": 45
+  },
+  "280": {
+    "species": "Feeling Pokémon",
+    "heightM": 0.4,
+    "weightKg": 6.6,
+    "catchRate": 235
+  },
+  "281": {
+    "species": "Emotion Pokémon",
+    "heightM": 0.8,
+    "weightKg": 20.2,
+    "catchRate": 120
+  },
+  "282": {
+    "species": "Embrace Pokémon",
+    "heightM": 1.6,
+    "weightKg": 48.4,
+    "catchRate": 45
+  },
+  "283": {
+    "species": "Pond Skater Pokémon",
+    "heightM": 0.5,
+    "weightKg": 1.7,
+    "catchRate": 200
+  },
+  "284": {
+    "species": "Eyeball Pokémon",
+    "heightM": 0.8,
+    "weightKg": 3.6,
+    "catchRate": 75
+  },
+  "285": {
+    "species": "Mushroom Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4.5,
+    "catchRate": 255
+  },
+  "286": {
+    "species": "Mushroom Pokémon",
+    "heightM": 1.2,
+    "weightKg": 39.2,
+    "catchRate": 90
+  },
+  "287": {
+    "species": "Slacker Pokémon",
+    "heightM": 0.8,
+    "weightKg": 24,
+    "catchRate": 255
+  },
+  "288": {
+    "species": "Wild Monkey Pokémon",
+    "heightM": 1.4,
+    "weightKg": 46.5,
+    "catchRate": 120
+  },
+  "289": {
+    "species": "Lazy Pokémon",
+    "heightM": 2,
+    "weightKg": 130.5,
+    "catchRate": 45
+  },
+  "290": {
+    "species": "Trainee Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5.5,
+    "catchRate": 255
+  },
+  "291": {
+    "species": "Ninja Pokémon",
+    "heightM": 0.8,
+    "weightKg": 12,
+    "catchRate": 120
+  },
+  "292": {
+    "species": "Shed Pokémon",
+    "heightM": 0.8,
+    "weightKg": 1.2,
+    "catchRate": 45
+  },
+  "293": {
+    "species": "Whisper Pokémon",
+    "heightM": 0.6,
+    "weightKg": 16.3,
+    "catchRate": 190
+  },
+  "294": {
+    "species": "Big Voice Pokémon",
+    "heightM": 1,
+    "weightKg": 40.5,
+    "catchRate": 120
+  },
+  "295": {
+    "species": "Loud Noise Pokémon",
+    "heightM": 1.5,
+    "weightKg": 84,
+    "catchRate": 45
+  },
+  "296": {
+    "species": "Guts Pokémon",
+    "heightM": 1,
+    "weightKg": 86.4,
+    "catchRate": 180
+  },
+  "297": {
+    "species": "Arm Thrust Pokémon",
+    "heightM": 2.3,
+    "weightKg": 253.8,
+    "catchRate": 200
+  },
+  "298": {
+    "species": "Polka Dot Pokémon",
+    "heightM": 0.2,
+    "weightKg": 2,
+    "catchRate": 150
+  },
+  "299": {
+    "species": "Compass Pokémon",
+    "heightM": 1,
+    "weightKg": 97,
+    "catchRate": 255
+  },
+  "300": {
+    "species": "Kitten Pokémon",
+    "heightM": 0.6,
+    "weightKg": 11,
+    "catchRate": 255
+  },
+  "301": {
+    "species": "Prim Pokémon",
+    "heightM": 1.1,
+    "weightKg": 32.6,
+    "catchRate": 60
+  },
+  "302": {
+    "species": "Darkness Pokémon",
+    "heightM": 0.5,
+    "weightKg": 11,
+    "catchRate": 45
+  },
+  "303": {
+    "species": "Deceiver Pokémon",
+    "heightM": 0.6,
+    "weightKg": 11.5,
+    "catchRate": 45
+  },
+  "304": {
+    "species": "Iron Armor Pokémon",
+    "heightM": 0.4,
+    "weightKg": 60,
+    "catchRate": 180
+  },
+  "305": {
+    "species": "Iron Armor Pokémon",
+    "heightM": 0.9,
+    "weightKg": 120,
+    "catchRate": 90
+  },
+  "306": {
+    "species": "Iron Armor Pokémon",
+    "heightM": 2.1,
+    "weightKg": 360,
+    "catchRate": 45
+  },
+  "307": {
+    "species": "Meditate Pokémon",
+    "heightM": 0.6,
+    "weightKg": 11.2,
+    "catchRate": 180
+  },
+  "308": {
+    "species": "Meditate Pokémon",
+    "heightM": 1.3,
+    "weightKg": 31.5,
+    "catchRate": 90
+  },
+  "309": {
+    "species": "Lightning Pokémon",
+    "heightM": 0.6,
+    "weightKg": 15.2,
+    "catchRate": 120
+  },
+  "310": {
+    "species": "Discharge Pokémon",
+    "heightM": 1.5,
+    "weightKg": 40.2,
+    "catchRate": 45
+  },
+  "311": {
+    "species": "Cheering Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4.2,
+    "catchRate": 200
+  },
+  "312": {
+    "species": "Cheering Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4.2,
+    "catchRate": 200
+  },
+  "313": {
+    "species": "Firefly Pokémon",
+    "heightM": 0.7,
+    "weightKg": 17.7,
+    "catchRate": 150
+  },
+  "314": {
+    "species": "Firefly Pokémon",
+    "heightM": 0.6,
+    "weightKg": 17.7,
+    "catchRate": 150
+  },
+  "315": {
+    "species": "Thorn Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2,
+    "catchRate": 150
+  },
+  "316": {
+    "species": "Stomach Pokémon",
+    "heightM": 0.4,
+    "weightKg": 10.3,
+    "catchRate": 225
+  },
+  "317": {
+    "species": "Poison Bag Pokémon",
+    "heightM": 1.7,
+    "weightKg": 80,
+    "catchRate": 75
+  },
+  "318": {
+    "species": "Savage Pokémon",
+    "heightM": 0.8,
+    "weightKg": 20.8,
+    "catchRate": 225
+  },
+  "319": {
+    "species": "Brutal Pokémon",
+    "heightM": 1.8,
+    "weightKg": 88.8,
+    "catchRate": 60
+  },
+  "320": {
+    "species": "Ball Whale Pokémon",
+    "heightM": 2,
+    "weightKg": 130,
+    "catchRate": 125
+  },
+  "321": {
+    "species": "Float Whale Pokémon",
+    "heightM": 14.5,
+    "weightKg": 398,
+    "catchRate": 60
+  },
+  "322": {
+    "species": "Numb Pokémon",
+    "heightM": 0.7,
+    "weightKg": 24,
+    "catchRate": 255
+  },
+  "323": {
+    "species": "Eruption Pokémon",
+    "heightM": 1.9,
+    "weightKg": 220,
+    "catchRate": 150
+  },
+  "324": {
+    "species": "Coal Pokémon",
+    "heightM": 0.5,
+    "weightKg": 80.4,
+    "catchRate": 90
+  },
+  "325": {
+    "species": "Bounce Pokémon",
+    "heightM": 0.7,
+    "weightKg": 30.6,
+    "catchRate": 255
+  },
+  "326": {
+    "species": "Manipulate Pokémon",
+    "heightM": 0.9,
+    "weightKg": 71.5,
+    "catchRate": 60
+  },
+  "327": {
+    "species": "Spot Panda Pokémon",
+    "heightM": 1.1,
+    "weightKg": 5,
+    "catchRate": 255
+  },
+  "328": {
+    "species": "Ant Pit Pokémon",
+    "heightM": 0.7,
+    "weightKg": 15,
+    "catchRate": 255
+  },
+  "329": {
+    "species": "Vibration Pokémon",
+    "heightM": 1.1,
+    "weightKg": 15.3,
+    "catchRate": 120
+  },
+  "330": {
+    "species": "Mystic Pokémon",
+    "heightM": 2,
+    "weightKg": 82,
+    "catchRate": 45
+  },
+  "331": {
+    "species": "Cactus Pokémon",
+    "heightM": 0.4,
+    "weightKg": 51.3,
+    "catchRate": 190
+  },
+  "332": {
+    "species": "Scarecrow Pokémon",
+    "heightM": 1.3,
+    "weightKg": 77.4,
+    "catchRate": 60
+  },
+  "333": {
+    "species": "Cotton Bird Pokémon",
+    "heightM": 0.4,
+    "weightKg": 1.2,
+    "catchRate": 255
+  },
+  "334": {
+    "species": "Humming Pokémon",
+    "heightM": 1.1,
+    "weightKg": 20.6,
+    "catchRate": 45
+  },
+  "335": {
+    "species": "Cat Ferret Pokémon",
+    "heightM": 1.3,
+    "weightKg": 40.3,
+    "catchRate": 90
+  },
+  "336": {
+    "species": "Fang Snake Pokémon",
+    "heightM": 2.7,
+    "weightKg": 52.5,
+    "catchRate": 90
+  },
+  "337": {
+    "species": "Meteorite Pokémon",
+    "heightM": 1,
+    "weightKg": 168,
+    "catchRate": 45
+  },
+  "338": {
+    "species": "Meteorite Pokémon",
+    "heightM": 1.2,
+    "weightKg": 154,
+    "catchRate": 45
+  },
+  "339": {
+    "species": "Whiskers Pokémon",
+    "heightM": 0.4,
+    "weightKg": 1.9,
+    "catchRate": 190
+  },
+  "340": {
+    "species": "Whiskers Pokémon",
+    "heightM": 0.9,
+    "weightKg": 23.6,
+    "catchRate": 75
+  },
+  "341": {
+    "species": "Ruffian Pokémon",
+    "heightM": 0.6,
+    "weightKg": 11.5,
+    "catchRate": 205
+  },
+  "342": {
+    "species": "Rogue Pokémon",
+    "heightM": 1.1,
+    "weightKg": 32.8,
+    "catchRate": 155
+  },
+  "343": {
+    "species": "Clay Doll Pokémon",
+    "heightM": 0.5,
+    "weightKg": 21.5,
+    "catchRate": 255
+  },
+  "344": {
+    "species": "Clay Doll Pokémon",
+    "heightM": 1.5,
+    "weightKg": 108,
+    "catchRate": 90
+  },
+  "345": {
+    "species": "Sea Lily Pokémon",
+    "heightM": 1,
+    "weightKg": 23.8,
+    "catchRate": 45
+  },
+  "346": {
+    "species": "Barnacle Pokémon",
+    "heightM": 1.5,
+    "weightKg": 60.4,
+    "catchRate": 45
+  },
+  "347": {
+    "species": "Old Shrimp Pokémon",
+    "heightM": 0.7,
+    "weightKg": 12.5,
+    "catchRate": 45
+  },
+  "348": {
+    "species": "Plate Pokémon",
+    "heightM": 1.5,
+    "weightKg": 68.2,
+    "catchRate": 45
+  },
+  "349": {
+    "species": "Fish Pokémon",
+    "heightM": 0.6,
+    "weightKg": 7.4,
+    "catchRate": 255
+  },
+  "350": {
+    "species": "Tender Pokémon",
+    "heightM": 6.2,
+    "weightKg": 162,
+    "catchRate": 60
+  },
+  "351": {
+    "species": "Weather Pokémon",
+    "heightM": 0.3,
+    "weightKg": 0.8,
+    "catchRate": 45
+  },
+  "352": {
+    "species": "Color Swap Pokémon",
+    "heightM": 1,
+    "weightKg": 22,
+    "catchRate": 200
+  },
+  "353": {
+    "species": "Puppet Pokémon",
+    "heightM": 0.6,
+    "weightKg": 2.3,
+    "catchRate": 225
+  },
+  "354": {
+    "species": "Marionette Pokémon",
+    "heightM": 1.1,
+    "weightKg": 12.5,
+    "catchRate": 45
+  },
+  "355": {
+    "species": "Requiem Pokémon",
+    "heightM": 0.8,
+    "weightKg": 15,
+    "catchRate": 190
+  },
+  "356": {
+    "species": "Beckon Pokémon",
+    "heightM": 1.6,
+    "weightKg": 30.6,
+    "catchRate": 90
+  },
+  "357": {
+    "species": "Fruit Pokémon",
+    "heightM": 2,
+    "weightKg": 100,
+    "catchRate": 200
+  },
+  "358": {
+    "species": "Wind Chime Pokémon",
+    "heightM": 0.6,
+    "weightKg": 1,
+    "catchRate": 45
+  },
+  "359": {
+    "species": "Disaster Pokémon",
+    "heightM": 1.2,
+    "weightKg": 47,
+    "catchRate": 30
+  },
+  "360": {
+    "species": "Bright Pokémon",
+    "heightM": 0.6,
+    "weightKg": 14,
+    "catchRate": 125
+  },
+  "361": {
+    "species": "Snow Hat Pokémon",
+    "heightM": 0.7,
+    "weightKg": 16.8,
+    "catchRate": 190
+  },
+  "362": {
+    "species": "Face Pokémon",
+    "heightM": 1.5,
+    "weightKg": 256.5,
+    "catchRate": 75
+  },
+  "363": {
+    "species": "Clap Pokémon",
+    "heightM": 0.8,
+    "weightKg": 39.5,
+    "catchRate": 255
+  },
+  "364": {
+    "species": "Ball Roll Pokémon",
+    "heightM": 1.1,
+    "weightKg": 87.6,
+    "catchRate": 120
+  },
+  "365": {
+    "species": "Ice Break Pokémon",
+    "heightM": 1.4,
+    "weightKg": 150.6,
+    "catchRate": 45
+  },
+  "366": {
+    "species": "Bivalve Pokémon",
+    "heightM": 0.4,
+    "weightKg": 52.5,
+    "catchRate": 255
+  },
+  "367": {
+    "species": "Deep Sea Pokémon",
+    "heightM": 1.7,
+    "weightKg": 27,
+    "catchRate": 60
+  },
+  "368": {
+    "species": "South Sea Pokémon",
+    "heightM": 1.8,
+    "weightKg": 22.6,
+    "catchRate": 60
+  },
+  "369": {
+    "species": "Longevity Pokémon",
+    "heightM": 1,
+    "weightKg": 23.4,
+    "catchRate": 25
+  },
+  "370": {
+    "species": "Rendezvous Pokémon",
+    "heightM": 0.6,
+    "weightKg": 8.7,
+    "catchRate": 225
+  },
+  "371": {
+    "species": "Rock Head Pokémon",
+    "heightM": 0.6,
+    "weightKg": 42.1,
+    "catchRate": 45
+  },
+  "372": {
+    "species": "Endurance Pokémon",
+    "heightM": 1.1,
+    "weightKg": 110.5,
+    "catchRate": 45
+  },
+  "373": {
+    "species": "Dragon Pokémon",
+    "heightM": 1.5,
+    "weightKg": 102.6,
+    "catchRate": 45
+  },
+  "374": {
+    "species": "Iron Ball Pokémon",
+    "heightM": 0.6,
+    "weightKg": 95.2,
+    "catchRate": 3
+  },
+  "375": {
+    "species": "Iron Claw Pokémon",
+    "heightM": 1.2,
+    "weightKg": 202.5,
+    "catchRate": 3
+  },
+  "376": {
+    "species": "Iron Leg Pokémon",
+    "heightM": 1.6,
+    "weightKg": 550,
+    "catchRate": 3
+  },
+  "377": {
+    "species": "Rock Peak Pokémon",
+    "heightM": 1.7,
+    "weightKg": 230,
+    "catchRate": 3
+  },
+  "378": {
+    "species": "Iceberg Pokémon",
+    "heightM": 1.8,
+    "weightKg": 175,
+    "catchRate": 3
+  },
+  "379": {
+    "species": "Iron Pokémon",
+    "heightM": 1.9,
+    "weightKg": 205,
+    "catchRate": 3
+  },
+  "380": {
+    "species": "Eon Pokémon",
+    "heightM": 1.4,
+    "weightKg": 40,
+    "catchRate": 3
+  },
+  "381": {
+    "species": "Eon Pokémon",
+    "heightM": 2,
+    "weightKg": 60,
+    "catchRate": 3
+  },
+  "382": {
+    "species": "Sea Basin Pokémon",
+    "heightM": 4.5,
+    "weightKg": 352,
+    "catchRate": 3
+  },
+  "383": {
+    "species": "Continent Pokémon",
+    "heightM": 3.5,
+    "weightKg": 950,
+    "catchRate": 3
+  },
+  "384": {
+    "species": "Sky High Pokémon",
+    "heightM": 7,
+    "weightKg": 206.5,
+    "catchRate": 45
+  },
+  "385": {
+    "species": "Wish Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1.1,
+    "catchRate": 3
+  },
+  "386": {
+    "species": "DNA Pokémon",
+    "heightM": 1.7,
+    "weightKg": 60.8,
+    "catchRate": 3
+  },
+  "387": {
+    "species": "Tiny Leaf Pokémon",
+    "heightM": 0.4,
+    "weightKg": 10.2,
+    "catchRate": 45
+  },
+  "388": {
+    "species": "Grove Pokémon",
+    "heightM": 1.1,
+    "weightKg": 97,
+    "catchRate": 45
+  },
+  "389": {
+    "species": "Continent Pokémon",
+    "heightM": 2.2,
+    "weightKg": 310,
+    "catchRate": 45
+  },
+  "390": {
+    "species": "Chimp Pokémon",
+    "heightM": 0.5,
+    "weightKg": 6.2,
+    "catchRate": 45
+  },
+  "391": {
+    "species": "Playful Pokémon",
+    "heightM": 0.9,
+    "weightKg": 22,
+    "catchRate": 45
+  },
+  "392": {
+    "species": "Flame Pokémon",
+    "heightM": 1.2,
+    "weightKg": 55,
+    "catchRate": 45
+  },
+  "393": {
+    "species": "Penguin Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.2,
+    "catchRate": 45
+  },
+  "394": {
+    "species": "Penguin Pokémon",
+    "heightM": 0.8,
+    "weightKg": 23,
+    "catchRate": 45
+  },
+  "395": {
+    "species": "Emperor Pokémon",
+    "heightM": 1.7,
+    "weightKg": 84.5,
+    "catchRate": 45
+  },
+  "396": {
+    "species": "Starling Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2,
+    "catchRate": 255
+  },
+  "397": {
+    "species": "Starling Pokémon",
+    "heightM": 0.6,
+    "weightKg": 15.5,
+    "catchRate": 120
+  },
+  "398": {
+    "species": "Predator Pokémon",
+    "heightM": 1.2,
+    "weightKg": 24.9,
+    "catchRate": 45
+  },
+  "399": {
+    "species": "Plump Mouse Pokémon",
+    "heightM": 0.5,
+    "weightKg": 20,
+    "catchRate": 255
+  },
+  "400": {
+    "species": "Beaver Pokémon",
+    "heightM": 1,
+    "weightKg": 31.5,
+    "catchRate": 127
+  },
+  "401": {
+    "species": "Cricket Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2.2,
+    "catchRate": 255
+  },
+  "402": {
+    "species": "Cricket Pokémon",
+    "heightM": 1,
+    "weightKg": 25.5,
+    "catchRate": 45
+  },
+  "403": {
+    "species": "Flash Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9.5,
+    "catchRate": 235
+  },
+  "404": {
+    "species": "Spark Pokémon",
+    "heightM": 0.9,
+    "weightKg": 30.5,
+    "catchRate": 120
+  },
+  "405": {
+    "species": "Gleam Eyes Pokémon",
+    "heightM": 1.4,
+    "weightKg": 42,
+    "catchRate": 45
+  },
+  "406": {
+    "species": "Bud Pokémon",
+    "heightM": 0.2,
+    "weightKg": 1.2,
+    "catchRate": 255
+  },
+  "407": {
+    "species": "Bouquet Pokémon",
+    "heightM": 0.9,
+    "weightKg": 14.5,
+    "catchRate": 75
+  },
+  "408": {
+    "species": "Head Butt Pokémon",
+    "heightM": 0.9,
+    "weightKg": 31.5,
+    "catchRate": 45
+  },
+  "409": {
+    "species": "Head Butt Pokémon",
+    "heightM": 1.6,
+    "weightKg": 102.5,
+    "catchRate": 45
+  },
+  "410": {
+    "species": "Shield Pokémon",
+    "heightM": 0.5,
+    "weightKg": 57,
+    "catchRate": 45
+  },
+  "411": {
+    "species": "Shield Pokémon",
+    "heightM": 1.3,
+    "weightKg": 149.5,
+    "catchRate": 45
+  },
+  "412": {
+    "species": "Bagworm Pokémon",
+    "heightM": 0.2,
+    "weightKg": 3.4,
+    "catchRate": 120
+  },
+  "413": {
+    "species": "Bagworm Pokémon",
+    "heightM": 0.5,
+    "weightKg": 6.5,
+    "catchRate": 45
+  },
+  "414": {
+    "species": "Moth Pokémon",
+    "heightM": 0.9,
+    "weightKg": 23.3,
+    "catchRate": 45
+  },
+  "415": {
+    "species": "Tiny Bee Pokémon",
+    "heightM": 0.3,
+    "weightKg": 5.5,
+    "catchRate": 120
+  },
+  "416": {
+    "species": "Beehive Pokémon",
+    "heightM": 1.2,
+    "weightKg": 38.5,
+    "catchRate": 45
+  },
+  "417": {
+    "species": "EleSquirrel Pokémon",
+    "heightM": 0.4,
+    "weightKg": 3.9,
+    "catchRate": 200
+  },
+  "418": {
+    "species": "Sea Weasel Pokémon",
+    "heightM": 0.7,
+    "weightKg": 29.5,
+    "catchRate": 190
+  },
+  "419": {
+    "species": "Sea Weasel Pokémon",
+    "heightM": 1.1,
+    "weightKg": 33.5,
+    "catchRate": 75
+  },
+  "420": {
+    "species": "Cherry Pokémon",
+    "heightM": 0.4,
+    "weightKg": 3.3,
+    "catchRate": 190
+  },
+  "421": {
+    "species": "Blossom Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9.3,
+    "catchRate": 75
+  },
+  "422": {
+    "species": "Sea Slug Pokémon",
+    "heightM": 0.3,
+    "weightKg": 6.3,
+    "catchRate": 190
+  },
+  "423": {
+    "species": "Sea Slug Pokémon",
+    "heightM": 0.9,
+    "weightKg": 29.9,
+    "catchRate": 75
+  },
+  "424": {
+    "species": "Long Tail Pokémon",
+    "heightM": 1.2,
+    "weightKg": 20.3,
+    "catchRate": 45
+  },
+  "425": {
+    "species": "Balloon Pokémon",
+    "heightM": 0.4,
+    "weightKg": 1.2,
+    "catchRate": 125
+  },
+  "426": {
+    "species": "Blimp Pokémon",
+    "heightM": 1.2,
+    "weightKg": 15,
+    "catchRate": 60
+  },
+  "427": {
+    "species": "Rabbit Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.5,
+    "catchRate": 190
+  },
+  "428": {
+    "species": "Rabbit Pokémon",
+    "heightM": 1.2,
+    "weightKg": 33.3,
+    "catchRate": 60
+  },
+  "429": {
+    "species": "Magical Pokémon",
+    "heightM": 0.9,
+    "weightKg": 4.4,
+    "catchRate": 45
+  },
+  "430": {
+    "species": "Big Boss Pokémon",
+    "heightM": 0.9,
+    "weightKg": 27.3,
+    "catchRate": 30
+  },
+  "431": {
+    "species": "Catty Pokémon",
+    "heightM": 0.5,
+    "weightKg": 3.9,
+    "catchRate": 190
+  },
+  "432": {
+    "species": "Tiger Cat Pokémon",
+    "heightM": 1,
+    "weightKg": 43.8,
+    "catchRate": 75
+  },
+  "433": {
+    "species": "Bell Pokémon",
+    "heightM": 0.2,
+    "weightKg": 0.6,
+    "catchRate": 120
+  },
+  "434": {
+    "species": "Skunk Pokémon",
+    "heightM": 0.4,
+    "weightKg": 19.2,
+    "catchRate": 225
+  },
+  "435": {
+    "species": "Skunk Pokémon",
+    "heightM": 1,
+    "weightKg": 38,
+    "catchRate": 60
+  },
+  "436": {
+    "species": "Bronze Pokémon",
+    "heightM": 0.5,
+    "weightKg": 60.5,
+    "catchRate": 255
+  },
+  "437": {
+    "species": "Bronze Bell Pokémon",
+    "heightM": 1.3,
+    "weightKg": 187,
+    "catchRate": 90
+  },
+  "438": {
+    "species": "Bonsai Pokémon",
+    "heightM": 0.5,
+    "weightKg": 15,
+    "catchRate": 255
+  },
+  "439": {
+    "species": "Mime Pokémon",
+    "heightM": 0.6,
+    "weightKg": 13,
+    "catchRate": 145
+  },
+  "440": {
+    "species": "Playhouse Pokémon",
+    "heightM": 0.6,
+    "weightKg": 24.4,
+    "catchRate": 130
+  },
+  "441": {
+    "species": "Music Note Pokémon",
+    "heightM": 0.5,
+    "weightKg": 1.9,
+    "catchRate": 30
+  },
+  "442": {
+    "species": "Forbidden Pokémon",
+    "heightM": 1,
+    "weightKg": 108,
+    "catchRate": 100
+  },
+  "443": {
+    "species": "Land Shark Pokémon",
+    "heightM": 0.7,
+    "weightKg": 20.5,
+    "catchRate": 45
+  },
+  "444": {
+    "species": "Cave Pokémon",
+    "heightM": 1.4,
+    "weightKg": 56,
+    "catchRate": 45
+  },
+  "445": {
+    "species": "Mach Pokémon",
+    "heightM": 1.9,
+    "weightKg": 95,
+    "catchRate": 45
+  },
+  "446": {
+    "species": "Big Eater Pokémon",
+    "heightM": 0.6,
+    "weightKg": 105,
+    "catchRate": 50
+  },
+  "447": {
+    "species": "Emanation Pokémon",
+    "heightM": 0.7,
+    "weightKg": 20.2,
+    "catchRate": 75
+  },
+  "448": {
+    "species": "Aura Pokémon",
+    "heightM": 1.2,
+    "weightKg": 54,
+    "catchRate": 45
+  },
+  "449": {
+    "species": "Hippo Pokémon",
+    "heightM": 0.8,
+    "weightKg": 49.5,
+    "catchRate": 140
+  },
+  "450": {
+    "species": "Heavyweight Pokémon",
+    "heightM": 2,
+    "weightKg": 300,
+    "catchRate": 60
+  },
+  "451": {
+    "species": "Scorpion Pokémon",
+    "heightM": 0.8,
+    "weightKg": 12,
+    "catchRate": 120
+  },
+  "452": {
+    "species": "Ogre Scorpion Pokémon",
+    "heightM": 1.3,
+    "weightKg": 61.5,
+    "catchRate": 45
+  },
+  "453": {
+    "species": "Toxic Mouth Pokémon",
+    "heightM": 0.7,
+    "weightKg": 23,
+    "catchRate": 140
+  },
+  "454": {
+    "species": "Toxic Mouth Pokémon",
+    "heightM": 1.3,
+    "weightKg": 44.4,
+    "catchRate": 75
+  },
+  "455": {
+    "species": "Bug Catcher Pokémon",
+    "heightM": 1.4,
+    "weightKg": 27,
+    "catchRate": 200
+  },
+  "456": {
+    "species": "Wing Fish Pokémon",
+    "heightM": 0.4,
+    "weightKg": 7,
+    "catchRate": 190
+  },
+  "457": {
+    "species": "Neon Pokémon",
+    "heightM": 1.2,
+    "weightKg": 24,
+    "catchRate": 75
+  },
+  "458": {
+    "species": "Kite Pokémon",
+    "heightM": 1,
+    "weightKg": 65,
+    "catchRate": 25
+  },
+  "459": {
+    "species": "Frost Tree Pokémon",
+    "heightM": 1,
+    "weightKg": 50.5,
+    "catchRate": 120
+  },
+  "460": {
+    "species": "Frost Tree Pokémon",
+    "heightM": 2.2,
+    "weightKg": 135.5,
+    "catchRate": 60
+  },
+  "461": {
+    "species": "Sharp Claw Pokémon",
+    "heightM": 1.1,
+    "weightKg": 34,
+    "catchRate": 45
+  },
+  "462": {
+    "species": "Magnet Area Pokémon",
+    "heightM": 1.2,
+    "weightKg": 180,
+    "catchRate": 30
+  },
+  "463": {
+    "species": "Licking Pokémon",
+    "heightM": 1.7,
+    "weightKg": 140,
+    "catchRate": 30
+  },
+  "464": {
+    "species": "Drill Pokémon",
+    "heightM": 2.4,
+    "weightKg": 282.8,
+    "catchRate": 30
+  },
+  "465": {
+    "species": "Vine Pokémon",
+    "heightM": 2,
+    "weightKg": 128.6,
+    "catchRate": 30
+  },
+  "466": {
+    "species": "Thunderbolt Pokémon",
+    "heightM": 1.8,
+    "weightKg": 138.6,
+    "catchRate": 30
+  },
+  "467": {
+    "species": "Blast Pokémon",
+    "heightM": 1.6,
+    "weightKg": 68,
+    "catchRate": 30
+  },
+  "468": {
+    "species": "Jubilee Pokémon",
+    "heightM": 1.5,
+    "weightKg": 38,
+    "catchRate": 30
+  },
+  "469": {
+    "species": "Ogre Darner Pokémon",
+    "heightM": 1.9,
+    "weightKg": 51.5,
+    "catchRate": 30
+  },
+  "470": {
+    "species": "Verdant Pokémon",
+    "heightM": 1,
+    "weightKg": 25.5,
+    "catchRate": 45
+  },
+  "471": {
+    "species": "Fresh Snow Pokémon",
+    "heightM": 0.8,
+    "weightKg": 25.9,
+    "catchRate": 45
+  },
+  "472": {
+    "species": "Fang Scorpion Pokémon",
+    "heightM": 2,
+    "weightKg": 42.5,
+    "catchRate": 30
+  },
+  "473": {
+    "species": "Twin Tusk Pokémon",
+    "heightM": 2.5,
+    "weightKg": 291,
+    "catchRate": 50
+  },
+  "474": {
+    "species": "Virtual Pokémon",
+    "heightM": 0.9,
+    "weightKg": 34,
+    "catchRate": 30
+  },
+  "475": {
+    "species": "Blade Pokémon",
+    "heightM": 1.6,
+    "weightKg": 52,
+    "catchRate": 45
+  },
+  "476": {
+    "species": "Compass Pokémon",
+    "heightM": 1.4,
+    "weightKg": 340,
+    "catchRate": 60
+  },
+  "477": {
+    "species": "Gripper Pokémon",
+    "heightM": 2.2,
+    "weightKg": 106.6,
+    "catchRate": 45
+  },
+  "478": {
+    "species": "Snow Land Pokémon",
+    "heightM": 1.3,
+    "weightKg": 26.6,
+    "catchRate": 75
+  },
+  "479": {
+    "species": "Plasma Pokémon",
+    "heightM": 0.3,
+    "weightKg": 0.3,
+    "catchRate": 45
+  },
+  "480": {
+    "species": "Knowledge Pokémon",
+    "heightM": 0.3,
+    "weightKg": 0.3,
+    "catchRate": 3
+  },
+  "481": {
+    "species": "Emotion Pokémon",
+    "heightM": 0.3,
+    "weightKg": 0.3,
+    "catchRate": 3
+  },
+  "482": {
+    "species": "Willpower Pokémon",
+    "heightM": 0.3,
+    "weightKg": 0.3,
+    "catchRate": 3
+  },
+  "483": {
+    "species": "Temporal Pokémon",
+    "heightM": 5.4,
+    "weightKg": 683,
+    "catchRate": 3
+  },
+  "484": {
+    "species": "Spatial Pokémon",
+    "heightM": 4.2,
+    "weightKg": 336,
+    "catchRate": 3
+  },
+  "485": {
+    "species": "Lava Dome Pokémon",
+    "heightM": 1.7,
+    "weightKg": 430,
+    "catchRate": 3
+  },
+  "486": {
+    "species": "Colossal Pokémon",
+    "heightM": 3.7,
+    "weightKg": 420,
+    "catchRate": 3
+  },
+  "487": {
+    "species": "Renegade Pokémon",
+    "heightM": 4.5,
+    "weightKg": 750,
+    "catchRate": 3
+  },
+  "488": {
+    "species": "Lunar Pokémon",
+    "heightM": 1.5,
+    "weightKg": 85.6,
+    "catchRate": 3
+  },
+  "489": {
+    "species": "Sea Drifter Pokémon",
+    "heightM": 0.4,
+    "weightKg": 3.1,
+    "catchRate": 30
+  },
+  "490": {
+    "species": "Seafaring Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1.4,
+    "catchRate": 3
+  },
+  "491": {
+    "species": "Pitch-Black Pokémon",
+    "heightM": 1.5,
+    "weightKg": 50.5,
+    "catchRate": 3
+  },
+  "492": {
+    "species": "Gratitude Pokémon",
+    "heightM": 0.2,
+    "weightKg": 2.1,
+    "catchRate": 45
+  },
+  "493": {
+    "species": "Alpha Pokémon",
+    "heightM": 3.2,
+    "weightKg": 320,
+    "catchRate": 3
+  },
+  "494": {
+    "species": "Victory Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4,
+    "catchRate": 3
+  },
+  "495": {
+    "species": "Grass Snake Pokémon",
+    "heightM": 0.6,
+    "weightKg": 8.1,
+    "catchRate": 45
+  },
+  "496": {
+    "species": "Grass Snake Pokémon",
+    "heightM": 0.8,
+    "weightKg": 16,
+    "catchRate": 45
+  },
+  "497": {
+    "species": "Regal Pokémon",
+    "heightM": 3.3,
+    "weightKg": 63,
+    "catchRate": 45
+  },
+  "498": {
+    "species": "Fire Pig Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9.9,
+    "catchRate": 45
+  },
+  "499": {
+    "species": "Fire Pig Pokémon",
+    "heightM": 1,
+    "weightKg": 55.5,
+    "catchRate": 45
+  },
+  "500": {
+    "species": "Mega Fire Pig Pokémon",
+    "heightM": 1.6,
+    "weightKg": 150,
+    "catchRate": 45
+  },
+  "501": {
+    "species": "Sea Otter Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5.9,
+    "catchRate": 45
+  },
+  "502": {
+    "species": "Discipline Pokémon",
+    "heightM": 0.8,
+    "weightKg": 24.5,
+    "catchRate": 45
+  },
+  "503": {
+    "species": "Formidable Pokémon",
+    "heightM": 1.5,
+    "weightKg": 94.6,
+    "catchRate": 45
+  },
+  "504": {
+    "species": "Scout Pokémon",
+    "heightM": 0.5,
+    "weightKg": 11.6,
+    "catchRate": 255
+  },
+  "505": {
+    "species": "Lookout Pokémon",
+    "heightM": 1.1,
+    "weightKg": 27,
+    "catchRate": 255
+  },
+  "506": {
+    "species": "Puppy Pokémon",
+    "heightM": 0.4,
+    "weightKg": 4.1,
+    "catchRate": 255
+  },
+  "507": {
+    "species": "Loyal Dog Pokémon",
+    "heightM": 0.9,
+    "weightKg": 14.7,
+    "catchRate": 120
+  },
+  "508": {
+    "species": "Big-Hearted Pokémon",
+    "heightM": 1.2,
+    "weightKg": 61,
+    "catchRate": 45
+  },
+  "509": {
+    "species": "Devious Pokémon",
+    "heightM": 0.4,
+    "weightKg": 10.1,
+    "catchRate": 255
+  },
+  "510": {
+    "species": "Cruel Pokémon",
+    "heightM": 1.1,
+    "weightKg": 37.5,
+    "catchRate": 90
+  },
+  "511": {
+    "species": "Grass Monkey Pokémon",
+    "heightM": 0.6,
+    "weightKg": 10.5,
+    "catchRate": 190
+  },
+  "512": {
+    "species": "Thorn Monkey Pokémon",
+    "heightM": 1.1,
+    "weightKg": 30.5,
+    "catchRate": 75
+  },
+  "513": {
+    "species": "High Temp Pokémon",
+    "heightM": 0.6,
+    "weightKg": 11,
+    "catchRate": 190
+  },
+  "514": {
+    "species": "Ember Pokémon",
+    "heightM": 1,
+    "weightKg": 28,
+    "catchRate": 75
+  },
+  "515": {
+    "species": "Spray Pokémon",
+    "heightM": 0.6,
+    "weightKg": 13.5,
+    "catchRate": 190
+  },
+  "516": {
+    "species": "Geyser Pokémon",
+    "heightM": 1,
+    "weightKg": 29,
+    "catchRate": 75
+  },
+  "517": {
+    "species": "Dream Eater Pokémon",
+    "heightM": 0.6,
+    "weightKg": 23.3,
+    "catchRate": 190
+  },
+  "518": {
+    "species": "Drowsing Pokémon",
+    "heightM": 1.1,
+    "weightKg": 60.5,
+    "catchRate": 75
+  },
+  "519": {
+    "species": "Tiny Pigeon Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2.1,
+    "catchRate": 255
+  },
+  "520": {
+    "species": "Wild Pigeon Pokémon",
+    "heightM": 0.6,
+    "weightKg": 15,
+    "catchRate": 120
+  },
+  "521": {
+    "species": "Proud Pokémon",
+    "heightM": 1.2,
+    "weightKg": 29,
+    "catchRate": 45
+  },
+  "522": {
+    "species": "Electrified Pokémon",
+    "heightM": 0.8,
+    "weightKg": 29.8,
+    "catchRate": 190
+  },
+  "523": {
+    "species": "Thunderbolt Pokémon",
+    "heightM": 1.6,
+    "weightKg": 79.5,
+    "catchRate": 75
+  },
+  "524": {
+    "species": "Mantle Pokémon",
+    "heightM": 0.4,
+    "weightKg": 18,
+    "catchRate": 255
+  },
+  "525": {
+    "species": "Ore Pokémon",
+    "heightM": 0.9,
+    "weightKg": 102,
+    "catchRate": 120
+  },
+  "526": {
+    "species": "Compressed Pokémon",
+    "heightM": 1.7,
+    "weightKg": 260,
+    "catchRate": 45
+  },
+  "527": {
+    "species": "Bat Pokémon",
+    "heightM": 0.4,
+    "weightKg": 2.1,
+    "catchRate": 190
+  },
+  "528": {
+    "species": "Courting Pokémon",
+    "heightM": 0.9,
+    "weightKg": 10.5,
+    "catchRate": 45
+  },
+  "529": {
+    "species": "Mole Pokémon",
+    "heightM": 0.3,
+    "weightKg": 8.5,
+    "catchRate": 120
+  },
+  "530": {
+    "species": "Subterrene Pokémon",
+    "heightM": 0.7,
+    "weightKg": 40.4,
+    "catchRate": 60
+  },
+  "531": {
+    "species": "Hearing Pokémon",
+    "heightM": 1.1,
+    "weightKg": 31,
+    "catchRate": 255
+  },
+  "532": {
+    "species": "Muscular Pokémon",
+    "heightM": 0.6,
+    "weightKg": 12.5,
+    "catchRate": 180
+  },
+  "533": {
+    "species": "Muscular Pokémon",
+    "heightM": 1.2,
+    "weightKg": 40,
+    "catchRate": 90
+  },
+  "534": {
+    "species": "Muscular Pokémon",
+    "heightM": 1.4,
+    "weightKg": 87,
+    "catchRate": 45
+  },
+  "535": {
+    "species": "Tadpole Pokémon",
+    "heightM": 0.5,
+    "weightKg": 4.5,
+    "catchRate": 255
+  },
+  "536": {
+    "species": "Vibration Pokémon",
+    "heightM": 0.8,
+    "weightKg": 17,
+    "catchRate": 120
+  },
+  "537": {
+    "species": "Vibration Pokémon",
+    "heightM": 1.5,
+    "weightKg": 62,
+    "catchRate": 45
+  },
+  "538": {
+    "species": "Judo Pokémon",
+    "heightM": 1.3,
+    "weightKg": 55.5,
+    "catchRate": 45
+  },
+  "539": {
+    "species": "Karate Pokémon",
+    "heightM": 1.4,
+    "weightKg": 51,
+    "catchRate": 45
+  },
+  "540": {
+    "species": "Sewing Pokémon",
+    "heightM": 0.3,
+    "weightKg": 2.5,
+    "catchRate": 255
+  },
+  "541": {
+    "species": "Leaf-Wrapped Pokémon",
+    "heightM": 0.5,
+    "weightKg": 7.3,
+    "catchRate": 120
+  },
+  "542": {
+    "species": "Nurturing Pokémon",
+    "heightM": 1.2,
+    "weightKg": 20.5,
+    "catchRate": 45
+  },
+  "543": {
+    "species": "Centipede Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.3,
+    "catchRate": 255
+  },
+  "544": {
+    "species": "Curlipede Pokémon",
+    "heightM": 1.2,
+    "weightKg": 58.5,
+    "catchRate": 120
+  },
+  "545": {
+    "species": "Megapede Pokémon",
+    "heightM": 2.5,
+    "weightKg": 200.5,
+    "catchRate": 45
+  },
+  "546": {
+    "species": "Cotton Puff Pokémon",
+    "heightM": 0.3,
+    "weightKg": 0.6,
+    "catchRate": 190
+  },
+  "547": {
+    "species": "Windveiled Pokémon",
+    "heightM": 0.7,
+    "weightKg": 6.6,
+    "catchRate": 75
+  },
+  "548": {
+    "species": "Bulb Pokémon",
+    "heightM": 0.5,
+    "weightKg": 6.6,
+    "catchRate": 190
+  },
+  "549": {
+    "species": "Flowering Pokémon",
+    "heightM": 1.1,
+    "weightKg": 16.3,
+    "catchRate": 75
+  },
+  "550": {
+    "species": "Hostile Pokémon",
+    "heightM": 1,
+    "weightKg": 18,
+    "catchRate": 25
+  },
+  "551": {
+    "species": "Desert Croc Pokémon",
+    "heightM": 0.7,
+    "weightKg": 15.2,
+    "catchRate": 180
+  },
+  "552": {
+    "species": "Desert Croc Pokémon",
+    "heightM": 1,
+    "weightKg": 33.4,
+    "catchRate": 90
+  },
+  "553": {
+    "species": "Intimidation Pokémon",
+    "heightM": 1.5,
+    "weightKg": 96.3,
+    "catchRate": 45
+  },
+  "554": {
+    "species": "Zen Charm Pokémon",
+    "heightM": 0.6,
+    "weightKg": 37.5,
+    "catchRate": 120
+  },
+  "555": {
+    "species": "Blazing Pokémon",
+    "heightM": 1.3,
+    "weightKg": 92.9,
+    "catchRate": 60
+  },
+  "556": {
+    "species": "Cactus Pokémon",
+    "heightM": 1,
+    "weightKg": 28,
+    "catchRate": 255
+  },
+  "557": {
+    "species": "Rock Inn Pokémon",
+    "heightM": 0.3,
+    "weightKg": 14.5,
+    "catchRate": 190
+  },
+  "558": {
+    "species": "Stone Home Pokémon",
+    "heightM": 1.4,
+    "weightKg": 200,
+    "catchRate": 75
+  },
+  "559": {
+    "species": "Shedding Pokémon",
+    "heightM": 0.6,
+    "weightKg": 11.8,
+    "catchRate": 180
+  },
+  "560": {
+    "species": "Hoodlum Pokémon",
+    "heightM": 1.1,
+    "weightKg": 30,
+    "catchRate": 90
+  },
+  "561": {
+    "species": "Avianoid Pokémon",
+    "heightM": 1.4,
+    "weightKg": 14,
+    "catchRate": 45
+  },
+  "562": {
+    "species": "Spirit Pokémon",
+    "heightM": 0.5,
+    "weightKg": 1.5,
+    "catchRate": 190
+  },
+  "563": {
+    "species": "Coffin Pokémon",
+    "heightM": 1.7,
+    "weightKg": 76.5,
+    "catchRate": 90
+  },
+  "564": {
+    "species": "Prototurtle Pokémon",
+    "heightM": 0.7,
+    "weightKg": 16.5,
+    "catchRate": 45
+  },
+  "565": {
+    "species": "Prototurtle Pokémon",
+    "heightM": 1.2,
+    "weightKg": 81,
+    "catchRate": 45
+  },
+  "566": {
+    "species": "First Bird Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9.5,
+    "catchRate": 45
+  },
+  "567": {
+    "species": "First Bird Pokémon",
+    "heightM": 1.4,
+    "weightKg": 32,
+    "catchRate": 45
+  },
+  "568": {
+    "species": "Trash Bag Pokémon",
+    "heightM": 0.6,
+    "weightKg": 31,
+    "catchRate": 190
+  },
+  "569": {
+    "species": "Trash Heap Pokémon",
+    "heightM": 1.9,
+    "weightKg": 107.3,
+    "catchRate": 60
+  },
+  "570": {
+    "species": "Tricky Fox Pokémon",
+    "heightM": 0.7,
+    "weightKg": 12.5,
+    "catchRate": 75
+  },
+  "571": {
+    "species": "Illusion Fox Pokémon",
+    "heightM": 1.6,
+    "weightKg": 81.1,
+    "catchRate": 45
+  },
+  "572": {
+    "species": "Chinchilla Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.8,
+    "catchRate": 255
+  },
+  "573": {
+    "species": "Scarf Pokémon",
+    "heightM": 0.5,
+    "weightKg": 7.5,
+    "catchRate": 60
+  },
+  "574": {
+    "species": "Fixation Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.8,
+    "catchRate": 200
+  },
+  "575": {
+    "species": "Manipulate Pokémon",
+    "heightM": 0.7,
+    "weightKg": 18,
+    "catchRate": 100
+  },
+  "576": {
+    "species": "Astral Body Pokémon",
+    "heightM": 1.5,
+    "weightKg": 44,
+    "catchRate": 50
+  },
+  "577": {
+    "species": "Cell Pokémon",
+    "heightM": 0.3,
+    "weightKg": 1,
+    "catchRate": 200
+  },
+  "578": {
+    "species": "Mitosis Pokémon",
+    "heightM": 0.6,
+    "weightKg": 8,
+    "catchRate": 100
+  },
+  "579": {
+    "species": "Multiplying Pokémon",
+    "heightM": 1,
+    "weightKg": 20.1,
+    "catchRate": 50
+  },
+  "580": {
+    "species": "Water Bird Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5.5,
+    "catchRate": 190
+  },
+  "581": {
+    "species": "White Bird Pokémon",
+    "heightM": 1.3,
+    "weightKg": 24.2,
+    "catchRate": 45
+  },
+  "582": {
+    "species": "Fresh Snow Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5.7,
+    "catchRate": 255
+  },
+  "583": {
+    "species": "Icy Snow Pokémon",
+    "heightM": 1.1,
+    "weightKg": 41,
+    "catchRate": 120
+  },
+  "584": {
+    "species": "Snowstorm Pokémon",
+    "heightM": 1.3,
+    "weightKg": 57.5,
+    "catchRate": 45
+  },
+  "585": {
+    "species": "Season Pokémon",
+    "heightM": 0.6,
+    "weightKg": 19.5,
+    "catchRate": 190
+  },
+  "586": {
+    "species": "Season Pokémon",
+    "heightM": 1.9,
+    "weightKg": 92.5,
+    "catchRate": 75
+  },
+  "587": {
+    "species": "Sky Squirrel Pokémon",
+    "heightM": 0.4,
+    "weightKg": 5,
+    "catchRate": 200
+  },
+  "588": {
+    "species": "Clamping Pokémon",
+    "heightM": 0.5,
+    "weightKg": 5.9,
+    "catchRate": 200
+  },
+  "589": {
+    "species": "Cavalry Pokémon",
+    "heightM": 1,
+    "weightKg": 33,
+    "catchRate": 75
+  },
+  "590": {
+    "species": "Mushroom Pokémon",
+    "heightM": 0.2,
+    "weightKg": 1,
+    "catchRate": 190
+  },
+  "591": {
+    "species": "Mushroom Pokémon",
+    "heightM": 0.6,
+    "weightKg": 10.5,
+    "catchRate": 75
+  },
+  "592": {
+    "species": "Floating Pokémon",
+    "heightM": 1.2,
+    "weightKg": 33,
+    "catchRate": 190
+  },
+  "593": {
+    "species": "Floating Pokémon",
+    "heightM": 2.2,
+    "weightKg": 135,
+    "catchRate": 60
+  },
+  "594": {
+    "species": "Caring Pokémon",
+    "heightM": 1.2,
+    "weightKg": 31.6,
+    "catchRate": 75
+  },
+  "595": {
+    "species": "Attaching Pokémon",
+    "heightM": 0.1,
+    "weightKg": 0.6,
+    "catchRate": 190
+  },
+  "596": {
+    "species": "EleSpider Pokémon",
+    "heightM": 0.8,
+    "weightKg": 14.3,
+    "catchRate": 75
+  },
+  "597": {
+    "species": "Thorn Seed Pokémon",
+    "heightM": 0.6,
+    "weightKg": 18.8,
+    "catchRate": 255
+  },
+  "598": {
+    "species": "Thorn Pod Pokémon",
+    "heightM": 1,
+    "weightKg": 110,
+    "catchRate": 90
+  },
+  "599": {
+    "species": "Gear Pokémon",
+    "heightM": 0.3,
+    "weightKg": 21,
+    "catchRate": 130
+  },
+  "600": {
+    "species": "Gear Pokémon",
+    "heightM": 0.6,
+    "weightKg": 51,
+    "catchRate": 60
+  },
+  "601": {
+    "species": "Gear Pokémon",
+    "heightM": 0.6,
+    "weightKg": 81,
+    "catchRate": 30
+  },
+  "602": {
+    "species": "EleFish Pokémon",
+    "heightM": 0.2,
+    "weightKg": 0.3,
+    "catchRate": 190
+  },
+  "603": {
+    "species": "EleFish Pokémon",
+    "heightM": 1.2,
+    "weightKg": 22,
+    "catchRate": 60
+  },
+  "604": {
+    "species": "EleFish Pokémon",
+    "heightM": 2.1,
+    "weightKg": 80.5,
+    "catchRate": 30
+  },
+  "605": {
+    "species": "Cerebral Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9,
+    "catchRate": 255
+  },
+  "606": {
+    "species": "Cerebral Pokémon",
+    "heightM": 1,
+    "weightKg": 34.5,
+    "catchRate": 90
+  },
+  "607": {
+    "species": "Candle Pokémon",
+    "heightM": 0.3,
+    "weightKg": 3.1,
+    "catchRate": 190
+  },
+  "608": {
+    "species": "Lamp Pokémon",
+    "heightM": 0.6,
+    "weightKg": 13,
+    "catchRate": 90
+  },
+  "609": {
+    "species": "Luring Pokémon",
+    "heightM": 1,
+    "weightKg": 34.3,
+    "catchRate": 45
+  },
+  "610": {
+    "species": "Tusk Pokémon",
+    "heightM": 0.6,
+    "weightKg": 18,
+    "catchRate": 75
+  },
+  "611": {
+    "species": "Axe Jaw Pokémon",
+    "heightM": 1,
+    "weightKg": 36,
+    "catchRate": 60
+  },
+  "612": {
+    "species": "Axe Jaw Pokémon",
+    "heightM": 1.8,
+    "weightKg": 105.5,
+    "catchRate": 45
+  },
+  "613": {
+    "species": "Chill Pokémon",
+    "heightM": 0.5,
+    "weightKg": 8.5,
+    "catchRate": 120
+  },
+  "614": {
+    "species": "Freezing Pokémon",
+    "heightM": 2.6,
+    "weightKg": 260,
+    "catchRate": 60
+  },
+  "615": {
+    "species": "Crystallizing Pokémon",
+    "heightM": 1.1,
+    "weightKg": 148,
+    "catchRate": 25
+  },
+  "616": {
+    "species": "Snail Pokémon",
+    "heightM": 0.4,
+    "weightKg": 7.7,
+    "catchRate": 200
+  },
+  "617": {
+    "species": "Shell Out Pokémon",
+    "heightM": 0.8,
+    "weightKg": 25.3,
+    "catchRate": 75
+  },
+  "618": {
+    "species": "Trap Pokémon",
+    "heightM": 0.7,
+    "weightKg": 11,
+    "catchRate": 75
+  },
+  "619": {
+    "species": "Martial Arts Pokémon",
+    "heightM": 0.9,
+    "weightKg": 20,
+    "catchRate": 180
+  },
+  "620": {
+    "species": "Martial Arts Pokémon",
+    "heightM": 1.4,
+    "weightKg": 35.5,
+    "catchRate": 45
+  },
+  "621": {
+    "species": "Cave Pokémon",
+    "heightM": 1.6,
+    "weightKg": 139,
+    "catchRate": 45
+  },
+  "622": {
+    "species": "Automaton Pokémon",
+    "heightM": 1,
+    "weightKg": 92,
+    "catchRate": 190
+  },
+  "623": {
+    "species": "Automaton Pokémon",
+    "heightM": 2.8,
+    "weightKg": 330,
+    "catchRate": 90
+  },
+  "624": {
+    "species": "Sharp Blade Pokémon",
+    "heightM": 0.5,
+    "weightKg": 10.2,
+    "catchRate": 120
+  },
+  "625": {
+    "species": "Sword Blade Pokémon",
+    "heightM": 1.6,
+    "weightKg": 70,
+    "catchRate": 45
+  },
+  "626": {
+    "species": "Bash Buffalo Pokémon",
+    "heightM": 1.6,
+    "weightKg": 94.6,
+    "catchRate": 45
+  },
+  "627": {
+    "species": "Eaglet Pokémon",
+    "heightM": 0.5,
+    "weightKg": 10.5,
+    "catchRate": 190
+  },
+  "628": {
+    "species": "Valiant Pokémon",
+    "heightM": 1.5,
+    "weightKg": 41,
+    "catchRate": 60
+  },
+  "629": {
+    "species": "Diapered Pokémon",
+    "heightM": 0.5,
+    "weightKg": 9,
+    "catchRate": 190
+  },
+  "630": {
+    "species": "Bone Vulture Pokémon",
+    "heightM": 1.2,
+    "weightKg": 39.5,
+    "catchRate": 60
+  },
+  "631": {
+    "species": "Anteater Pokémon",
+    "heightM": 1.4,
+    "weightKg": 58,
+    "catchRate": 90
+  },
+  "632": {
+    "species": "Iron Ant Pokémon",
+    "heightM": 0.3,
+    "weightKg": 33,
+    "catchRate": 90
+  },
+  "633": {
+    "species": "Irate Pokémon",
+    "heightM": 0.8,
+    "weightKg": 17.3,
+    "catchRate": 45
+  },
+  "634": {
+    "species": "Hostile Pokémon",
+    "heightM": 1.4,
+    "weightKg": 50,
+    "catchRate": 45
+  },
+  "635": {
+    "species": "Brutal Pokémon",
+    "heightM": 1.8,
+    "weightKg": 160,
+    "catchRate": 45
+  },
+  "636": {
+    "species": "Torch Pokémon",
+    "heightM": 1.1,
+    "weightKg": 28.8,
+    "catchRate": 45
+  },
+  "637": {
+    "species": "Sun Pokémon",
+    "heightM": 1.6,
+    "weightKg": 46,
+    "catchRate": 15
+  },
+  "638": {
+    "species": "Iron Will Pokémon",
+    "heightM": 2.1,
+    "weightKg": 250,
+    "catchRate": 3
+  },
+  "639": {
+    "species": "Cavern Pokémon",
+    "heightM": 1.9,
+    "weightKg": 260,
+    "catchRate": 3
+  },
+  "640": {
+    "species": "Grassland Pokémon",
+    "heightM": 2,
+    "weightKg": 200,
+    "catchRate": 3
+  },
+  "641": {
+    "species": "Cyclone Pokémon",
+    "heightM": 1.5,
+    "weightKg": 63,
+    "catchRate": 3
+  },
+  "642": {
+    "species": "Bolt Strike Pokémon",
+    "heightM": 1.5,
+    "weightKg": 61,
+    "catchRate": 3
+  },
+  "643": {
+    "species": "Vast White Pokémon",
+    "heightM": 3.2,
+    "weightKg": 330,
+    "catchRate": 3
+  },
+  "644": {
+    "species": "Deep Black Pokémon",
+    "heightM": 2.9,
+    "weightKg": 345,
+    "catchRate": 3
+  },
+  "645": {
+    "species": "Abundance Pokémon",
+    "heightM": 1.5,
+    "weightKg": 68,
+    "catchRate": 3
+  },
+  "646": {
+    "species": "Boundary Pokémon",
+    "heightM": 3,
+    "weightKg": 325,
+    "catchRate": 3
+  },
+  "647": {
+    "species": "Colt Pokémon",
+    "heightM": 1.4,
+    "weightKg": 48.5,
+    "catchRate": 3
+  },
+  "648": {
+    "species": "Melody Pokémon",
+    "heightM": 0.6,
+    "weightKg": 6.5,
+    "catchRate": 3
+  },
+  "649": {
+    "species": "Paleozoic Pokémon",
+    "heightM": 1.5,
+    "weightKg": 82.5,
+    "catchRate": 3
+  }
+}

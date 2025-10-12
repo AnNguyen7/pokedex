@@ -1,5 +1,8 @@
 "use client";
 
+// AnN updated: Toggle sprite with cry sound on 10/11/2025
+
+import { useState, useRef } from "react";
 import type { PokemonTypeName } from "@/types/pokemon";
 import Link from "next/link";
 import AnimatedSprite from "@/components/AnimatedSprite";
@@ -19,29 +22,67 @@ type Props = {
   nationalDex: number;
   types: PokemonTypeName[];
   sprites: SpriteSources;
+  cryUrl?: string | null;
 };
 
-export default function HeroSection({ displayName, nationalDex, types, sprites }: Props) {
+export default function HeroSection({ displayName, nationalDex, types, sprites, cryUrl }: Props) {
+  const [isShiny, setIsShiny] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handleClick = () => {
+    // Toggle shiny state
+    setIsShiny(!isShiny);
+
+    // Play cry sound if available
+    if (cryUrl) {
+      // Stop current audio if playing
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+
+      const audio = new Audio(cryUrl);
+      audio.volume = 0.3; // AnN added: Lower volume to 30% on 10/12/2025
+      audioRef.current = audio;
+
+      audio.play().catch(error => {
+        console.error("Failed to play cry:", error);
+      });
+    }
+  };
+
   return (
-    <div className="flex flex-col gap-6 sm:flex-row sm:gap-10">
-      <div className="group mx-auto flex h-48 w-48 items-center justify-center rounded-3xl border border-emerald-100 bg-emerald-50/80 shadow-inner transition-all duration-300 hover:scale-105 hover:border-emerald-200 hover:shadow-lg sm:mx-0">
+    <div className="flex flex-col items-center gap-6 md:flex-row md:items-start md:gap-10">
+      {/* Sprite container */}
+      <button
+        onClick={handleClick}
+        className={`group relative flex h-48 w-48 items-center justify-center rounded-3xl border shadow-inner transition-all duration-300 hover:shadow-lg ${
+          isShiny
+            ? "border-lime-200 bg-lime-50/80 hover:border-lime-300"
+            : "border-emerald-100 bg-emerald-50/80 hover:border-emerald-200"
+        } cursor-pointer md:mx-0`}
+        title={cryUrl ? "Click to toggle shiny & hear cry" : "Click to toggle shiny"}
+      >
         <AnimatedSprite
-          animatedSrc={sprites.animated}
-          fallbackSrc={sprites.fallback}
-          animatedShinySrc={sprites.animatedShiny}
-          fallbackShinySrc={sprites.fallbackShiny}
-          alt={displayName}
+          animatedSrc={isShiny ? (sprites.animatedShiny || sprites.animated) : sprites.animated}
+          fallbackSrc={isShiny ? (sprites.fallbackShiny || sprites.fallback) : sprites.fallback}
+          alt={isShiny ? `${displayName} shiny` : displayName}
           width={192}
           height={192}
-          className="h-40 w-40 object-contain drop-shadow transition-transform duration-300 group-hover:scale-110"
+          className="h-48 w-48 object-contain drop-shadow"
+          style={{ imageRendering: 'pixelated' }}
         />
-      </div>
-      <div className="flex-1 space-y-5 text-center sm:text-left">
-        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400 transition-colors hover:text-emerald-500">
+      </button>
+
+      {/* Info section */}
+      <div className="space-y-4 text-center md:flex-1 md:text-left">
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400 transition-colors hover:text-emerald-500 md:tracking-[0.4em]">
           {formatDexNumber(nationalDex)}
         </p>
-        <h1 className="text-4xl font-bold text-emerald-900 transition-colors hover:text-emerald-700 sm:text-5xl">{displayName}</h1>
-        <div className="flex flex-wrap justify-center gap-3 sm:justify-start">
+        <h1 className="text-3xl font-bold text-emerald-900 transition-colors hover:text-emerald-700 break-words md:text-4xl">
+          {displayName}
+        </h1>
+        <div className="flex flex-wrap justify-center gap-3 md:justify-start">
           {types.map(type => (
             <Link
               key={type}

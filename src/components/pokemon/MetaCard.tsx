@@ -26,7 +26,7 @@ function formatWeight(weightKg: number): string {
 
 export default function MetaCard({ species, heightM, weightKg }: Props) {
   return (
-    <div className="rounded-[24px] border border-emerald-100/80 bg-white/80 p-6 shadow-inner transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
+    <div className="rounded-[28px] border border-emerald-100/70 bg-white/80 p-6 shadow-inner transition-all duration-200 hover:border-emerald-200 hover:shadow-lg sm:p-8">
       <dl className="space-y-4 text-sm text-emerald-800">
         {species && (
           <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">

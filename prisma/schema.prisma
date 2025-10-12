@@ -43,6 +43,7 @@ model Pokemon {
   primaryType    PokemonType
   secondaryType  PokemonType?
   spriteUrl      String
+  cryUrl         String?      // AnN added: Pokémon cry audio URL on 10/11/2025
   species        String?      // "Seed Pokémon", "Flame Pokémon", etc.
   heightM        Float?       // Height in meters (e.g., 0.7)
   weightKg       Float?       // Weight in kg (e.g., 6.9)
