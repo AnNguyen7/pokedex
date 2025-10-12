@@ -2,7 +2,7 @@
 
 // AnN updated: Toggle sprite with cry sound on 10/11/2025
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { PokemonTypeName } from "@/types/pokemon";
 import Link from "next/link";
 import AnimatedSprite from "@/components/AnimatedSprite";
@@ -29,25 +29,42 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
   const [isShiny, setIsShiny] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  // Preload shiny sprites to reduce flicker during toggle
+  useEffect(() => {
+    const preloadSources = [
+      sprites.animatedShiny,
+      sprites.fallbackShiny,
+      sprites.animated,
+      sprites.fallback,
+    ].filter((src): src is string => Boolean(src));
+
+    preloadSources.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [sprites]);
+
+  // Ensure audio element is ready when cry URL changes
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.3;
+      audioRef.current.load();
+    }
+  }, [cryUrl]);
+
   const handleClick = () => {
     // Toggle shiny state
-    setIsShiny(!isShiny);
+    setIsShiny(prev => !prev);
 
     // Play cry sound if available
-    if (cryUrl) {
-      // Stop current audio if playing
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
-
-      const audio = new Audio(cryUrl);
-      audio.volume = 0.3; // AnN added: Lower volume to 30% on 10/12/2025
-      audioRef.current = audio;
-
-      audio.play().catch(error => {
-        console.error("Failed to play cry:", error);
-      });
+    if (cryUrl && audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current
+        .play()
+        .catch(error => {
+          console.error("Failed to play cry:", error);
+        });
     }
   };
 
@@ -96,6 +113,7 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
           ))}
         </div>
       </div>
+      {cryUrl ? <audio ref={audioRef} src={cryUrl} preload="auto" className="hidden" /> : null}
     </div>
   );
 }

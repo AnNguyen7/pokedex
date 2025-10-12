@@ -58,13 +58,8 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
           <h1 className="text-3xl sm:text-4xl font-bold text-emerald-900">National Pokédex</h1>
         </div>
         <div className="rounded-3xl border border-emerald-100 bg-white/80 px-6 py-5 text-sm leading-6 text-emerald-800 shadow-sm backdrop-blur">
-          <p className="mb-3">
-            Explore all 649 Pokémon from Generation I through Generation V, spanning from
-            Kanto to Unova. This comprehensive Pokédex includes detailed stats, abilities,
-            evolution chains, and type effectiveness for every Pokémon.
-          </p>
           <p>
-            Click any Pokémon to view detailed information, hear their cry, and see their shiny form!
+            Explore 649 Pokémon across Kanto through Unova with complete stats, abilities, evolutions, and type matchups.
           </p>
         </div>
       </header>
