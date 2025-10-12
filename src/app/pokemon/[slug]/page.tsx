@@ -6,7 +6,6 @@ import HeroSection from "@/components/pokemon/HeroSection"; // AnN updated on 10
 import EvolutionCard from "@/components/pokemon/EvolutionCard";
 import AbilitiesCard from "@/components/pokemon/AbilitiesCard";
 import StatsCard from "@/components/pokemon/StatsCard";
-import MetaCard from "@/components/pokemon/MetaCard";
 import TrainingCard from "@/components/pokemon/TrainingCard";
 import TypeEffectivenessCard from "@/components/pokemon/TypeEffectivenessCard";
 import type { PokemonTypeName } from "@/types/pokemon";
@@ -150,8 +149,8 @@ export default async function PokemonPage({ params }: { params: { slug: string }
 
       <section className="mt-10 rounded-[36px] border border-emerald-100 bg-white/85 p-6 shadow-xl backdrop-blur sm:p-8 md:p-10">
         {/* AnN updated: Reorganized layout with wider left column on 10/12/2025 */}
-        <div className="grid gap-8 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] items-start">
-          {/* Left column: Sprite, Evolution, Species, Abilities */}
+        <div className="grid gap-8 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
+          {/* Left column: Sprite, Evolution, Abilities - AnN updated on 10/12/2025 */}
           <div className="space-y-8">
             <HeroSection
               displayName={pokemon.displayName}
@@ -159,15 +158,12 @@ export default async function PokemonPage({ params }: { params: { slug: string }
               types={types}
               sprites={sprites}
               cryUrl={pokemon.cryUrl}
-            />
-
-            <EvolutionCard stages={evolutionStages} />
-
-            <MetaCard
               species={pokemon.species ?? null}
               heightM={pokemon.heightM ?? null}
               weightKg={pokemon.weightKg ?? null}
             />
+
+            <EvolutionCard stages={evolutionStages} />
 
             <AbilitiesCard abilities={abilities} />
           </div>
