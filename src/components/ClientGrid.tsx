@@ -99,8 +99,18 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
           <h1 className="text-3xl sm:text-4xl font-bold text-emerald-900">List of Pokémon</h1>
         </div>
 
+        {/* Description */}
+        <div className="rounded-3xl border border-emerald-100 bg-white/80 px-6 py-5 text-sm leading-6 text-emerald-800 shadow-sm backdrop-blur text-center">
+          <p>
+            This is the complete <strong>National Pokédex</strong> for Generation 1-5, which lists every one of the 649 Pokémon discovered so far.
+          </p>
+          <p className="mt-2">
+            Click a Pokémon&apos;s name to see its detailed Pokédex page, or click a type to see other Pokémon of the same type.
+          </p>
+        </div>
+
         {/* Jump to Generation Navigation */}
-        <div className="rounded-3xl border border-emerald-100 bg-emerald-50/50 px-6 py-5 backdrop-blur">
+        <div className="rounded-3xl border border-emerald-100 bg-white/80 px-6 py-5 backdrop-blur">
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
             <span className="font-semibold text-emerald-900">Jump to</span>
             {GENERATION_RANGES.map(gen => (
@@ -113,16 +123,6 @@ export default function ClientGrid({ pokemon }: { pokemon: PokemonListItem[] }) 
               </button>
             ))}
           </div>
-        </div>
-
-        {/* Description */}
-        <div className="rounded-3xl border border-emerald-100 bg-white/80 px-6 py-5 text-sm leading-6 text-emerald-800 shadow-sm backdrop-blur">
-          <p>
-            This is the complete <strong>National Pokédex</strong> for Generation 1-5, which lists every one of the 649 Pokémon discovered so far.
-          </p>
-          <p className="mt-2">
-            Click a Pokémon&apos;s name to see its detailed Pokédex page, or click a type to see other Pokémon of the same type.
-          </p>
         </div>
       </header>
 
