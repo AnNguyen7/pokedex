@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import AnimatedSprite from "@/components/AnimatedSprite";
-import { spriteUrls } from "@/lib/sprites"; // AnN updated on 10/11/2025
+import Image from "next/image";
 
 type Stage = {
   dex: number;
@@ -20,25 +19,25 @@ export default function EvolutionCard({ stages }: Props) {
       <h2 className="text-sm font-semibold uppercase tracking-wide text-emerald-500">Evolution Chain</h2>
       <div className="mt-4">
 
-        <div className="flex flex-wrap items-center gap-2 text-sm text-emerald-800 sm:gap-4">
+        <div className="flex flex-wrap items-center gap-3 text-sm text-emerald-800">
           {stages.map((stage, index) => {
-            const sprites = spriteUrls(stage.dex);
+            {/* AnN add/fix: Use PokéSprite icons for evolution chain on 10/13/2025 */}
+            const pokespriteUrl = `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/${stage.slug}.png`;
             return (
-              <div key={stage.dex} className="flex items-center gap-2 sm:gap-3">
-                {index > 0 && <span aria-hidden className="text-sm text-emerald-400 sm:text-base">&rarr;</span>}
+              <div key={stage.dex} className="flex items-center gap-3">
+                {index > 0 && <span aria-hidden className="text-emerald-400">&rarr;</span>}
                 <Link
                   href={`/pokemon/${stage.slug}`}
-                  className="group flex items-center gap-2 rounded-lg p-1.5 transition-all hover:bg-emerald-50 hover:shadow-sm sm:gap-3 sm:p-2"
+                  className="group flex items-center gap-2 rounded-full bg-gradient-to-br from-emerald-50/90 to-emerald-100/50 px-3 py-2 shadow-sm backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:shadow-md"
                 >
-                  <AnimatedSprite
-                    animatedSrc={sprites.animated}
-                    fallbackSrc={sprites.fallback}
+                  <Image
+                    src={pokespriteUrl}
                     alt={stage.name}
-                    width={36}
-                    height={36}
-                    className="h-8 w-8 object-contain drop-shadow transition-transform group-hover:scale-110 sm:h-9 sm:w-9"
+                    width={32}
+                    height={32}
+                    className="h-8 w-8 object-contain drop-shadow transition-transform group-hover:scale-110"
                   />
-                  <span className="text-xs font-medium text-emerald-800 transition-colors group-hover:text-emerald-600 sm:text-sm">
+                  <span className="text-sm font-semibold text-emerald-900">
                     {stage.name}
                   </span>
                 </Link>

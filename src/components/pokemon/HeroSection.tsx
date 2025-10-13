@@ -64,7 +64,7 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
   // Ensure audio element is ready when cry URL changes
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.3;
+      audioRef.current.volume = 0.15;
       audioRef.current.load();
     }
   }, [cryUrl]);
@@ -77,6 +77,7 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
     if (cryUrl && audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
+      audioRef.current.volume = 0.1; // Set volume before playing
       audioRef.current
         .play()
         .catch(error => {

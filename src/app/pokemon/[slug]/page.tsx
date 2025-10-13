@@ -163,9 +163,18 @@ export default async function PokemonPage({ params }: { params: { slug: string }
               weightKg={pokemon.weightKg ?? null}
             />
 
-            <EvolutionCard stages={evolutionStages} />
+            {/* AnN add/fix: Only show evolution chain if Pokémon has evolutions (2+ stages) on 10/13/2025 */}
+            {evolutionStages.length > 1 && <EvolutionCard stages={evolutionStages} />}
 
             <AbilitiesCard abilities={abilities} />
+
+            {/* Pokédex Notes - moved inside main card on 10/13/2025 */}
+            {pokemon.description && (
+              <div className="rounded-[24px] border border-emerald-100/80 bg-white/70 p-6 shadow-inner transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
+                <h2 className="text-sm font-semibold uppercase tracking-wide text-emerald-500">Pokédex Notes</h2>
+                <p className="mt-4 text-base leading-relaxed text-emerald-800">{pokemon.description}</p>
+              </div>
+            )}
           </div>
 
           {/* Right column: Base Stats, Training, Type Effectiveness */}
@@ -181,13 +190,6 @@ export default async function PokemonPage({ params }: { params: { slug: string }
         <section className="mt-8 space-y-3 rounded-[32px] border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur transition-all duration-200 hover:border-emerald-200 hover:shadow-xl sm:mt-16 sm:space-y-4 sm:p-8">
           <h2 className="text-lg font-semibold text-emerald-800 sm:text-xl">Summary</h2>
           <p className="text-sm leading-6 text-emerald-800 sm:text-base sm:leading-7">{pokemon.summary}</p>
-        </section>
-      )}
-
-      {pokemon.description && (
-        <section className="mt-6 space-y-3 rounded-[32px] border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur transition-all duration-200 hover:border-emerald-200 hover:shadow-xl sm:mt-8 sm:space-y-4 sm:p-8">
-          <h2 className="text-lg font-semibold text-emerald-800 sm:text-xl">Pokédex Notes</h2>
-          <p className="text-sm leading-6 text-emerald-800 sm:text-base sm:leading-7">{pokemon.description}</p>
         </section>
       )}
     </main>
