@@ -77,7 +77,7 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
     if (cryUrl && audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
-      audioRef.current.volume = 0.1; // Set volume before playing
+      audioRef.current.volume = 0.12; // Set volume before playing
       audioRef.current
         .play()
         .catch(error => {
