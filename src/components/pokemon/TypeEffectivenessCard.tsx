@@ -1,3 +1,7 @@
+"use client";
+
+// AnN add: Shiny theme support for type effectiveness card on 10/13/2025
+import { useShiny } from "@/contexts/ShinyContext";
 import type { PokemonTypeName } from "@/types/pokemon";
 import Link from "next/link";
 import { TYPE_BADGE_STYLES } from "./typeStyles";
@@ -165,10 +169,16 @@ function calculateCombinedEffectiveness(types: PokemonTypeName[]) {
 }
 
 export default function TypeEffectivenessCard({ types }: Props) {
+  const { isShiny } = useShiny();
   const effectiveness = calculateCombinedEffectiveness(types);
 
+  // Shiny theme classes
+  const cardClasses = isShiny
+    ? "rounded-[28px] border border-lime-600/25 bg-lime-800/20 p-6 shadow-lg transition-all duration-200 hover:border-lime-500/30 hover:shadow-xl"
+    : "rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg transition-all duration-200 hover:border-emerald-200 hover:shadow-xl";
+
   return (
-    <aside className="rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg transition-all duration-200 hover:border-emerald-200 hover:shadow-xl">
+    <aside className={cardClasses}>
       <div className="space-y-4">
         {/* Types that deal 4× damage */}
         {effectiveness.veryWeakTo.length > 0 && (

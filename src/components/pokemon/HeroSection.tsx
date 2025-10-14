@@ -2,11 +2,13 @@
 
 // AnN updated: Toggle sprite with cry sound on 10/11/2025
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import type { PokemonTypeName } from "@/types/pokemon";
 import Link from "next/link";
 import AnimatedSprite from "@/components/AnimatedSprite";
 import { TYPE_BADGE_STYLES } from "@/components/pokemon/typeStyles";
+// AnN add: Shiny theme support for hero section on 10/13/2025
+import { useShiny } from "@/contexts/ShinyContext";
 
 const formatDexNumber = (dex: number) => `#${dex.toString().padStart(3, "0")}`;
 
@@ -30,7 +32,7 @@ type Props = {
 };
 
 export default function HeroSection({ displayName, nationalDex, types, sprites, cryUrl, species, heightM, weightKg }: Props) {
-  const [isShiny, setIsShiny] = useState(false);
+  const { isShiny, toggleShiny } = useShiny();
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // AnN added: Format helper functions on 10/12/2025
@@ -71,7 +73,7 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
 
   const handleClick = () => {
     // Toggle shiny state
-    setIsShiny(prev => !prev);
+    toggleShiny();
 
     // Play cry sound if available
     if (cryUrl && audioRef.current) {
@@ -93,8 +95,8 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
         onClick={handleClick}
         className={`group relative flex h-64 w-64 flex-shrink-0 items-center justify-center rounded-3xl border shadow-inner transition-all duration-300 hover:shadow-lg ${
           isShiny
-            ? "border-lime-200 bg-lime-50/80 hover:border-lime-300"
-            : "border-emerald-100 bg-emerald-50/80 hover:border-emerald-200"
+            ? "border-lime-600/30 bg-lime-800/20 hover:border-lime-500/40 hover:bg-lime-700/25"
+            : "border-emerald-100 bg-emerald-50/80 hover:border-emerald-200 hover:bg-emerald-100/80"
         } cursor-pointer md:mx-0`}
         title={cryUrl ? "Click to toggle shiny & hear cry" : "Click to toggle shiny"}
       >
@@ -112,10 +114,14 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
       {/* Info section - AnN updated: added species/height/weight card on 10/12/2025 */}
       <div className="flex flex-col justify-end space-y-4 text-center md:flex-1 md:text-left md:h-64">
         <div className="space-y-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-emerald-400 transition-colors hover:text-emerald-500 md:tracking-[0.4em]">
+          <p className={`text-xs font-semibold uppercase tracking-[0.35em] transition-colors md:tracking-[0.4em] ${
+            isShiny ? "text-lime-600 hover:text-lime-500" : "text-emerald-400 hover:text-emerald-500"
+          }`}>
             {formatDexNumber(nationalDex)}
           </p>
-          <h1 className="text-3xl font-bold text-emerald-900 transition-colors hover:text-emerald-700 break-words md:text-4xl">
+          <h1 className={`text-3xl font-bold transition-colors break-words md:text-4xl ${
+            isShiny ? "text-lime-800 hover:text-lime-700" : "text-emerald-900 hover:text-emerald-700"
+          }`}>
             {displayName}
           </h1>
           <div className="flex flex-wrap justify-center gap-3 md:justify-start">
@@ -138,20 +144,20 @@ export default function HeroSection({ displayName, nationalDex, types, sprites, 
           <div className="space-y-2 text-sm">
             {species && (
               <div className="flex justify-center gap-2 md:justify-start">
-                <span className="font-semibold text-emerald-600">Species:</span>
-                <span className="text-emerald-800">{species}</span>
+                <span className={`font-semibold ${isShiny ? "text-lime-600" : "text-emerald-600"}`}>Species:</span>
+                <span className={isShiny ? "text-lime-800" : "text-emerald-800"}>{species}</span>
               </div>
             )}
             {heightM !== null && heightM !== undefined && (
               <div className="flex justify-center gap-2 md:justify-start">
-                <span className="font-semibold text-emerald-600">Height:</span>
-                <span className="text-emerald-800">{formatHeight(heightM)}</span>
+                <span className={`font-semibold ${isShiny ? "text-lime-600" : "text-emerald-600"}`}>Height:</span>
+                <span className={isShiny ? "text-lime-800" : "text-emerald-800"}>{formatHeight(heightM)}</span>
               </div>
             )}
             {weightKg !== null && weightKg !== undefined && (
               <div className="flex justify-center gap-2 md:justify-start">
-                <span className="font-semibold text-emerald-600">Weight:</span>
-                <span className="text-emerald-800">{formatWeight(weightKg)}</span>
+                <span className={`font-semibold ${isShiny ? "text-lime-600" : "text-emerald-600"}`}>Weight:</span>
+                <span className={isShiny ? "text-lime-800" : "text-emerald-800"}>{formatWeight(weightKg)}</span>
               </div>
             )}
           </div>

@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { spriteUrls } from "@/lib/sprites"; // AnN updated on 10/11/2025
 import { prisma } from "@/lib/prisma";
-import HeroSection from "@/components/pokemon/HeroSection"; // AnN updated on 10/11/2025
-import EvolutionCard from "@/components/pokemon/EvolutionCard";
-import AbilitiesCard from "@/components/pokemon/AbilitiesCard";
-import StatsCard from "@/components/pokemon/StatsCard";
-import TrainingCard from "@/components/pokemon/TrainingCard";
-import TypeEffectivenessCard from "@/components/pokemon/TypeEffectivenessCard";
+// AnN add: Shiny theme provider and client component for Pokemon detail page on 10/13/2025
+import { ShinyProvider } from "@/contexts/ShinyContext";
+import PokemonDetailClient from "@/components/pokemon/PokemonDetailClient";
 import type { PokemonTypeName } from "@/types/pokemon";
 
 
@@ -147,44 +144,27 @@ export default async function PokemonPage({ params }: { params: { slug: string }
         Back to Pokédex
       </Link>
 
-      <section className="mt-10 rounded-[36px] border border-emerald-100 bg-white/85 p-6 shadow-xl backdrop-blur sm:p-8 md:p-10">
-        {/* AnN updated: Reorganized layout with wider left column on 10/12/2025 */}
-        <div className="grid gap-8 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)] lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-start">
-          {/* Left column: Sprite, Evolution, Abilities - AnN updated on 10/12/2025 */}
-          <div className="space-y-8">
-            <HeroSection
-              displayName={pokemon.displayName}
-              nationalDex={pokemon.nationalDex}
-              types={types}
-              sprites={sprites}
-              cryUrl={pokemon.cryUrl}
-              species={pokemon.species ?? null}
-              heightM={pokemon.heightM ?? null}
-              weightKg={pokemon.weightKg ?? null}
-            />
-
-            {/* AnN add/fix: Only show evolution chain if Pokémon has evolutions (2+ stages) on 10/13/2025 */}
-            {evolutionStages.length > 1 && <EvolutionCard stages={evolutionStages} />}
-
-            <AbilitiesCard abilities={abilities} />
-
-            {/* Pokédex Notes - moved inside main card on 10/13/2025 */}
-            {pokemon.description && (
-              <div className="rounded-[24px] border border-emerald-100/80 bg-white/70 p-6 shadow-inner transition-all duration-200 hover:border-emerald-200 hover:shadow-lg">
-                <h2 className="text-sm font-semibold uppercase tracking-wide text-emerald-500">Pokédex Notes</h2>
-                <p className="mt-4 text-base leading-relaxed text-emerald-800">{pokemon.description}</p>
-              </div>
-            )}
-          </div>
-
-          {/* Right column: Base Stats, Training, Type Effectiveness */}
-          <div className="space-y-8">
-            <StatsCard stats={statEntries} total={total} primaryType={types[0]} />
-            <TrainingCard catchRate={pokemon.catchRate ?? null} evYields={evYields} />
-            <TypeEffectivenessCard types={types} />
-          </div>
-        </div>
-      </section>
+      <ShinyProvider>
+        <PokemonDetailClient
+          displayName={pokemon.displayName}
+          nationalDex={pokemon.nationalDex}
+          types={types}
+          sprites={sprites}
+          cryUrl={pokemon.cryUrl}
+          species={pokemon.species}
+          heightM={pokemon.heightM}
+          weightKg={pokemon.weightKg}
+          description={pokemon.description}
+          abilities={abilities}
+          evolutionStages={evolutionStages}
+          stats={statEntries}
+          totalStats={total}
+          primaryType={types[0]}
+          evYields={evYields}
+          catchRate={pokemon.catchRate ?? 0}
+          typeEffectiveness={[]} // Not used in current implementation
+        />
+      </ShinyProvider>
 
       {pokemon.summary && (
         <section className="mt-8 space-y-3 rounded-[32px] border border-emerald-100 bg-white/85 p-6 shadow-lg backdrop-blur transition-all duration-200 hover:border-emerald-200 hover:shadow-xl sm:mt-16 sm:space-y-4 sm:p-8">

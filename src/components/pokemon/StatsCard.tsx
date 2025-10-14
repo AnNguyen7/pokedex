@@ -1,3 +1,5 @@
+// AnN add: Shiny theme support for stats card on 10/13/2025
+import { useShiny } from "@/contexts/ShinyContext";
 import type { PokemonTypeName } from "@/types/pokemon";
 
 type StatEntry = {
@@ -57,21 +59,36 @@ const TYPE_BG_COLORS: Record<string, string> = {
 };
 
 export default function StatsCard({ stats, total, primaryType }: Props) {
+  const { isShiny } = useShiny();
+  
   const gradient = primaryType ? TYPE_GRADIENTS[primaryType] || TYPE_GRADIENTS.normal : "from-emerald-500 via-emerald-400 to-lime-300";
-  const bgColor = primaryType ? TYPE_BG_COLORS[primaryType] || "bg-emerald-100" : "bg-emerald-100";
+  const bgColor = isShiny 
+    ? "bg-lime-700/30" // Dark lime green background for shiny theme
+    : (primaryType ? TYPE_BG_COLORS[primaryType] || "bg-emerald-100" : "bg-emerald-100");
+
+  // Shiny theme classes
+  const cardClasses = isShiny
+    ? "rounded-[28px] border border-lime-600/25 bg-lime-800/20 p-6 shadow-lg transition-all duration-200 hover:border-lime-500/30 hover:shadow-xl"
+    : "rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg transition-all duration-200 hover:border-emerald-200 hover:shadow-xl";
+
+  const titleClasses = isShiny ? "text-lg font-semibold text-lime-700" : "text-lg font-semibold text-emerald-800";
+  const totalClasses = isShiny ? "text-sm font-semibold text-lime-600" : "text-sm font-semibold text-emerald-600";
+  const labelClasses = isShiny ? "text-sm font-medium text-lime-600" : "text-sm font-medium text-emerald-700";
+  const valueClasses = isShiny ? "font-semibold text-lime-800" : "font-semibold text-emerald-900";
+  const hoverLabelClasses = isShiny ? "group-hover:text-lime-700" : "group-hover:text-emerald-900";
 
   return (
-    <aside className="rounded-[28px] border border-emerald-100/60 bg-white/85 p-6 shadow-lg transition-all duration-200 hover:border-emerald-200 hover:shadow-xl">
+    <aside className={cardClasses}>
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-emerald-800">Base Stats</h2>
-        <span className="text-sm font-semibold text-emerald-600">Total {total}</span>
+        <h2 className={titleClasses}>Base Stats</h2>
+        <span className={totalClasses}>Total {total}</span>
       </div>
       <div className="mt-6 space-y-4">
         {stats.map(stat => (
           <div key={stat.key} className="group space-y-2">
-            <div className="flex items-center justify-between text-sm font-medium text-emerald-700">
-              <span className="transition-colors group-hover:text-emerald-900">{stat.label}</span>
-              <span className="font-semibold text-emerald-900 transition-transform group-hover:scale-110">{stat.value}</span>
+            <div className={`flex items-center justify-between ${labelClasses}`}>
+              <span className={`transition-colors ${hoverLabelClasses}`}>{stat.label}</span>
+              <span className={`${valueClasses} transition-transform group-hover:scale-110`}>{stat.value}</span>
             </div>
             <div className={`relative h-2.5 w-full overflow-hidden rounded-full ${bgColor} transition-all group-hover:h-3`}>
               <div
